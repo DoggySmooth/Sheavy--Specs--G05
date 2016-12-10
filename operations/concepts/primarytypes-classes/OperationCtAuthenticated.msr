@@ -1,0 +1,35 @@
+/*
+* @author Phil
+* @date Tue Dec 06 17:12:25 CET 2016
+*/
+
+package Sheavy.operations.concepts.primarytypes.classes.ctAuthenticated {
+
+import lu.uni.lassy.messir.libraries.calendar
+import lu.uni.lassy.messir.libraries.math
+import lu.uni.lassy.messir.libraries.primitives
+import lu.uni.lassy.messir.libraries.string
+
+import Sheavy.concepts.primarytypes.classes
+import Sheavy.concepts.primarytypes.datatypes
+
+	Operation Model {
+operation: ctAuthenticated.init(AWorksAs:dtString, AName:dtString, ATeam:dtInteger, AAvaible:ptBoolean, APhoneNumber:dtInteger, Alogin:dtLogin, Apwd:dtPassword, AvpIsLogged:ptBoolean):ptBoolean {
+postF {
+	if(
+		/* Post F01 */
+		let Self:ctAuthenticated in
+		Self.id = Aid and Self.WorksAs = AString and Self.Name = AName and Self.Team = ATeam and Self.Available = AStatus and Self.PhoneNumber = APhoneNumber and Self.emailAdress = AEmailAdress and Self.Login = ALogin and Self.Pwd = APwd and Self.vpIsLogged = false
+		/* Post F02 */
+		and(Self.oclIsNew and self= Self))
+	then(result = true)
+	else(result = false)
+	endif
+
+}
+
+}
+	}
+
+
+}

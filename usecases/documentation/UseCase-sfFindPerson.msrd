@@ -1,0 +1,27 @@
+/*
+@author Phil
+@date Sat Dec 10 12:52:38 CET 2016
+*/
+
+
+@@Use Case Subfunction Sheavy.usecases.subfunctions.sfFindPerson
+@description ""
+@parameter Sheavy.usecases.subfunctions.sfFindPerson.Name ""
+@parameter Sheavy.usecases.subfunctions.sfFindPerson.Function ""
+@endParameters
+@protocolCondition
+"
+"
+@endProtocolConditions
+@preCondition
+"
+"
+@endPreConditions
+@postCondition
+"
+"
+@endPostConditions
+@additionalInformation
+"
+none
+"

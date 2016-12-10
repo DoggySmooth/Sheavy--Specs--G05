@@ -1,0 +1,34 @@
+/*
+* @author Phil
+* @date Tue Dec 06 17:23:26 CET 2016
+*/
+
+package Sheavy.operations.concepts.primarytypes.datatypes.dtLatitude {
+
+import lu.uni.lassy.messir.libraries.calendar
+import lu.uni.lassy.messir.libraries.math
+import lu.uni.lassy.messir.libraries.primitives
+import lu.uni.lassy.messir.libraries.string
+
+import Sheavy.concepts.primarytypes.datatypes
+
+	Operation Model {
+
+operation: dtLatitude.is():ptBoolean{
+    postF{ 
+        let TheResult: ptBoolean in
+        ( if
+          ( AdtValue.value.geq(-90.0)
+            and AdtValue.value.leq(+90.0)
+          )
+          then (TheResult = true)
+          else (TheResult = false)
+          endif
+          result = TheResult
+        )}
+	
+		}
+	}
+
+
+}

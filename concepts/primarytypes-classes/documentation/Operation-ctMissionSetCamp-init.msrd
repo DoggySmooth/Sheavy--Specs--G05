@@ -1,0 +1,46 @@
+/*
+@author Phil
+@date Sat Dec 10 12:50:58 CET 2016
+*/
+
+
+@@Operation
+Sheavy.concepts.primarytypes.classes.ctMissionSetCamp.init
+//parameters
+@parameter
+Sheavy.concepts.primarytypes.classes.ctMissionSetCamp.init.ASendTo
+""
+@parameter
+Sheavy.concepts.primarytypes.classes.ctMissionSetCamp.init.ATitle
+""
+@parameter
+Sheavy.concepts.primarytypes.classes.ctMissionSetCamp.init.AMissionType
+""
+@parameter
+Sheavy.concepts.primarytypes.classes.ctMissionSetCamp.init.AStart
+""
+@parameter
+Sheavy.concepts.primarytypes.classes.ctMissionSetCamp.init.ADate
+""
+@parameter
+Sheavy.concepts.primarytypes.classes.ctMissionSetCamp.init.ALocation
+""
+@parameter
+Sheavy.concepts.primarytypes.classes.ctMissionSetCamp.init.ACapacity
+""
+@parameter
+Sheavy.concepts.primarytypes.classes.ctMissionSetCamp.init.ANeededTeam
+""
+@parameter
+Sheavy.concepts.primarytypes.classes.ctMissionSetCamp.init.ADescription
+""
+@endParameters
+
+@description "
+used to initialize the current object as a new instance of the ctMissionSetCamp type. "
+//postFunctional descriptions
+@postF 
+"true iff the system poststate includes the current object as a new ctMissionSetCamp instance having its attributes equal to the ones provided as parameters. "
+@endPostF
+//example
+@example" "

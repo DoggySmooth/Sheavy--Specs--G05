@@ -1,0 +1,25 @@
+/*
+* @author Phil
+* @date Tue Dec 06 17:51:01 CET 2016
+*/
+
+package Sheavy.operations.environment.ActAll.sfAlertGPSZone {
+
+import lu.uni.lassy.messir.libraries.calendar
+import lu.uni.lassy.messir.libraries.math
+import lu.uni.lassy.messir.libraries.primitives
+import lu.uni.lassy.messir.libraries.string
+
+import Sheavy.concepts.primarytypes.classes
+import Sheavy.concepts.primarytypes.datatypes
+import Sheavy.environment
+
+	Operation Model {
+
+	operation: actAll.outactAll.sfAlertGPSZone(GPSLocation:dtGeolocation, Zones:ctZone):ptBoolean{
+		
+	}
+	}
+
+
+}

@@ -1,0 +1,25 @@
+/*
+@author Phil
+@date Sat Dec 10 12:51:03 CET 2016
+*/
+
+
+@@Primary Type Class Sheavy.concepts.primarytypes.classes.ctMissionEvacuate
+@description ""
+@attribute
+Sheavy.concepts.primarytypes.classes.ctMissionEvacuate.EvaType
+""
+@attribute
+Sheavy.concepts.primarytypes.classes.ctMissionEvacuate.FromLocation
+""
+@attribute
+Sheavy.concepts.primarytypes.classes.ctMissionEvacuate.ToLocation
+""
+@attribute
+Sheavy.concepts.primarytypes.classes.ctMissionEvacuate.Estimated
+""
+@endAttributes
+@operation
+Sheavy.concepts.primarytypes.classes.ctMissionEvacuate.init
+""
+@endOperations

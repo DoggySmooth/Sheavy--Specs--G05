@@ -1,0 +1,61 @@
+/*
+* @author Phil
+* @date Tue Dec 06 18:01:13 CET 2016
+*/
+
+package Sheavy.operations.environment.ActAdministrator.sfInsertPersonIntoDatabase {
+
+import lu.uni.lassy.messir.libraries.calendar
+import lu.uni.lassy.messir.libraries.math
+import lu.uni.lassy.messir.libraries.primitives
+import lu.uni.lassy.messir.libraries.string
+
+import Sheavy.environment
+import Sheavy.concepts.primarytypes.classes
+
+	Operation Model {
+
+	operation: actAdministrator.outactAdministrator.sfInsertPersonIntoDatabase(AAuthenticadesUser: ctAuthenticated):ptBoolean{
+		
+		preP{
+			let TheSystem: ctState in
+			let TheactAdministrator: ctAuthenticated in
+			
+			self.rnActor.rnSystem = TheSystem
+			and self.rnActor = TheactAdministrator
+			
+			/*PreP01*/
+			and TheSystem.vpStarted
+			
+			/*PreP02*/
+			and TheactAdministrator.rnctAuthenticated.vpIsLogged = true
+			/*PreP03*/
+			and TheSystem.vpCrisisLevel = 0
+		}
+		preF{true}
+		
+		postF{
+			let TheSystem: ctState in
+  let TheactAuthenticated:actAuthenticated in
+  let ThectAuthenticated:ctAuthenticated in
+  
+  self.rnActor.rnSystem = TheSystem
+  and self.rnActor = TheactAdministrator
+/* PostF01 */
+  TheactAuthenticated.init()
+/* PostF02 */
+  and ThectAuthenticated.init(AWorksAs, AName, ATeam, AAvaible, APhoneNumber, Alogin, Apwd, AvpIsLogged)
+
+/* PostF03 */
+  and TheactAuthenticated@post.rnctAuthenticated = ThectAuthenticated
+  
+/* PostF04 */  
+  and ThectAuthenticated@post.rnactAuthenticated = TheactAuthenticated
+/* PostF05 */  
+  and TheactAdministrator.rnInterfaceIN^ieMessage("User Added!")
+		}
+	}
+	}
+
+
+}

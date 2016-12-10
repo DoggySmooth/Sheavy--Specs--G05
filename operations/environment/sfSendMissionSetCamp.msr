@@ -1,0 +1,54 @@
+
+/*
+* @author Phil
+* @date Tue Dec 06 17:53:43 CET 2016
+*/
+package Sheavy.operations.environment.ActCoordinator.sfSendMissionSetCamp {
+	import lu.uni.lassy.messir.libraries.calendar
+	import lu.uni.lassy.messir.libraries.math
+	import lu.uni.lassy.messir.libraries.primitives
+	import lu.uni.lassy.messir.libraries.string
+	import Sheavy.environment
+	import Sheavy.concepts.primarytypes.classes
+	import Sheavy.concepts.primarytypes.datatypes
+
+	Operation Model {
+
+		operation: actCoordinator.outactCoordinator.sfSendMissionSetCamp(AMission:ctMissionSetCamp):ptBoolean {
+			preP {
+				let TheSystem:ctState in
+				let TheCoor:actCoordinator in
+				self.rnActor.rnSystem = TheSystem and self.rnActor = TheCoor
+				/*PreP01*/
+				and TheCoordinator.rnctAuthenticated.vpIsLogged = true
+				/*PreP02*/
+				and TheSystem.vpCrisisLevel = 2
+
+			}
+			preF {
+				true
+
+	}
+	postF {
+		let TheSystem:ctState in
+		let AMission:ctMissionSetCamp in
+		let TheCoor:actCoordinator in
+		let TeamLeader:actTeamLeader in
+		
+		self.rnActor.rnSystem = TheSystem 
+		and self.rnActor = TeamLeader
+		
+		/*PostF01*/
+		and AMission.init(ASendTo, ATitle, AMissionType, AStart, ADate, ALocation, ACapacity, ANeededTeam, ADescription)
+		
+		/*PostF02*/
+		and TeamLeader.rnInterfaceIN ^ieNotify(AMission)
+		
+		/*PostF03*/
+		and TheCoor.rnIntefaceIN ^ieMessage("Request Send")
+
+	}
+}
+
+}
+}

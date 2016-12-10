@@ -1,0 +1,37 @@
+/*
+* @author Phil
+* @date Tue Dec 06 17:17:13 CET 2016
+*/
+
+package Sheavy.operations.concepts.primarytypes.classes.ctTeamMember {
+
+import lu.uni.lassy.messir.libraries.calendar
+import lu.uni.lassy.messir.libraries.math
+import lu.uni.lassy.messir.libraries.primitives
+import lu.uni.lassy.messir.libraries.string
+
+
+import Sheavy.concepts.primarytypes.classes
+import Sheavy.concepts.primarytypes.datatypes
+
+	Operation Model {
+
+operation: ctTeamMember.init(ATeamMemberID:dtTeamMemberID):ptBoolean {
+postF {
+if(
+/* Post F01 */
+let Self:ctTeamMember in
+Self.id = Aid and Self.TeamLeaderID = Aid
+/* Post F02 */
+and(Self.oclIsNew and self= Self))
+then(result = true)
+else(result = false)
+endif
+
+}
+
+}
+	}
+
+
+}

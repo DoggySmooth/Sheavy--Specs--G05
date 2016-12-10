@@ -1,0 +1,12 @@
+/*
+@author Phil
+@date Sat Dec 10 12:51:42 CET 2016
+*/
+
+
+@@Primary Type Enumeration Sheavy.concepts.primarytypes.datatypes.enActTypesForMissionScreen
+@description ""
+@operation
+Sheavy.concepts.primarytypes.datatypes.enActTypesForMissionScreen.is
+""
+@endOperations

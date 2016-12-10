@@ -1,0 +1,32 @@
+/*
+@author Phil
+@date Sat Dec 10 12:52:03 CET 2016
+*/
+
+
+@@Actor Sheavy.environment.actAuthenticated
+@description ""
+//input events
+@inputEvent
+Sheavy.environment.actAuthenticated.inactAuthenticated.ieDisplay
+""
+@inputEvent
+Sheavy.environment.actAuthenticated.inactAuthenticated.ieMessage
+""
+
+@endInputEvents
+//output events
+@outputEvent
+Sheavy.environment.actAuthenticated.outactAuthenticated.sfFindPerson
+""
+@outputEvent
+Sheavy.environment.actAuthenticated.outactAuthenticated.sfLogin
+""
+@outputEvent
+Sheavy.environment.actAuthenticated.outactAuthenticated.sfLogout
+""
+@outputEvent
+Sheavy.environment.actAuthenticated.outactAuthenticated.sfSendExactAmountOfPeople
+""
+
+@endOutputEvents

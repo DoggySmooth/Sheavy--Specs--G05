@@ -1,0 +1,28 @@
+/*
+@author Phil
+@date Sat Dec 10 12:51:05 CET 2016
+*/
+
+
+@@Primary Type Class Sheavy.concepts.primarytypes.classes.ctZone
+@description ""
+@attribute
+Sheavy.concepts.primarytypes.classes.ctZone.zoneID
+""
+@attribute
+Sheavy.concepts.primarytypes.classes.ctZone.zoneType
+""
+@attribute
+Sheavy.concepts.primarytypes.classes.ctZone.height
+""
+@attribute
+Sheavy.concepts.primarytypes.classes.ctZone.width
+""
+@attribute
+Sheavy.concepts.primarytypes.classes.ctZone.location
+""
+@endAttributes
+@operation
+Sheavy.concepts.primarytypes.classes.ctZone.init
+""
+@endOperations

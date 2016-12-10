@@ -1,0 +1,27 @@
+/*
+@author Phil
+@date Sat Dec 10 12:52:40 CET 2016
+*/
+
+
+@@Use Case Subfunction Sheavy.usecases.subfunctions.sfAlertGPSZone
+@description ""
+@parameter Sheavy.usecases.subfunctions.sfAlertGPSZone.GPSLocation ""
+@parameter Sheavy.usecases.subfunctions.sfAlertGPSZone.Zones ""
+@endParameters
+@protocolCondition
+"
+"
+@endProtocolConditions
+@preCondition
+"
+"
+@endPreConditions
+@postCondition
+"
+"
+@endPostConditions
+@additionalInformation
+"
+none
+"

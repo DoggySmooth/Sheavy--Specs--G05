@@ -1,0 +1,26 @@
+/*
+@author Phil
+@date Sat Dec 10 12:52:26 CET 2016
+*/
+
+
+@@Use Case Subfunction Sheavy.usecases.subfunctions.sfSendMissionEvacuate
+@description ""
+@parameter Sheavy.usecases.subfunctions.sfSendMissionEvacuate.Mission ""
+@endParameters
+@protocolCondition
+"
+"
+@endProtocolConditions
+@preCondition
+"
+"
+@endPreConditions
+@postCondition
+"
+"
+@endPostConditions
+@additionalInformation
+"
+none
+"

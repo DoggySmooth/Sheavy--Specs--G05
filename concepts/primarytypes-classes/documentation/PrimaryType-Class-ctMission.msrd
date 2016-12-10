@@ -1,0 +1,24 @@
+/*
+@author Phil
+@date Sat Dec 10 12:50:56 CET 2016
+*/
+
+
+@@Primary Type Class Sheavy.concepts.primarytypes.classes.ctMission
+@description ""
+@attribute
+Sheavy.concepts.primarytypes.classes.ctMission.SendTo
+""
+@attribute
+Sheavy.concepts.primarytypes.classes.ctMission.Title
+""
+@attribute
+Sheavy.concepts.primarytypes.classes.ctMission.MissionType
+""
+@attribute
+Sheavy.concepts.primarytypes.classes.ctMission.Start
+""
+@attribute
+Sheavy.concepts.primarytypes.classes.ctMission.Date
+""
+@endAttributes

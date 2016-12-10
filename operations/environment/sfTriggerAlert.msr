@@ -1,0 +1,64 @@
+/*
+* @author Phil
+* @date Tue Dec 06 18:01:43 CET 2016
+*/
+
+package Sheavy.operations.environment.ActMedicalDepartement.sfTriggerAlert {
+
+import lu.uni.lassy.messir.libraries.calendar
+import lu.uni.lassy.messir.libraries.math
+import lu.uni.lassy.messir.libraries.primitives
+import lu.uni.lassy.messir.libraries.string
+
+import Sheavy.environment
+import Sheavy.concepts.primarytypes.classes
+import Sheavy.concepts.primarytypes.datatypes
+
+	Operation Model {
+
+	operation: actMedicalDepartement.outactMedicalDepartement.sfTriggerAlert(Amessage: dtMessage, AReport: dtFile):ptBoolean{
+		
+		preP{
+			let ThySystem: ctState in
+			let TheMedicalUser: ctAuthenticated in
+			
+			self.rnActor.rnSystem = TheSystem and self.rnAuthenticated = TheMedicalUser
+			
+			/*PreP01*/
+			and TheSystem.vpStarted
+			
+			/*PreP02*/
+			and TheSystem.vpCrisisLevel = 0
+			
+			/*PreP03*/
+			and TheMedicalUser.vpIsLogged = true
+			
+			/*PreP04*/
+			and TheMedicalUser.AWorksAs = Medical Department
+		}
+		preF{true}
+		postF{
+			let ThySystem: ctState in
+			let TheMedicalDep: actMedicalDepartement in
+			let TheCoordinator: actCoordinator in
+			let AllUsers: ctActAll in
+			
+			/*PostF01*/
+			TheCoordinator.rnInterfaceIN^ieAlertMessage(AMessage, AReport)
+			
+			/*PostF02*/
+			TheSystem.vpCrisisLevel = 1
+			
+			/*PostF03*/
+			ThySystem.rnactActAll.>forAll(rnInterfaceIN^ieWarning)
+			/*PostF04*/
+			TheMedicalDep.rnInterfaceIN^ieNotifyMedicalDep(AMessage)
+			
+			
+		}
+		
+	}
+	}
+
+
+}

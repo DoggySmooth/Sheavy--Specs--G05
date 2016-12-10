@@ -1,0 +1,37 @@
+/*
+@author Phil
+@date Sat Dec 10 12:52:05 CET 2016
+*/
+
+
+@@Operation
+Sheavy.environment.actAuthenticated.outactAuthenticated.sfLogin
+//parameters
+@parameter
+Sheavy.environment.actAuthenticated.outactAuthenticated.sfLogin.AdtLogin
+""
+@parameter
+Sheavy.environment.actAuthenticated.outactAuthenticated.sfLogin.AdtPassword
+""
+@endParameters
+
+@description "
+ "
+//preProtocol descriptions
+@preP
+" "
+@endPreP
+//preFunctional descriptions
+@preF
+" "
+@endPreF
+//postFunctional descriptions
+@postF 
+" "
+@endPostF
+//postProtocol descriptions
+@postP 
+" "
+@endPostP
+//example
+@example" "

@@ -1,0 +1,114 @@
+
+/*
+* @author Phil
+* @date Tue Dec 06 15:26:31 CET 2016
+*/
+package Sheavy.environment {
+	import lu.uni.lassy.messir.libraries.calendar
+	import lu.uni.lassy.messir.libraries.math
+	import lu.uni.lassy.messir.libraries.primitives
+	import lu.uni.lassy.messir.libraries.string
+	
+	import Sheavy.concepts.primarytypes.datatypes
+	import Sheavy.concepts.primarytypes.classes
+
+	Environment Model {
+		actor actTeamMembers role rnactTeamMembers cardinality[1 .. *] {
+			input interface inactTeamMembers {
+				operation ieSendInformation(Mission:ctMission):ptBoolean
+			}
+			output interface outactTeamMembers {
+			}
+		}
+		actor actAll role rnactAll cardinality[1 .. *] {
+			input interface inactAll {
+				operation ieLinkToRoute(Destination:dtGeolocation):ptBoolean
+				operation ieStart(Message:dtMessage):ptBoolean
+				operation ieUpdateMap(Zone:ctZone):ptBoolean
+				operation ieWarning():ptBoolean
+				operation ieSendWarningToAllUsers():ptBoolean
+				operation ieNotify(News:ctNews):ptBoolean
+				operation ieGetAllZones(AllZones: Set(ctZone)):ptBoolean
+			}
+			output interface outactAll {
+				operation sfSafePlaceFinder(GPSLocation:dtGeolocation):ptBoolean
+				operation sfAlertGPSZone(GPSLocation:dtGeolocation, Zones:ctZone):ptBoolean
+				operation sfForgotPassword():ptBoolean
+				operation sfGetAllZones():ptBoolean
+			}
+		}
+		actor actCoordinator role rnactCoordinator cardinality[1 .. *] {
+			input interface inactCoordinator {
+				operation ieAffectATeamToAMission(Mission:ctMission):ptBoolean
+				operation ieAlertMessage(Message:dtMessage, Report:dtFile):ptBoolean
+				operation ieShowPerson(actTeamLeader:dtTeamLeaderID):ptBoolean
+				operation ieMissionSent():ptBoolean
+				operation ieStats():ptBoolean
+				operation ieMessage():ptBoolean
+			}
+			output interface outactCoordinator {
+				operation sfSeeAffectedTeamToMission(AMission:ctMission):ptBoolean
+				operation sfStatistiques(Mission:ctMission):ptBoolean
+				operation sfConfirmAlert():ptBoolean
+				operation sfSendMissionSetCamp(Mission:ctMissionSetCamp):ptBoolean
+				operation sfSendMissionCheckpoints(Mission:ctMissionSetCheckpoint):ptBoolean
+				operation sfSendMissionTransferPeople(Mission:ctMissionTransferPeople):ptBoolean
+				operation sfSendMissionEvacuate(Mission:ctMissionEvacuate):ptBoolean
+				operation sfAddZone(Zone:ctZone):ptBoolean
+				operation sfDeleteZone(Zone:ctZone):ptBoolean
+				operation sfSetZone(Zone:ctZone):ptBoolean
+				
+			}
+		}
+		actor actAuthenticated role rnactAuthenticated cardinality[1 .. *] extends actAll {
+			input interface inactAuthenticated {
+				operation ieDisplay():ptBoolean
+				operation ieMessage(Message:dtMessage):ptBoolean
+			}
+			output interface outactAuthenticated {
+				operation sfFindPerson(Name:dtName, Function:enActTypesForMissionScreen):ptBoolean
+				operation sfLogin(AdtLogin:dtLogin, AdtPassword:dtPassword):ptBoolean
+				operation sfLogout():ptBoolean
+				operation sfSendExactAmountOfPeople(Amount:dtInteger):ptBoolean
+			}
+		}
+		actor actAdministrator role rnactAdministrator cardinality[1 .. *] {
+			input interface inactAdministrator {
+				operation ieMessage(AMessage:dtMessage):ptBoolean
+			}
+			output interface outactAdministrator {
+				operation sfInsertPersonIntoDatabase(AAuthenticatedUser:ctAuthenticated):ptBoolean
+			}
+		}
+		actor actMedicalDepartement role rnactMedicalDepartement cardinality[1 .. *] {
+			input interface inactMedicalDepartement {
+				operation ieNotifyMedicalDep(Message:dtMessage):ptBoolean
+			}
+			output interface outactMedicalDepartement {
+				operation sfTriggerAlert(AMessage:dtMessage, AReport:dtFile):ptBoolean
+			}
+		}
+		actor actAuthorities role rnactAuthorities cardinality[1 .. *] {
+			input interface inactAuthorities {
+				operation ieNotifyAuthorities(Message:dtMessage):ptBoolean
+			}
+			output interface outactAuthorities {
+			}
+		}
+		actor actDoctor role rnactDoctor cardinality[1 .. *] {
+			input interface inactDoctor {
+			}
+			output interface outactDoctor {
+			}
+		}
+		actor actTeamLeader role rnactTeamLeader cardinality[1 .. *] {
+			input interface inactTeamLeader {
+				operation ieAddTeam(Mission:ctMission):ptBoolean
+				operation ieNotify(Mission:ctMission):ptBoolean
+			}
+			output interface outactTeamLeader {
+				operation sfAcceptMission(Mission:ctMission):ptBoolean
+			}
+		}
+	}
+}

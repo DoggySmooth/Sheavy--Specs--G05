@@ -1,0 +1,27 @@
+/*
+@author Phil
+@date Sat Dec 10 12:52:32 CET 2016
+*/
+
+
+@@Use Case Subfunction Sheavy.usecases.subfunctions.sfLogin
+@description ""
+@parameter Sheavy.usecases.subfunctions.sfLogin.AdtLogin ""
+@parameter Sheavy.usecases.subfunctions.sfLogin.AdtPassword ""
+@endParameters
+@protocolCondition
+"
+"
+@endProtocolConditions
+@preCondition
+"
+"
+@endPreConditions
+@postCondition
+"
+"
+@endPostConditions
+@additionalInformation
+"
+none
+"

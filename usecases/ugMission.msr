@@ -1,0 +1,22 @@
+
+/*
+* @author Phil
+* @date Tue Dec 06 17:01:08 CET 2016
+*/
+package Sheavy.usecases.ugMission {
+	import Sheavy.environment
+	import Sheavy.usecases.subfunctions
+
+	Use Case Model {
+
+		use case system usergoal ugMission() {
+			actor actCoordinator[primary, active]
+			actor actTeamLeader[primary, active]
+			actor actMedicalDepartement[secondary]
+			actor actAuthorities[secondary]
+			actor actTeamMembers[secondary]
+			step a:actCoordinator executes sfSendMissionSetCamp(TeamLeaderID, Title, Location, Date, Time, Capacity, TeamsNeeded, Description)
+			step b:actTeamLeader executes sfAcceptMission(Mission)
+		}
+	}
+}

@@ -1,0 +1,37 @@
+/*
+* @author Phil
+* @date Tue Dec 06 17:14:26 CET 2016
+*/
+
+package Sheavy.operations.concepts.primarytypes.classes.ctMissionSetCamp {
+
+import lu.uni.lassy.messir.libraries.calendar
+import lu.uni.lassy.messir.libraries.math
+import lu.uni.lassy.messir.libraries.primitives
+import lu.uni.lassy.messir.libraries.string
+
+
+import Sheavy.concepts.primarytypes.classes
+import Sheavy.concepts.primarytypes.datatypes
+
+	Operation Model {
+
+operation: ctMissionSetCamp.init(ASendTo:enActTypesForMissionScreen, ATitle:dtString, AMissionType:enMissionTypes, AStart:dtTime, ADate:dtDate, AAccepted:ptBoolean, ALocation:dtGeolocation, ACapacity:dtInteger, ANeededTeam:dtInteger, ADescription:dtString):ptBoolean {
+postF {
+if(
+/* Post F01 */
+let Self:ctMission in
+Self.SendTo = ASendTo and Self.Title = ATitle and Self.MissionType = AType and Self.Start = AStart and Self.Date = ADate and Self.Accepted = false and Self.location = ALocation and Self.Capacity = ACapacity and Self.NeddedTeams = ANeddedTeams and Self.Description = ADescription
+/* Post F02 */
+and(Self.oclIsNew and self= Self))
+then(result = true)
+else(result = false)
+endif
+
+}
+}
+
+	}
+
+
+}

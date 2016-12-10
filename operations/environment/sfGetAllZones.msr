@@ -1,0 +1,55 @@
+/*
+* @author Phil
+* @date Tue Dec 06 17:51:55 CET 2016
+*/
+
+package Sheavy.operations.environment.ActAll.sfGetAllZones {
+
+import lu.uni.lassy.messir.libraries.calendar
+import lu.uni.lassy.messir.libraries.math
+import lu.uni.lassy.messir.libraries.primitives
+import lu.uni.lassy.messir.libraries.string
+
+import Sheavy.environment
+import Sheavy.concepts.primarytypes.classes
+import Sheavy.concepts.primarytypes.datatypes
+
+	Operation Model {
+operation: actAll.outactAll.sfGetAllZones():ptBoolean
+{
+preP{
+  let TheSystem: ctState in
+  let AvpStarted: ptBoolean in
+  let AvpCrisisLevel: enStateTypes in
+  
+  
+/* PreP01 */
+  self.rnActor.rnSystem = TheSystem
+  and self.rnActor.rnSystem.vpStarted = AvpStarted
+  and AvpStarted = true
+  and AvpCrisisLevel = "2"
+  
+}
+preF{true}
+
+postF{
+  let TheSystem: ctState in
+  let Actor: ctActAll in
+  let myZones: Set(ctZone) in
+  
+  self.rnActor.rnSystem = TheSystem
+  and self.rnActor = Actor
+
+/* PostF01 */
+ 	Actor.rnInterfaceIN^ieGetAllZones(myZones)
+ 	
+}
+postP{true}
+
+
+
+}
+	}
+
+
+}

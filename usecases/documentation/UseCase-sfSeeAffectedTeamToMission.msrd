@@ -1,0 +1,26 @@
+/*
+@author Phil
+@date Sat Dec 10 12:52:35 CET 2016
+*/
+
+
+@@Use Case Subfunction Sheavy.usecases.subfunctions.sfSeeAffectedTeamToMission
+@description ""
+@parameter Sheavy.usecases.subfunctions.sfSeeAffectedTeamToMission.AMission ""
+@endParameters
+@protocolCondition
+"
+"
+@endProtocolConditions
+@preCondition
+"
+"
+@endPreConditions
+@postCondition
+"
+"
+@endPostConditions
+@additionalInformation
+"
+none
+"

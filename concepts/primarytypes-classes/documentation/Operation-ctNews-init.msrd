@@ -1,0 +1,31 @@
+/*
+@author Phil
+@date Sat Dec 10 12:51:08 CET 2016
+*/
+
+
+@@Operation
+Sheavy.concepts.primarytypes.classes.ctNews.init
+//parameters
+@parameter
+Sheavy.concepts.primarytypes.classes.ctNews.init.ATitle
+""
+@parameter
+Sheavy.concepts.primarytypes.classes.ctNews.init.ALevel
+""
+@parameter
+Sheavy.concepts.primarytypes.classes.ctNews.init.AText
+""
+@parameter
+Sheavy.concepts.primarytypes.classes.ctNews.init.AxAgo
+""
+@endParameters
+
+@description "
+used to initialize the current object as a new instance of the ctNews type. "
+//postFunctional descriptions
+@postF 
+"true iff the system poststate includes the current object as a new ctNews instance having its attributes equal to the ones provided as parameters. "
+@endPostF
+//example
+@example" "

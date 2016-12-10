@@ -1,0 +1,35 @@
+
+/*
+* @author Phil
+* @date Tue Dec 06 17:28:11 CET 2016
+*/
+package Sheavy.operations.concetps.primarytypes.datatypes.enMissionTypes {
+	import lu.uni.lassy.messir.libraries.calendar
+	import lu.uni.lassy.messir.libraries.math
+	import lu.uni.lassy.messir.libraries.primitives
+	import lu.uni.lassy.messir.libraries.string
+
+	import Sheavy.concepts.primarytypes.datatypes
+
+	Operation Model {
+
+operation: enMissionTypes.is():ptBoolean{
+    postF{ 
+        let TheResult: ptBoolean in
+        ( if
+          ( self = "Set Camp"
+            or self = "Set checkpoints"
+            or self = "Transfer People"
+            or self = "Evacuate"
+          )
+          then (TheResult = true)
+          else (TheResult = false)
+          endif
+          result = TheResult
+        )
+		}
+
+}
+
+}
+}

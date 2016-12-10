@@ -1,0 +1,59 @@
+/*
+* @author Phil
+* @date Tue Dec 06 17:59:00 CET 2016
+*/
+
+package Sheavy.operations.environment.ActAuthenticated.sfFindPerson {
+
+import lu.uni.lassy.messir.libraries.calendar
+import lu.uni.lassy.messir.libraries.math
+import lu.uni.lassy.messir.libraries.primitives
+import lu.uni.lassy.messir.libraries.string
+
+import Sheavy.environment
+import Sheavy.concepts.primarytypes.classes
+import Sheavy.concepts.primarytypes.datatypes
+
+	Operation Model {
+
+	operation: actAuthenticated.outactAuthenticated.sfFindPerson(Name:dtName, Function:enActTypesForMissionScreen):ptBoolean{
+		
+		preP{
+			let TheSystem: ctState in
+			let User: actAuthenticated in
+			
+			self.rnActor.rnSystem = TheSystem
+			and self.rnActor = User
+			
+			/*PreP01*/
+			and TheSystem.vpStarted
+			
+			/*PreP02*/
+			and TheSystem.CrisisLevel = 2
+			
+			/*PreP03*/
+			and User.vpIsLogged = true
+			
+		}
+		preF{true}
+		
+		postF{
+			let TheSystem: ctState in
+			let User: actAuthenticated in
+			let Users: Bag(ctActAll) in
+			let SerachUser: dtString in
+			
+			self.rnActor.rnSystem = TheSystem
+			and self.rnActor = User
+			
+			/*PostF01*/
+			if(SearchUser.eq(Users))
+				then (User.rnInterfaceIN^ieDisplay())
+			else false
+			endif
+		}
+	}
+	}
+
+
+}

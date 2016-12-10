@@ -1,0 +1,41 @@
+/*
+* @author Phil
+* @date Tue Dec 06 17:16:02 CET 2016
+*/
+
+package Sheavy.operations.concepts.primarytypes.classes.ctNews {
+
+import lu.uni.lassy.messir.libraries.calendar
+import lu.uni.lassy.messir.libraries.math
+import lu.uni.lassy.messir.libraries.primitives
+import lu.uni.lassy.messir.libraries.string
+
+import Sheavy.concepts.primarytypes.classes
+import Sheavy.concepts.primarytypes.datatypes
+
+	Operation Model {
+
+operation: ctNews.init(ATitle:dtString, ALevel:dtString, AText:dtString, AxAgo:dtTime):ptBoolean {
+postF {
+if(
+/* Post F01 */
+let Self:ctNews in
+Self.Title = ATitle
+and Self.Level = ALevel
+and Self.Text = AText
+and Self.xAgo = ATime
+and Self.location = ALocation
+
+/* Post F02 */
+and(Self.oclIsNew and self= Self))
+then(result = true)
+else(result = false)
+endif
+
+}
+}
+
+	}
+
+
+}

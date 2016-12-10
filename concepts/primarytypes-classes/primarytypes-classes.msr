@@ -1,0 +1,116 @@
+
+/*
+* @author Phil
+* @date Tue Dec 06 15:26:31 CET 2016
+*/
+package Sheavy.concepts.primarytypes.classes {
+	import lu.uni.lassy.messir.libraries.calendar
+	import lu.uni.lassy.messir.libraries.math
+	import lu.uni.lassy.messir.libraries.primitives
+	import lu.uni.lassy.messir.libraries.string
+	import lu.uni.lassy.messir.libraries.primitives
+
+	import Sheavy.concepts.primarytypes.datatypes
+	
+	Concept Model {
+		Primary Types {
+
+			state class ctState {
+				attribute vpStarted:ptBoolean
+				attribute vpCrisisLevel:enStateTypes
+				operation init(AvpStarted:enStateTypes):ptBoolean
+			}
+
+			class ctActAll role rnctActAll cardinality[1 .. *] {
+				attribute location:dtGeolocation
+			}
+
+			class ctAuthenticated role rnctAuthenticated cardinality[0 .. *] extends ctActAll {
+				attribute WorksAs:dtString
+				attribute Name:dtString
+				attribute Team:dtInteger
+				attribute Avaible:ptBoolean
+				attribute phoneNumber:dtInteger
+				attribute emailAdress:dtString
+				attribute login:dtLogin
+				attribute pwd:dtPassword
+				attribute vpIsLogged:ptBoolean
+				operation init(AWorksAs:dtString, AName:dtString, ATeam:dtInteger, AAvaible:ptBoolean, APhoneNumber:dtInteger, Alogin:dtLogin, Apwd:dtPassword, AvpIsLogged:ptBoolean):ptBoolean
+			}
+
+			class ctCoordinator role rnctCoordinator cardinality[0 .. *] extends ctAuthenticated {
+				attribute id:dtCoordinatorID
+				operation init(Aid:dtCoordinatorID, Alogin:dtLogin, Apwd:dtPassword):ptBoolean
+			}
+
+			class ctTeamLeader role rnctTeamLeader cardinality[1 .. *] extends ctAuthenticated {
+				attribute TeamLeaderID:dtTeamLeaderID
+				operation init(ATeamLeaderID:dtTeamLeaderID):ptBoolean
+			}
+
+			class ctTeamMember role rnctTeamMember cardinality[1 .. *] extends ctAuthenticated {
+				attribute AssignedToThisTeamLeader:dtTeamLeaderID
+				attribute TeamMemberID:dtTeamMemberID
+				operation init(ATeamMemberID:dtTeamMemberID):ptBoolean
+			}
+
+			class ctMission role rnctMission cardinality[1 .. *] {
+				attribute SendTo:enActTypesForMissionScreen
+				attribute Title:dtString
+				attribute MissionType:enMissionTypes
+				attribute Start:dtTime
+				attribute Date:dtDate
+				attribute Accepted:ptBoolean
+			}
+
+			class ctMissionSetCamp role rnctMissionSetCamp cardinality[1 .. *] extends ctMission {
+				attribute location:dtGeolocation
+				attribute Capacity:dtInteger
+				attribute NeededTeams:dtInteger
+				attribute Description:dtString
+				operation init(ASendTo:enActTypesForMissionScreen, ATitle:dtString, AMissionType:enMissionTypes, AStart:dtTime, ADate:dtDate, AAccepted:ptBoolean, ALocation:dtGeolocation, ACapacity:dtInteger, ANeededTeam:dtInteger, ADescription:dtString):ptBoolean
+			}
+
+			class ctMissionSetCheckpoint role rnctMissionSetCheckpoint cardinality[1 .. *] extends ctMission {
+				attribute location:dtGeolocation
+				attribute NeededTeams:dtInteger
+				attribute SendInfectedTo:dtString
+				attribute Description:dtString
+				operation init(ASendTo:enActTypesForMissionScreen, ATitle:dtString, AMissionType:enMissionTypes, AStart:dtTime, ADate:dtDate, AAccepted:ptBoolean, ALocation:dtGeolocation, ANeededTeams:dtInteger, ASendInfectTo:dtString, ADescription:dtString):ptBoolean
+			}
+
+			class ctMissionTransferPeople role rnctMissionTransferPeople cardinality[1 .. *] extends ctMission {
+				attribute FromLocation:dtGeolocation
+				attribute ToLocation:dtGeolocation
+				attribute Quantity:dtInteger
+				operation init(ASendTo:enActTypesForMissionScreen, ATitle:dtString, AMissionType:enMissionTypes, AStart:dtTime, ADate:dtDate, AAccepted:ptBoolean, AFromLocation:dtGeolocation, AToLocation:dtGeolocation, AQuantity:dtInteger):ptBoolean
+			}
+
+			class ctMissionEvacuate role rnctMissionEvacuate cardinality[1 .. *] extends ctMission {
+				attribute EvaType:enEvacuateTypes
+				attribute FromLocation:dtGeolocation
+				attribute ToLocation:dtGeolocation
+				attribute Estimated:dtInteger
+				operation init(ASendTo:enActTypesForMissionScreen, ATitle:dtString, AMissionType:enMissionTypes, AStart:dtTime, ADate:dtDate, AAccepted:ptBoolean, AType:enEvacuateTypes, AFromLocation:dtGeolocation, AToLocation:dtGeolocation, AEstimated:dtInteger):ptBoolean
+			}
+
+			class ctZone role rnctZone cardinality[1 .. *] {
+				attribute zoneID:dtString
+				attribute zoneType:enTypeOne
+				attribute height:dtInteger
+				attribute width:dtInteger
+				attribute location:dtGeolocation
+				operation init(AZoneID:dtString, AZoneType:enTypeOne, AHeight:dtInteger, AWidth:dtInteger, ALocation:dtGeolocation):ptBoolean
+			}
+
+			class ctNews role rnctNews cardinality[1 .. *] {
+				attribute Title:dtString
+				attribute Level:dtString
+				attribute AText:dtString
+				attribute xAgo:dtTime
+				operation init(ATitle:dtString, ALevel:dtString, AText:dtString, AxAgo:dtTime):ptBoolean
+			}
+
+		}
+	}
+}

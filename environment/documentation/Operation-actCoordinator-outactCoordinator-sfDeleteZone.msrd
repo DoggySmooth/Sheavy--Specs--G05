@@ -1,0 +1,34 @@
+/*
+@author Phil
+@date Sat Dec 10 12:52:00 CET 2016
+*/
+
+
+@@Operation
+Sheavy.environment.actCoordinator.outactCoordinator.sfDeleteZone
+//parameters
+@parameter
+Sheavy.environment.actCoordinator.outactCoordinator.sfDeleteZone.Zone
+""
+@endParameters
+
+@description "
+ "
+//preProtocol descriptions
+@preP
+" "
+@endPreP
+//preFunctional descriptions
+@preF
+" "
+@endPreF
+//postFunctional descriptions
+@postF 
+" "
+@endPostF
+//postProtocol descriptions
+@postP 
+" "
+@endPostP
+//example
+@example" "

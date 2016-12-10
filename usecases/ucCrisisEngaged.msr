@@ -1,0 +1,27 @@
+
+/*
+* @author Phil
+* @date Tue Dec 06 17:07:33 CET 2016
+*/
+package Sheavy.usecases.ucCrisisEngaged {
+	import Sheavy.environment
+	import Sheavy.usecases.subfunctions
+	import Sheavy.usecases.ugCrisis
+
+	Use Case Model {
+
+		use case instance ucCrisisEngaged:ugCrisis {
+			actors {
+				Tom:actMedicalDepartement Bob:actCoordinator All:actAll
+			}
+			use case steps {
+				Tom executed instanceof subfunction sfTriggerAlert("Alert for Epidemic", "Report.doc") {
+					ieAlertMessage("Alert for Epidemic", "Report.doc") returned to Bob
+				}
+				Bob executed instanceof subfunction sfConfirmAlert() {
+					ieStart("EPIDEMIC DETECTED - CRISIS ENGAGED") returned to All
+				}
+			}
+		}
+	}
+}

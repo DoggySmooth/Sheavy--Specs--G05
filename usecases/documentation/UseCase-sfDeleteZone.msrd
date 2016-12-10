@@ -1,0 +1,26 @@
+/*
+@author Phil
+@date Sat Dec 10 12:52:34 CET 2016
+*/
+
+
+@@Use Case Subfunction Sheavy.usecases.subfunctions.sfDeleteZone
+@description ""
+@parameter Sheavy.usecases.subfunctions.sfDeleteZone.Zone ""
+@endParameters
+@protocolCondition
+"
+"
+@endProtocolConditions
+@preCondition
+"
+"
+@endPreConditions
+@postCondition
+"
+"
+@endPostConditions
+@additionalInformation
+"
+none
+"

@@ -1,0 +1,46 @@
+
+/*
+* @author Phil
+* @date Tue Dec 06 18:03:47 CET 2016
+*/
+package Sheavy.operations.environment.ActCoordinator.sfConfirmAlert {
+	import lu.uni.lassy.messir.libraries.calendar
+	import lu.uni.lassy.messir.libraries.math
+	import lu.uni.lassy.messir.libraries.primitives
+	import lu.uni.lassy.messir.libraries.string
+	import Sheavy.environment
+	import Sheavy.concepts.primarytypes.classes
+
+	Operation Model {
+
+		operation: actCoordinator.outactCoordinator.sfConfirmAlert():ptBoolean {
+			preP {
+				let TheSystem:ctState in
+				let TheCoordinator:actCoordinator in
+				
+				self.rnActor.rnSystem = TheSystem and 				self.rnActor = TheCoordinator
+
+				/*PreP01*/
+				and TheCoordinator.rnctAuthenticated.vpIsLogged = true
+				/*PreP02*/
+				and TheSystem.vpCrisisLevel = 1
+			}
+			
+			preF{true}
+			postF{
+				
+				let TheSystem: ctState in
+				let Users: Bag(ctActAll) in
+				let TheCoordinator: actCoordinator in
+				let Message: dtString in
+				
+				/*PostF01*/
+				and TheSystem.vpCrisisLevel = 2
+				
+				/*PostF02*/
+				and Users.rnInterfaceIN^ieStart(Message)
+			}
+		}
+
+}
+}

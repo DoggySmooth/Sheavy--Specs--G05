@@ -1,0 +1,12 @@
+/*
+@author Phil
+@date Sat Dec 10 12:51:38 CET 2016
+*/
+
+
+@@Primary Type Enumeration Sheavy.concepts.primarytypes.datatypes.enTypeOne
+@description ""
+@operation
+Sheavy.concepts.primarytypes.datatypes.enTypeOne.is
+""
+@endOperations

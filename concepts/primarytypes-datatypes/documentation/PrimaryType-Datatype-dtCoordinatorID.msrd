@@ -1,0 +1,12 @@
+/*
+@author Phil
+@date Sat Dec 10 12:51:09 CET 2016
+*/
+
+
+@@Primary Type Datatype Sheavy.concepts.primarytypes.datatypes.dtCoordinatorID
+@description ""
+@operation
+Sheavy.concepts.primarytypes.datatypes.dtCoordinatorID.is
+""
+@endOperations

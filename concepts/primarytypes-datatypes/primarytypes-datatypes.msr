@@ -1,0 +1,75 @@
+
+/*
+* @author Phil
+* @date Tue Dec 06 15:26:31 CET 2016
+*/
+package Sheavy.concepts.primarytypes.datatypes {
+	import lu.uni.lassy.messir.libraries.calendar
+	import lu.uni.lassy.messir.libraries.math
+	import lu.uni.lassy.messir.libraries.primitives
+	import lu.uni.lassy.messir.libraries.string
+
+	Concept Model {
+		Primary Types {
+			datatype dtCoordinatorID extends dtString {
+				operation is():ptBoolean
+			}
+			datatype dtLogin extends dtString {
+				operation is():ptBoolean
+			}
+			datatype dtFile extends dtString {
+				operation is():ptBoolean
+			}
+			datatype dtPassword extends dtString {
+				operation is():ptBoolean
+			}
+			datatype dtName extends dtString {
+				operation is():ptBoolean
+			}
+			datatype dtMessage extends dtString {
+				operation is():ptBoolean
+			}
+			datatype dtAbstractID extends dtInteger {
+				operation is():ptBoolean
+			}
+			datatype dtTeamLeaderID extends dtAbstractID {
+				operation is():ptBoolean
+			}
+			datatype dtTeamMemberID extends dtAbstractID {
+				operation is():ptBoolean
+			}
+			datatype dtLatitude extends dtReal {
+				operation is():ptBoolean
+			}
+			datatype dtLongitude extends dtReal {
+				operation is():ptBoolean
+			}
+			datatype dtGeolocation {
+				attribute latitude:dtReal
+				attribute longtitude:dtReal
+				operation is():ptBoolean
+			}
+			enum enEvacuateTypes {
+				constants["City", "Region", "Country"]
+				operation is():ptBoolean
+			}
+			enum enMissionTypes {
+				constants["Set Camp", "Set checkpoints", "Transfer People", "Evacuate"]
+				operation is():ptBoolean
+			}
+			enum enTypeOne {
+				constants["Danger Zone", "Unsafe Zone", "Safe Zone", "CheckPoint"]
+				operation is():ptBoolean
+			}
+			enum enStateTypes {
+				constants["0", "1", "2"]
+				operation is():ptBoolean
+			}
+			enum enActTypesForMissionScreen {
+				constants["Medical Department", "Authorities", "Administrator", "Common Users"]
+				operation is():ptBoolean
+			}
+		}
+	}
+}
+

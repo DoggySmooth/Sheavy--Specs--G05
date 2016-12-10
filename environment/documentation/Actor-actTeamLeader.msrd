@@ -1,0 +1,23 @@
+/*
+@author Phil
+@date Sat Dec 10 12:52:15 CET 2016
+*/
+
+
+@@Actor Sheavy.environment.actTeamLeader
+@description ""
+//input events
+@inputEvent
+Sheavy.environment.actTeamLeader.inactTeamLeader.ieAddTeam
+""
+@inputEvent
+Sheavy.environment.actTeamLeader.inactTeamLeader.ieNotify
+""
+
+@endInputEvents
+//output events
+@outputEvent
+Sheavy.environment.actTeamLeader.outactTeamLeader.sfAcceptMission
+""
+
+@endOutputEvents

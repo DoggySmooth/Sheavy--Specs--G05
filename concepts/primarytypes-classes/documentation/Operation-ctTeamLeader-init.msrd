@@ -1,0 +1,22 @@
+/*
+@author Phil
+@date Sat Dec 10 12:50:53 CET 2016
+*/
+
+
+@@Operation
+Sheavy.concepts.primarytypes.classes.ctTeamLeader.init
+//parameters
+@parameter
+Sheavy.concepts.primarytypes.classes.ctTeamLeader.init.ATeamLeaderID
+""
+@endParameters
+
+@description "
+used to initialize the current object as a new instance of the ctTeamLeader type. "
+//postFunctional descriptions
+@postF 
+"true iff the system poststate includes the current object as a new ctTeamLeader instance having its attributes equal to the ones provided as parameters. "
+@endPostF
+//example
+@example" "

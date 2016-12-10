@@ -1,0 +1,26 @@
+/*
+@author Phil
+@date Sat Dec 10 12:52:23 CET 2016
+*/
+
+
+@@Use Case Subfunction Sheavy.usecases.subfunctions.sfSendMissionSetCamp
+@description ""
+@parameter Sheavy.usecases.subfunctions.sfSendMissionSetCamp.Mission ""
+@endParameters
+@protocolCondition
+"
+"
+@endProtocolConditions
+@preCondition
+"
+"
+@endPreConditions
+@postCondition
+"
+"
+@endPostConditions
+@additionalInformation
+"
+none
+"

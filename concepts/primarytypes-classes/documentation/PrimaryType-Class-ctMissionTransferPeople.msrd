@@ -1,0 +1,22 @@
+/*
+@author Phil
+@date Sat Dec 10 12:51:01 CET 2016
+*/
+
+
+@@Primary Type Class Sheavy.concepts.primarytypes.classes.ctMissionTransferPeople
+@description ""
+@attribute
+Sheavy.concepts.primarytypes.classes.ctMissionTransferPeople.FromLocation
+""
+@attribute
+Sheavy.concepts.primarytypes.classes.ctMissionTransferPeople.ToLocation
+""
+@attribute
+Sheavy.concepts.primarytypes.classes.ctMissionTransferPeople.Quantity
+""
+@endAttributes
+@operation
+Sheavy.concepts.primarytypes.classes.ctMissionTransferPeople.init
+""
+@endOperations

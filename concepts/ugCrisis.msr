@@ -1,0 +1,20 @@
+
+/*
+* @author Phil
+* @date Tue Dec 06 16:57:46 CET 2016
+*/
+package Sheavy.usecases.ugCrisis {
+	import Sheavy.environment
+	import Sheavy.usecases.subfunctions
+	
+	Use Case Model {
+
+		use case system usergoal ugCrisis() {
+			actor actMedicalDepartement[primary, active]
+			actor actCoordinator[primary, active]
+			actor actAll[secondary]
+			step a:actMedicalDepartement executes sfTriggerAlert(Message, Report)
+			step b:actCoordinator executes sfConfirmAlert()
+		}
+	}
+}

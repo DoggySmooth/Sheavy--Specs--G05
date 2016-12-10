@@ -1,0 +1,19 @@
+/*
+@author Phil
+@date Sat Dec 10 12:50:54 CET 2016
+*/
+
+
+@@Primary Type Class Sheavy.concepts.primarytypes.classes.ctTeamMember
+@description ""
+@attribute
+Sheavy.concepts.primarytypes.classes.ctTeamMember.AssignedToThisTeamLeader
+""
+@attribute
+Sheavy.concepts.primarytypes.classes.ctTeamMember.TeamMemberID
+""
+@endAttributes
+@operation
+Sheavy.concepts.primarytypes.classes.ctTeamMember.init
+""
+@endOperations

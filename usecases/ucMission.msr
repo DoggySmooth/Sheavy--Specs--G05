@@ -1,0 +1,28 @@
+
+/*
+* @author Phil
+* @date Tue Dec 06 17:02:10 CET 2016
+*/
+package Sheavy.usecases.ucMission {
+	import Sheavy.environment
+	import Sheavy.usecases.subfunctions
+	import Sheavy.usecases.ugMission
+
+	Use Case Model {
+
+		use case instance ucMission:ugMission {
+			actors {
+				Tom:actMedicalDepartement Bob:actCoordinator Joe:actTeamLeader JoeTeam:actTeamMembers
+			}
+			use case steps {
+				Bob executed instanceof subfunction sfSendMissionSetCamp {
+					ieMissionSent() returned to Bob
+					ieNotify("A Mission") returned to Joe
+				}
+				Joe executed instanceof subfunction sfAcceptMission() {
+					ieAffectATeamToAMission("AMission") returned to JoeTeam
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,27 @@
+
+/*
+* @author Phil
+* @date Tue Dec 06 17:22:09 CET 2016
+*/
+package Sheavy.operations.concepts.primarytypes.datatypes.dtFile {
+	import lu.uni.lassy.messir.libraries.calendar
+	import lu.uni.lassy.messir.libraries.math
+	import lu.uni.lassy.messir.libraries.primitives
+	import lu.uni.lassy.messir.libraries.string
+	import Sheavy.concepts.primarytypes.datatypes
+
+	Operation Model {
+
+		operation: dtFile.is():ptBoolean {
+			postF {
+				let TheResult:ptBoolean in
+				let CheckExtension:dtString in(if(dtFile.extension = ".doc")
+				then(TheResult = true)
+				else(TheResult = false)
+				endif result = TheResult)
+
+			}
+		}
+
+}
+}

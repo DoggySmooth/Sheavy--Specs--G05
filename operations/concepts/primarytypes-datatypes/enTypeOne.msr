@@ -1,0 +1,37 @@
+/*
+* @author Phil
+* @date Tue Dec 06 17:28:59 CET 2016
+*/
+
+package Sheavy.operations.concetps.primarytypes.datatypes.enTypeOne {
+
+import lu.uni.lassy.messir.libraries.calendar
+import lu.uni.lassy.messir.libraries.math
+import lu.uni.lassy.messir.libraries.primitives
+import lu.uni.lassy.messir.libraries.string
+
+import Sheavy.concepts.primarytypes.datatypes
+
+	Operation Model {
+
+operation: enTypeOne.is():ptBoolean{
+    postF{ 
+        let TheResult: ptBoolean in
+        ( if
+          ( self = Danger Zone
+            or self = Unsafe Zone
+            or self = Safe Zone
+            or self = CheckPoint
+          )
+          then (TheResult = true)
+          else (TheResult = false)
+          endif
+          result = TheResult
+        )
+		}
+
+}
+	}
+
+
+}

@@ -1,0 +1,30 @@
+/*
+@author Phil
+@date Sat Dec 10 12:52:30 CET 2016
+*/
+
+
+@@Use Case Subfunction Sheavy.usecases.subfunctions.sfAddZone
+@description ""
+@parameter Sheavy.usecases.subfunctions.sfAddZone.AType ""
+@parameter Sheavy.usecases.subfunctions.sfAddZone.ShowZone ""
+@parameter Sheavy.usecases.subfunctions.sfAddZone.Height ""
+@parameter Sheavy.usecases.subfunctions.sfAddZone.Width ""
+@parameter Sheavy.usecases.subfunctions.sfAddZone.Location ""
+@endParameters
+@protocolCondition
+"
+"
+@endProtocolConditions
+@preCondition
+"
+"
+@endPreConditions
+@postCondition
+"
+"
+@endPostConditions
+@additionalInformation
+"
+none
+"

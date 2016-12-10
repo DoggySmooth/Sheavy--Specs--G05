@@ -1,0 +1,20 @@
+/*
+@author Phil
+@date Sat Dec 10 12:52:10 CET 2016
+*/
+
+
+@@Actor Sheavy.environment.actMedicalDepartement
+@description ""
+//input events
+@inputEvent
+Sheavy.environment.actMedicalDepartement.inactMedicalDepartement.ieNotifyMedicalDep
+""
+
+@endInputEvents
+//output events
+@outputEvent
+Sheavy.environment.actMedicalDepartement.outactMedicalDepartement.sfTriggerAlert
+""
+
+@endOutputEvents

@@ -1,0 +1,59 @@
+
+/*
+* @author Phil
+* @date Tue Dec 06 18:02:26 CET 2016
+*/
+package Sheavy.operations.environment.ActTeamLeader.sfAcceptMission {
+	import lu.uni.lassy.messir.libraries.calendar
+	import lu.uni.lassy.messir.libraries.math
+	import lu.uni.lassy.messir.libraries.primitives
+	import lu.uni.lassy.messir.libraries.string
+	import Sheavy.concepts.primarytypes.classes
+	import Sheavy.environment
+
+	Operation Model {
+
+		operation: actTeamLeader.outactTeamLeader.sfAcceptMission(AMission:ctMission):ptBoolean {
+			preP {
+				let TheSystem:ctState in
+				let TheActor:actTeamLeader in
+				self.rnActor.rnSystem = TheSystem and self.rnActor = TheTeamLeader
+				/*PreP01*/
+				and TheSystem.vpStarted = true
+				/*PreP02*/
+				and TheSystem.vpCrisisLevel = 2
+				/*PreP03*/
+				and TheTeamLeader.rnctAuthenticated.vpIsLogged = true
+
+			}
+			preF {
+				true
+
+	}
+	postF {
+		let TheSystem:ctState in
+		let TheactTeamLeader:actTeamLeader in
+		let TheactCoordinator:actCoordinator in
+		let AllTheactTeamMember:Bag(ctTeamMember) in
+		let AptStringMessageForTheactTeamMember:ptString in
+		let AMission:ctMission in
+		
+		self.rnActor.rnSystem = TheSystem 
+		and self.rnActor = TheactTeamLeader 
+		and self.rnActor = TheactCoordinator 
+		and self.rnActor = AllTheactTeamMember
+		
+		/*PostF01*/
+		AptStringMessageForTheactTeamMember.eq('You have a new Mission') and AllTheactTeamMember.rnInterfaceIN ^ieNotify(AptStringMessageForTheactTeamMember)
+		
+		/*PostF02*/
+		and TheactTeamLeader.rnctMission.Accepted = true
+		
+		/*PostF03*/
+		and TheactCoordinator.rnInterfaceINieAffectATeamToAMission(AMission)
+
+	}
+}
+
+}
+}

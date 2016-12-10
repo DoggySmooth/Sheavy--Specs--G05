@@ -1,0 +1,47 @@
+/*
+@author Phil
+@date Sat Dec 10 12:51:46 CET 2016
+*/
+
+
+@@Actor Sheavy.environment.actAll
+@description ""
+//input events
+@inputEvent
+Sheavy.environment.actAll.inactAll.ieLinkToRoute
+""
+@inputEvent
+Sheavy.environment.actAll.inactAll.ieStart
+""
+@inputEvent
+Sheavy.environment.actAll.inactAll.ieUpdateMap
+""
+@inputEvent
+Sheavy.environment.actAll.inactAll.ieWarning
+""
+@inputEvent
+Sheavy.environment.actAll.inactAll.ieSendWarningToAllUsers
+""
+@inputEvent
+Sheavy.environment.actAll.inactAll.ieNotify
+""
+@inputEvent
+Sheavy.environment.actAll.inactAll.ieGetAllZones
+""
+
+@endInputEvents
+//output events
+@outputEvent
+Sheavy.environment.actAll.outactAll.sfSafePlaceFinder
+""
+@outputEvent
+Sheavy.environment.actAll.outactAll.sfAlertGPSZone
+""
+@outputEvent
+Sheavy.environment.actAll.outactAll.sfForgotPassword
+""
+@outputEvent
+Sheavy.environment.actAll.outactAll.sfGetAllZones
+""
+
+@endOutputEvents

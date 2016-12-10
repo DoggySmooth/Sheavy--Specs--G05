@@ -1,0 +1,50 @@
+
+/*
+* @author Phil
+* @date Tue Dec 06 17:59:40 CET 2016
+*/
+package Sheavy.operations.environment.ActAuthenticated.sfLogout {
+	import lu.uni.lassy.messir.libraries.calendar
+	import lu.uni.lassy.messir.libraries.math
+	import lu.uni.lassy.messir.libraries.primitives
+	import lu.uni.lassy.messir.libraries.string
+	import Sheavy.environment
+	import Sheavy.concepts.primarytypes.classes
+	import Sheavy.concepts.primarytypes.datatypes
+
+	Operation Model {
+
+		operation: actAuthenticated.outactAuthenticated.sfLogout():ptBoolean {
+			preP {
+				let TheSystem:ctState in
+				let TheActor:actAuthenticated in
+				self.rnActor.rnSystem = TheSystem and self.rnActor = TheActor
+				/* PreP01 */
+				and TheSystem.vpStarted = true
+				/* PreP02 */
+				and TheSystem.vpCrisisLevel = 1
+				/* PreP03 */
+				and TheActor.rnctAuthenticated.vpIsLogged = false
+
+			}
+			preF {
+				true
+
+	}
+	postF {
+		let TheSystem:ctState in
+		let TheactAuthenticated:actAuthenticated in
+		let AptStringMessageForTheactAuthenticated:ptString in
+		let AptStringMessageForTheactAdministrator:ptString in
+		self.rnActor.rnSystem = TheSystem and self.rnActor = TheactAuthenticated and
+		/* PostF01 */
+		if(TheactAuthenticated.rnctAuthenticated.pwd = AdtPassword and TheactAuthenticated.rnctAuthenticated.login = AdtLogin)
+		then(AptStringMessageForTheactAuthenticated.eq('You are logged ! Welcome ...') and TheactAuthenticated.rnInterfaceIN ^ieMessage(AptStringMessageForTheactAuthenticated))
+		else(AptStringMessageForTheactAuthenticated.eq('Wrong identification information ! Please try again ...') and TheactAuthenticated.rnInterfaceIN ^ieMessage(AptStringMessageForTheactAuthenticated) and AptStringMessageForTheactAdministrator.eq('Intrusion tentative !') and TheSystem.rnactAdministrator.rnInterfaceIN ^ieMessage(AptStringMessageForTheactAdministrator))
+		endif
+
+	}
+}
+
+}
+}

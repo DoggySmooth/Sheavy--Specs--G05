@@ -1,0 +1,35 @@
+/*
+* @author Phil
+* @date Tue Dec 06 17:12:54 CET 2016
+*/
+
+package Sheavy.operations.concepts.primarytypes.classes.ctCoordinator {
+
+import lu.uni.lassy.messir.libraries.calendar
+import lu.uni.lassy.messir.libraries.math
+import lu.uni.lassy.messir.libraries.primitives
+import lu.uni.lassy.messir.libraries.string
+
+import Sheavy.concepts.primarytypes.classes
+import Sheavy.concepts.primarytypes.datatypes
+
+	Operation Model {
+operation: ctCoordinator.init(Aid:dtCoordinatorID, Alogin:dtLogin, Apwd:dtPassword):ptBoolean {
+postF {
+if(
+/* Post F01 */
+let Self:ctCoordinator in
+Self.id = Aid and Self.login = Alogin and Self.pwd = Apwd and Self.vpIsLogged = false
+/* Post F02 */
+and(Self.oclIsNew and self= Self))
+then(result = true)
+else(result = false)
+endif
+
+}
+
+}
+	}
+
+
+}

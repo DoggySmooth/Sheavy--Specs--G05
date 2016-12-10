@@ -1,0 +1,46 @@
+/*
+@author Phil
+@date Sat Dec 10 12:51:00 CET 2016
+*/
+
+
+@@Operation
+Sheavy.concepts.primarytypes.classes.ctMissionSetCheckpoint.init
+//parameters
+@parameter
+Sheavy.concepts.primarytypes.classes.ctMissionSetCheckpoint.init.ASendTo
+""
+@parameter
+Sheavy.concepts.primarytypes.classes.ctMissionSetCheckpoint.init.ATitle
+""
+@parameter
+Sheavy.concepts.primarytypes.classes.ctMissionSetCheckpoint.init.AMissionType
+""
+@parameter
+Sheavy.concepts.primarytypes.classes.ctMissionSetCheckpoint.init.AStart
+""
+@parameter
+Sheavy.concepts.primarytypes.classes.ctMissionSetCheckpoint.init.ADate
+""
+@parameter
+Sheavy.concepts.primarytypes.classes.ctMissionSetCheckpoint.init.ALocation
+""
+@parameter
+Sheavy.concepts.primarytypes.classes.ctMissionSetCheckpoint.init.ANeededTeams
+""
+@parameter
+Sheavy.concepts.primarytypes.classes.ctMissionSetCheckpoint.init.ASendInfectTo
+""
+@parameter
+Sheavy.concepts.primarytypes.classes.ctMissionSetCheckpoint.init.ADescription
+""
+@endParameters
+
+@description "
+used to initialize the current object as a new instance of the ctMissionSetCheckpoint type. "
+//postFunctional descriptions
+@postF 
+"true iff the system poststate includes the current object as a new ctMissionSetCheckpoint instance having its attributes equal to the ones provided as parameters. "
+@endPostF
+//example
+@example" "

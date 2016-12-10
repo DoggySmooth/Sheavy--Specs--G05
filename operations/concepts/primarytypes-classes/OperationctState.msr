@@ -1,0 +1,32 @@
+
+/*
+* @author Phil
+* @date Tue Dec 06 17:10:32 CET 2016
+*/
+package Sheavy.operations.concepts.primarytypes.classes.ctState {
+	import lu.uni.lassy.messir.libraries.calendar
+	import lu.uni.lassy.messir.libraries.math
+	import lu.uni.lassy.messir.libraries.primitives
+	import lu.uni.lassy.messir.libraries.string
+	import Sheavy.concepts.primarytypes.classes
+	import Sheavy.concepts.primarytypes.datatypes
+
+	Operation Model {
+
+		operation: ctState.init(AvpStarted:enStateTypes):ptBoolean {
+			postF {
+				if(
+					/* Post Functional:*/
+					/* Post F01 */
+					self.vpStarted = AvpStarted and(Self.oclIsNew and self= Self))
+				then(result = true)
+				else(result = false)
+				endif
+
+	}
+}
+
+}
+}
+
+

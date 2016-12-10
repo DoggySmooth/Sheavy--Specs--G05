@@ -1,0 +1,198 @@
+
+/*
+* @author Phil
+* @date Tue Dec 06 15:26:31 CET 2016
+*/
+package Sheavy.usecases.subfunctions {
+	import lu.uni.lassy.messir.libraries.calendar
+	import lu.uni.lassy.messir.libraries.math
+	import lu.uni.lassy.messir.libraries.primitives
+	import lu.uni.lassy.messir.libraries.string
+	import Sheavy.environment
+	import Sheavy.concepts.primarytypes.datatypes
+	import Sheavy.concepts.primarytypes.classes
+
+	Use Case Model {
+
+		use case system subfunction sfTriggerAlert(AMessage:dtString, AReport:dtFile) {
+			actor actMedicalDepartement[primary, active]
+			actor actCoordinator[secondary]
+			actor actAll[secondary]
+			returned messages {
+				ieAlertMessage(AMessage, AReport) returned to actCoordinator
+				ieSendWarningToAllUsers() returned to actAll
+			}
+		}
+
+		use case system subfunction sfInformAdminForBug(Message:dtMessage) {
+			actor actCoordinator[primary, active]
+			actor actAdministrator[secondary]
+			returned messages {
+				ieGetBugsInfo(AMessage) returned to actAll
+			}
+		}
+
+		use case system subfunction sfConfirmAlert() {
+			actor actCoordinator[primary, active]
+			actor actAll[secondary]
+			returned messages {
+				ieStart(AMessage) returned to actAll
+			}
+		}
+
+		use case system subfunction sfSendMissionSetCamp(Mission:ctMissionSetCamp) {
+			actor actCoordinator[primary, active]
+			actor actTeamLeader[secondary]
+			actor actAuthorities[secondary]
+			actor actMedicalDepartement[secondary]
+			returned messages {
+				ieNotify(AMission) returned to actTeamLeader
+				ieMissionSent() returned to actCoordinator
+				ieNotifyAuthorities(Message) returned to actAuthorities
+				ieNotifyMedicalDep(Message) returned to actMedicalDepartement
+			}
+		}
+
+		use case system subfunction sfSendMissionCheckpoints(Mission:ctMissionSetCheckpoint) {
+			actor actCoordinator[primary, active]
+			actor actTeamLeader[secondary]
+			actor actAuthorities[secondary]
+			actor actMedicalDepartement[secondary]
+			returned messages {
+				ieNotify(AMission) returned to actTeamLeader
+				ieMissionSent() returned to actCoordinator
+			}
+		}
+
+		use case system subfunction sfSendMissionTransferPeople(Mission:ctMissionTransferPeople) {
+			actor actCoordinator[primary, active]
+			actor actTeamLeader[secondary]
+			actor actAuthorities[secondary]
+			returned messages {
+				ieNotify(AMission) returned to actTeamLeader
+				ieMissionSent() returned to actCoordinator
+			}
+		}
+
+		use case system subfunction sfSendMissionEvacuate(Mission:ctMissionEvacuate) {
+			actor actCoordinator[primary, active]
+			actor actTeamLeader[secondary]
+			actor actMedicalDepartement[secondary]
+			actor actAuthorities[secondary]
+			returned messages {
+				ieNotify(AMission) returned to actTeamLeader
+				ieNotifyAuthorities(Message) returned to actAuthorities
+				ieNotifyMedicalDep(Message) returned to actMedicalDepartement
+				ieMissionSent() returned to actCoordinator
+			}
+		}
+
+		use case system subfunction sfForgotPassword() {
+			actor actAll[primary, active]
+			returned messages {
+				ieNotify() returned to actAll
+			}
+		}
+
+		use case system subfunction sfInsertPersonIntoDatabase(AAuthenticatedUser:ctAuthenticated) {
+			actor actAdministrator[primary, active]
+			returned messages {
+				ieNotify(AMessage) returned to actAdministrator
+			}
+		}
+
+		use case system subfunction sfAcceptMission(Mission:ctMission) {
+			actor actTeamLeader[primary, active]
+			actor actCoordinator[secondary]
+			actor actTeamMembers[secondary]
+			returned messages {
+				ieAffectATeamToAMission(AMission) returned to actCoordinator
+				ieSendInformation(AMission) returned to actTeamMembers
+			}
+		}
+
+		use case system subfunction sfAddZone(AType:enTypeOne, ShowZone:ptBoolean, Height:dtInteger, Width:dtInteger, Location:dtString) {
+			actor actCoordinator[primary, active]
+			actor actAll[secondary]
+			returned messages {
+				ieNotify(ANews) returned to actAll
+				ieUpdateMap(AZone) returned to actAll
+			}
+		}
+
+		use case system subfunction sfStatistiques(Mission:ctMission) {
+			actor actCoordinator[primary, active]
+			returned messages {
+				ieStats() returned to actCoordinator
+			}
+		}
+
+		use case system subfunction sfLogin(AdtLogin:dtLogin, AdtPassword:dtPassword) {
+			actor actAuthenticated[primary, active]
+			returned messages {
+				ieMessage(AMessage) returned to actAuthenticated
+			}
+		}
+		//----------------------------------------------------
+		use case system subfunction sfLogout() {
+			actor actAuthenticated[primary, active]
+			returned messages {
+				ieMessage(AMessage) returned to actAuthenticated
+			}
+		}
+
+		use case system subfunction sfDeleteZone(Zone:ctZone) {
+			actor actCoordinator[primary, active]
+			actor actAll[secondary]
+			returned messages {
+				ieUpdateMap(AZone) returned to actAll
+			}
+		}
+
+		use case system subfunction sfSeeAffectedTeamToMission(AMission:ctMission) {
+			actor actCoordinator[primary, active]
+			returned messages {
+				ieShowPerson(actTeamLeader) returned to actCoordinator
+			}
+		}
+
+		use case system subfunction sfSetZone(AZone:ctZone) {
+			actor actCoordinator[primary, active]
+			actor actAll[secondary]
+			returned messages {
+				ieNotify(ANews) returned to actAll
+				ieUpdateMap(AZone) returned to actAll
+			}
+		}
+
+		use case system subfunction sfSendExactAmountOfPeople(Amount:dtInteger) {
+			actor actAuthenticated[primary, active]
+			returned messages {
+				ieNotify() returned to actAuthenticated
+			}
+		}
+
+		use case system subfunction sfFindPerson(Name:dtString, Function:dtString) {
+			actor actAuthenticated[primary, active]
+			returned messages {
+				ieDisplay() returned to actAuthenticated
+			}
+		}
+
+		use case system subfunction sfGetAllZones() {
+			actor actAll[primary, active]
+			returned messages {
+				ieGetAllZones() returned to actAll
+			}
+		}
+
+		use case system subfunction sfAlertGPSZone(GPSLocation:dtGeolocation, Zones:ctZone) {
+			actor actAll[primary, active]
+			returned messages {
+				ieWarning() returned to actAll
+			}
+		}
+	
+	
+	}
+}

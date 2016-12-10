@@ -1,0 +1,16 @@
+/*
+@author Phil
+@date Sat Dec 10 12:51:45 CET 2016
+*/
+
+
+@@Actor Sheavy.environment.actTeamMembers
+@description ""
+//input events
+@inputEvent
+Sheavy.environment.actTeamMembers.inactTeamMembers.ieSendInformation
+""
+
+@endInputEvents
+//output events
+
