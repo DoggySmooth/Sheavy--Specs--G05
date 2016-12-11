@@ -56,8 +56,8 @@ package Sheavy.environment {
 				operation sfSendMissionEvacuate(Mission:ctMissionEvacuate):ptBoolean
 				operation sfAddZone(Zone:ctZone):ptBoolean
 				operation sfDeleteZone(Zone:ctZone):ptBoolean
-				operation sfSetZone(Zone:ctZone):ptBoolean
-				
+				operation sfChangeZone(Zone:ctZone):ptBoolean
+				operation sfDeleteUser(User: ctAuthenticated):ptBoolean
 			}
 		}
 		actor actAuthenticated role rnactAuthenticated cardinality[1 .. *] extends actAll {
@@ -70,6 +70,7 @@ package Sheavy.environment {
 				operation sfLogin(AdtLogin:dtLogin, AdtPassword:dtPassword):ptBoolean
 				operation sfLogout():ptBoolean
 				operation sfSendExactAmountOfPeople(Amount:dtInteger):ptBoolean
+				operation sfMissionFinished():ptBoolean
 			}
 		}
 		actor actAdministrator role rnactAdministrator cardinality[1 .. *] {
@@ -95,12 +96,7 @@ package Sheavy.environment {
 			output interface outactAuthorities {
 			}
 		}
-		actor actDoctor role rnactDoctor cardinality[1 .. *] {
-			input interface inactDoctor {
-			}
-			output interface outactDoctor {
-			}
-		}
+		
 		actor actTeamLeader role rnactTeamLeader cardinality[1 .. *] {
 			input interface inactTeamLeader {
 				operation ieAddTeam(Mission:ctMission):ptBoolean

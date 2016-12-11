@@ -31,6 +31,22 @@ Sheavy.concepts.primarytypes.classes.ctAuthenticated.init.Apwd
 @parameter
 Sheavy.concepts.primarytypes.classes.ctAuthenticated.init.AvpIsLogged
 ""
+@parameter Sheavy.operations.concepts.primarytypes.classes.ctAuthenticated.operationmodel.ctAuthenticated.init.AWorksAs
+" "
+@parameter Sheavy.operations.concepts.primarytypes.classes.ctAuthenticated.operationmodel.ctAuthenticated.init.AName
+" "
+@parameter Sheavy.operations.concepts.primarytypes.classes.ctAuthenticated.operationmodel.ctAuthenticated.init.ATeam
+" "
+@parameter Sheavy.operations.concepts.primarytypes.classes.ctAuthenticated.operationmodel.ctAuthenticated.init.AAvaible
+" "
+@parameter Sheavy.operations.concepts.primarytypes.classes.ctAuthenticated.operationmodel.ctAuthenticated.init.APhoneNumber
+" "
+@parameter Sheavy.operations.concepts.primarytypes.classes.ctAuthenticated.operationmodel.ctAuthenticated.init.Alogin
+" "
+@parameter Sheavy.operations.concepts.primarytypes.classes.ctAuthenticated.operationmodel.ctAuthenticated.init.Apwd
+" "
+@parameter Sheavy.operations.concepts.primarytypes.classes.ctAuthenticated.operationmodel.ctAuthenticated.init.AvpIsLogged
+" "
 @endParameters
 
 @description "

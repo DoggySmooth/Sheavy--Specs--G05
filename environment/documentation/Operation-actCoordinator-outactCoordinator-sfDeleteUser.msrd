@@ -1,16 +1,16 @@
 /*
 @author Phil
-@date Sat Dec 10 12:51:59 CET 2016
+@date Sun Dec 11 10:17:40 CET 2016
 */
 
 
 @@Operation
-Sheavy.environment.actCoordinator.outactCoordinator.sfAddZone
+Sheavy.environment.actCoordinator.outactCoordinator.sfDeleteUser
 //parameters
 @parameter
-Sheavy.environment.actCoordinator.outactCoordinator.sfAddZone.Zone
+Sheavy.environment.actCoordinator.outactCoordinator.sfDeleteUser.User
 ""
-@parameter Sheavy.operations.environment.ActCoordinator.sfAddZone.operationmodel.actCoordinator.outactCoordinator.sfAddZone.AZone
+@parameter Sheavy.operations.environment.ActCoordinator.sfDeleteUser.operationmodel.actCoordinator.outactCoordinator.sfDeleteUser.AUser
 " "
 @endParameters
 

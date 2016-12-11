@@ -22,7 +22,9 @@ package Sheavy.concepts.primarytypes.classes {
 			}
 
 			class ctActAll role rnctActAll cardinality[1 .. *] {
+				attribute ID:dtAbstractID
 				attribute location:dtGeolocation
+				operation init(AID: dtAbstractID, ALocation:dtGeolocation):ptBoolean
 			}
 
 			class ctAuthenticated role rnctAuthenticated cardinality[0 .. *] extends ctActAll {
@@ -61,6 +63,7 @@ package Sheavy.concepts.primarytypes.classes {
 				attribute Start:dtTime
 				attribute Date:dtDate
 				attribute Accepted:ptBoolean
+				attribute isFinish:ptBoolean
 			}
 
 			class ctMissionSetCamp role rnctMissionSetCamp cardinality[1 .. *] extends ctMission {
@@ -68,7 +71,7 @@ package Sheavy.concepts.primarytypes.classes {
 				attribute Capacity:dtInteger
 				attribute NeededTeams:dtInteger
 				attribute Description:dtString
-				operation init(ASendTo:enActTypesForMissionScreen, ATitle:dtString, AMissionType:enMissionTypes, AStart:dtTime, ADate:dtDate, AAccepted:ptBoolean, ALocation:dtGeolocation, ACapacity:dtInteger, ANeededTeam:dtInteger, ADescription:dtString):ptBoolean
+				operation init(ASendTo:enActTypesForMissionScreen, ATitle:dtString, AMissionType:enMissionTypes, AStart:dtTime, ADate:dtDate, AAccepted:ptBoolean, isFinished:ptBoolean,ALocation:dtGeolocation, ACapacity:dtInteger, ANeededTeam:dtInteger, ADescription:dtString):ptBoolean
 			}
 
 			class ctMissionSetCheckpoint role rnctMissionSetCheckpoint cardinality[1 .. *] extends ctMission {
@@ -76,14 +79,14 @@ package Sheavy.concepts.primarytypes.classes {
 				attribute NeededTeams:dtInteger
 				attribute SendInfectedTo:dtString
 				attribute Description:dtString
-				operation init(ASendTo:enActTypesForMissionScreen, ATitle:dtString, AMissionType:enMissionTypes, AStart:dtTime, ADate:dtDate, AAccepted:ptBoolean, ALocation:dtGeolocation, ANeededTeams:dtInteger, ASendInfectTo:dtString, ADescription:dtString):ptBoolean
+				operation init(ASendTo:enActTypesForMissionScreen, ATitle:dtString, AMissionType:enMissionTypes, AStart:dtTime, ADate:dtDate, AAccepted:ptBoolean, isFinished:ptBoolean,ALocation:dtGeolocation, ANeededTeams:dtInteger, ASendInfectTo:dtString, ADescription:dtString):ptBoolean
 			}
 
 			class ctMissionTransferPeople role rnctMissionTransferPeople cardinality[1 .. *] extends ctMission {
 				attribute FromLocation:dtGeolocation
 				attribute ToLocation:dtGeolocation
 				attribute Quantity:dtInteger
-				operation init(ASendTo:enActTypesForMissionScreen, ATitle:dtString, AMissionType:enMissionTypes, AStart:dtTime, ADate:dtDate, AAccepted:ptBoolean, AFromLocation:dtGeolocation, AToLocation:dtGeolocation, AQuantity:dtInteger):ptBoolean
+				operation init(ASendTo:enActTypesForMissionScreen, ATitle:dtString, AMissionType:enMissionTypes, AStart:dtTime, ADate:dtDate, AAccepted:ptBoolean, isFinished:ptBoolean,AFromLocation:dtGeolocation, AToLocation:dtGeolocation, AQuantity:dtInteger):ptBoolean
 			}
 
 			class ctMissionEvacuate role rnctMissionEvacuate cardinality[1 .. *] extends ctMission {
@@ -91,7 +94,7 @@ package Sheavy.concepts.primarytypes.classes {
 				attribute FromLocation:dtGeolocation
 				attribute ToLocation:dtGeolocation
 				attribute Estimated:dtInteger
-				operation init(ASendTo:enActTypesForMissionScreen, ATitle:dtString, AMissionType:enMissionTypes, AStart:dtTime, ADate:dtDate, AAccepted:ptBoolean, AType:enEvacuateTypes, AFromLocation:dtGeolocation, AToLocation:dtGeolocation, AEstimated:dtInteger):ptBoolean
+				operation init(ASendTo:enActTypesForMissionScreen, ATitle:dtString, AMissionType:enMissionTypes, AStart:dtTime, ADate:dtDate, AAccepted:ptBoolean,isFinished:ptBoolean, AType:enEvacuateTypes, AFromLocation:dtGeolocation, AToLocation:dtGeolocation, AEstimated:dtInteger):ptBoolean
 			}
 
 			class ctZone role rnctZone cardinality[1 .. *] {

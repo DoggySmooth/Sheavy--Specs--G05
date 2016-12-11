@@ -16,12 +16,12 @@ import Sheavy.concepts.primarytypes.datatypes
 
 	Operation Model {
 
-operation: ctMissionSetCamp.init(ASendTo:enActTypesForMissionScreen, ATitle:dtString, AMissionType:enMissionTypes, AStart:dtTime, ADate:dtDate, AAccepted:ptBoolean, ALocation:dtGeolocation, ACapacity:dtInteger, ANeededTeam:dtInteger, ADescription:dtString):ptBoolean {
+operation: ctMissionSetCamp.init(ASendTo:enActTypesForMissionScreen, ATitle:dtString, AMissionType:enMissionTypes, AStart:dtTime, ADate:dtDate, AAccepted:ptBoolean, isFinished:ptBoolean,ALocation:dtGeolocation, ACapacity:dtInteger, ANeededTeam:dtInteger, ADescription:dtString):ptBoolean {
 postF {
 if(
 /* Post F01 */
 let Self:ctMission in
-Self.SendTo = ASendTo and Self.Title = ATitle and Self.MissionType = AType and Self.Start = AStart and Self.Date = ADate and Self.Accepted = false and Self.location = ALocation and Self.Capacity = ACapacity and Self.NeddedTeams = ANeddedTeams and Self.Description = ADescription
+Self.SendTo = ASendTo and Self.Title = ATitle and Self.MissionType = AType and Self.Start = AStart and Self.Date = ADate and Self.Accepted = false and Self.isFinished = false and Self.location = ALocation and Self.Capacity = ACapacity and Self.NeddedTeams = ANeddedTeams and Self.Description = ADescription
 /* Post F02 */
 and(Self.oclIsNew and self= Self))
 then(result = true)

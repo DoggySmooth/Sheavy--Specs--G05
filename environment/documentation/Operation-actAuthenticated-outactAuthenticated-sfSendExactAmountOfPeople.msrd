@@ -10,6 +10,8 @@ Sheavy.environment.actAuthenticated.outactAuthenticated.sfSendExactAmountOfPeopl
 @parameter
 Sheavy.environment.actAuthenticated.outactAuthenticated.sfSendExactAmountOfPeople.Amount
 ""
+@parameter Sheavy.operations.environment.ActAuthenticated.sfSendExactAmountOfPeople.operationmodel.actAuthenticated.outactAuthenticated.sfSendExactAmountOfPeople.ANumber
+" "
 @endParameters
 
 @description "

@@ -5,11 +5,9 @@
 
 
 @@Actor Sheavy.environment.actAdministrator
-@description ""
-//input events
-@inputEvent
-Sheavy.environment.actAdministrator.inactAdministrator.ieGetBugsInfo
-""
+@description 
+"represents a logical actor for time automatic message sending based on system's or environment status."
+
 @inputEvent
 Sheavy.environment.actAdministrator.inactAdministrator.ieMessage
 ""

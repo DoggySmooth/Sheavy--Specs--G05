@@ -21,4 +21,8 @@ Sheavy.concepts.primarytypes.classes.ctMission.Start
 @attribute
 Sheavy.concepts.primarytypes.classes.ctMission.Date
 ""
+@attribute Sheavy.concepts.primarytypes.classes.ctMission.Accepted
+" "
+@attribute Sheavy.concepts.primarytypes.classes.ctMission.isFinish
+" "
 @endAttributes

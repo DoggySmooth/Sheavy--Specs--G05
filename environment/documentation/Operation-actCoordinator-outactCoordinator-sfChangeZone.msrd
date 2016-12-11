@@ -1,17 +1,15 @@
 /*
 @author Phil
-@date Sat Dec 10 12:51:47 CET 2016
+@date Sun Dec 11 10:49:35 CET 2016
 */
 
 
 @@Operation
-Sheavy.environment.actAll.outactAll.sfSafePlaceFinder
+Sheavy.environment.actCoordinator.outactCoordinator.sfChangeZone
 //parameters
 @parameter
-Sheavy.environment.actAll.outactAll.sfSafePlaceFinder.GPSLocation
+Sheavy.environment.actCoordinator.outactCoordinator.sfChangeZone.Zone
 ""
-@parameter Sheavy.operations.environment.ActAll.sfSafePlaceFinder.operationmodel.actAll.outactAll.sfSafePlaceFinder.GPSLocation
-" "
 @endParameters
 
 @description "

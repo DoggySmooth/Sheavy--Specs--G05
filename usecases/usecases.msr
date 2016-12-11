@@ -23,14 +23,22 @@ package Sheavy.usecases.subfunctions {
 				ieSendWarningToAllUsers() returned to actAll
 			}
 		}
-
-		use case system subfunction sfInformAdminForBug(Message:dtMessage) {
+		use case system subfunction sfMissionFinished(){
+			actor actAuthenticated[primary, active]
+			actor actCoordinator[secondary]
+			returned messages{
+				ieMessage(AMessage) returned to actAuthenticated
+			}
+			
+		}
+		use case system subfunction sfDeleteUser(User: ctAuthenticated){
 			actor actCoordinator[primary, active]
-			actor actAdministrator[secondary]
-			returned messages {
-				ieGetBugsInfo(AMessage) returned to actAll
+			actor actAuthenticated[secondary]
+			returned messages{
+				ieMessage(AMessage) returned to actCoordinator
 			}
 		}
+		
 
 		use case system subfunction sfConfirmAlert() {
 			actor actCoordinator[primary, active]
@@ -97,7 +105,7 @@ package Sheavy.usecases.subfunctions {
 		use case system subfunction sfInsertPersonIntoDatabase(AAuthenticatedUser:ctAuthenticated) {
 			actor actAdministrator[primary, active]
 			returned messages {
-				ieNotify(AMessage) returned to actAdministrator
+				ieMessage(AMessage) returned to actAdministrator
 			}
 		}
 
@@ -156,7 +164,7 @@ package Sheavy.usecases.subfunctions {
 			}
 		}
 
-		use case system subfunction sfSetZone(AZone:ctZone) {
+		use case system subfunction sfChangeZone(AZone:ctZone) {
 			actor actCoordinator[primary, active]
 			actor actAll[secondary]
 			returned messages {

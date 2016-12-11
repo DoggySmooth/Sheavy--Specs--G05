@@ -10,6 +10,8 @@ Sheavy.environment.actCoordinator.outactCoordinator.sfDeleteZone
 @parameter
 Sheavy.environment.actCoordinator.outactCoordinator.sfDeleteZone.Zone
 ""
+@parameter Sheavy.operations.environment.ActCoordinator.sfDeleteZone.operationmodel.actCoordinator.outactCoordinator.sfDeleteZone.Zone
+" "
 @endParameters
 
 @description "

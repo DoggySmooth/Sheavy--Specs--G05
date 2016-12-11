@@ -13,6 +13,10 @@ Sheavy.environment.actMedicalDepartement.outactMedicalDepartement.sfTriggerAlert
 @parameter
 Sheavy.environment.actMedicalDepartement.outactMedicalDepartement.sfTriggerAlert.AReport
 ""
+@parameter Sheavy.operations.environment.ActMedicalDepartement.sfTriggerAlert.operationmodel.actMedicalDepartement.outactMedicalDepartement.sfTriggerAlert.Amessage
+" "
+@parameter Sheavy.operations.environment.ActMedicalDepartement.sfTriggerAlert.operationmodel.actMedicalDepartement.outactMedicalDepartement.sfTriggerAlert.AReport
+" "
 @endParameters
 
 @description "

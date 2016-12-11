@@ -10,10 +10,49 @@ import lu.uni.lassy.messir.libraries.math
 import lu.uni.lassy.messir.libraries.primitives
 import lu.uni.lassy.messir.libraries.string
 
+import Sheavy.concepts.primarytypes.datatypes
+	import Sheavy.concepts.primarytypes.classes
+	import Sheavy.environment
 
 	Operation Model {
 
-	}
+		operation: actCoordinator.outactCoordinator.sfSeeAffectedTeamToMission(AMission: ctMission):ptBoolean {
+			preP {
+				let TheSystem:ctState in
+				let TheCoor:actCoordinator in
+				
+				self.rnActor.rnSystem = TheSystem and 				self.rnActor = TheCoor
+				
+				/*PreP01*/
+				and TheCoordinator.rnctAuthenticated.vpIsLogged = true
+				/*PreP02*/
+				and TheSystem.vpCrisisLevel = 2
 
+			}
+			preF{let TheSystem:ctState in
+				let TheCoor:actCoordinator in
+				let AllMissions: Bag(ctMission) in
+				
+				
+				and TheSystem.rnctMission->select(id.eq(MissionID))
+      = ColctMission
+  and ColctMissions->isEmpty() = 
+			}
+			
+			postF{
+				let TheSystem:ctState in
+				let TheCoor:actCoordinator in
+				let AMission: ctMission in
+				let TeamLeader: ctTeamLeader in
+				
+				self.rnActor.rnSystem = TheSystem and 				self.rnActor = TheCoor
+				
+				/*PostF01*/
+				
+				
+				/*PostF02*/
+			}
+		}
 
+}
 }

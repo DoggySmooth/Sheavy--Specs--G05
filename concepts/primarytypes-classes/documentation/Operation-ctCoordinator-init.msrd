@@ -16,6 +16,12 @@ Sheavy.concepts.primarytypes.classes.ctCoordinator.init.Alogin
 @parameter
 Sheavy.concepts.primarytypes.classes.ctCoordinator.init.Apwd
 ""
+@parameter Sheavy.operations.concepts.primarytypes.classes.ctCoordinator.operationmodel.ctCoordinator.init.Aid
+" "
+@parameter Sheavy.operations.concepts.primarytypes.classes.ctCoordinator.operationmodel.ctCoordinator.init.Alogin
+" "
+@parameter Sheavy.operations.concepts.primarytypes.classes.ctCoordinator.operationmodel.ctCoordinator.init.Apwd
+" "
 @endParameters
 
 @description "

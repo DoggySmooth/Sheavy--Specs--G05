@@ -10,6 +10,8 @@ Sheavy.environment.actCoordinator.outactCoordinator.sfStatistiques
 @parameter
 Sheavy.environment.actCoordinator.outactCoordinator.sfStatistiques.Mission
 ""
+@parameter Sheavy.operations.environment.ActCoordinator.sfStatistiques.operationmodel.actCoordinator.outactCoordinator.sfStatistiques.AMission
+" "
 @endParameters
 
 @description "

@@ -13,6 +13,10 @@ Sheavy.environment.actAuthenticated.outactAuthenticated.sfFindPerson.Name
 @parameter
 Sheavy.environment.actAuthenticated.outactAuthenticated.sfFindPerson.Function
 ""
+@parameter Sheavy.operations.environment.ActAuthenticated.sfFindPerson.operationmodel.actAuthenticated.outactAuthenticated.sfFindPerson.Name
+" "
+@parameter Sheavy.operations.environment.ActAuthenticated.sfFindPerson.operationmodel.actAuthenticated.outactAuthenticated.sfFindPerson.Function
+" "
 @endParameters
 
 @description "

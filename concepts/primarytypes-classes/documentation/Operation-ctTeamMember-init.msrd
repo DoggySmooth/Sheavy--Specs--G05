@@ -10,6 +10,8 @@ Sheavy.concepts.primarytypes.classes.ctTeamMember.init
 @parameter
 Sheavy.concepts.primarytypes.classes.ctTeamMember.init.ATeamMemberID
 ""
+@parameter Sheavy.operations.concepts.primarytypes.classes.ctTeamMember.operationmodel.ctTeamMember.init.ATeamMemberID
+" "
 @endParameters
 
 @description "

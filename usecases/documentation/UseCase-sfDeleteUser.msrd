@@ -1,0 +1,26 @@
+/*
+@author Phil
+@date Sun Dec 11 10:17:43 CET 2016
+*/
+
+
+@@Use Case Subfunction Sheavy.usecases.subfunctions.sfDeleteUser
+@description ""
+@parameter Sheavy.usecases.subfunctions.sfDeleteUser.User ""
+@endParameters
+@protocolCondition
+"
+"
+@endProtocolConditions
+@preCondition
+"
+"
+@endPreConditions
+@postCondition
+"
+"
+@endPostConditions
+@additionalInformation
+"
+none
+"

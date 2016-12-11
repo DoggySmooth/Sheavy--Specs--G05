@@ -13,6 +13,10 @@ Sheavy.environment.actAll.outactAll.sfAlertGPSZone.GPSLocation
 @parameter
 Sheavy.environment.actAll.outactAll.sfAlertGPSZone.Zones
 ""
+@parameter Sheavy.operations.environment.ActAll.sfAlertGPSZone.operationmodel.actAll.outactAll.sfAlertGPSZone.GPSLocation
+" "
+@parameter Sheavy.operations.environment.ActAll.sfAlertGPSZone.operationmodel.actAll.outactAll.sfAlertGPSZone.Zones
+" "
 @endParameters
 
 @description "

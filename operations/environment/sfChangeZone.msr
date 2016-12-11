@@ -1,15 +1,9 @@
-/*
-* @author Phil
-* @date Tue Dec 06 17:53:11 CET 2016
-*/
-
-package Sheavy.operations.environment.ActCoordinator.sfStatistiques {
+package Sheavy.operations.environment.ActCoordinator.sfChangeZone {
 
 import lu.uni.lassy.messir.libraries.calendar
 import lu.uni.lassy.messir.libraries.math
 import lu.uni.lassy.messir.libraries.primitives
 import lu.uni.lassy.messir.libraries.string
-
 
 import Sheavy.environment
 import Sheavy.concepts.primarytypes.datatypes
@@ -17,7 +11,7 @@ import Sheavy.concepts.primarytypes.classes
 
 	Operation Model {
 
-operation: actCoordinator.outactCoordinator.sfStatistiques(AMission: ctMission):ptBoolean
+operation: actCoordinator.outactCoordinator.sfChangeZone(Zone:ctZone):ptBoolean
 {
 preP{
   let TheSystem: ctState in
@@ -33,18 +27,37 @@ preP{
 /* PreP03 */
   and TheCoor.rnctAuthenticated.vpIsLogged = true
 }
-preF{true}
-postF{
-	let TheSystem: ctState in
+preF{
+  let TheSystem: ctState in
   let TheCoor:actCoordinator in
+   
+  self.rnActor.rnSystem = TheSystem
+  and self.rnActor = TheActor
+/* PreF01 */
+  TheSystem.rnctZone->select(id.eq(ZoneID))
+  = ColctZones
+  and ColctZones->size().eq(1)
+}
+postF{
+  let TheSystem: ctState in
+  let TheCoor:actCoordinator in
+  let ThectZone:ctZone in
   
   self.rnActor.rnSystem = TheSystem
-  and self.rnActor = TheCoor
+  and self.rnActor = TheActor
+/* PostF01 */
+  TheSystem.renctZone->select(id.eq(ZoneID))
+  = ThectZone
+  and ThectZone.changeValues()
   
-  /*PostF01*/
-  
-}
-}
+
+ /* Post Protocol:*/
+/* PostP01 */
+ and true
+ }
+ postP{true}
+ 
+ }
 	}
 
 

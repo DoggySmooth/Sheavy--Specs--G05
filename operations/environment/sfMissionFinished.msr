@@ -1,15 +1,14 @@
 /*
 * @author Phil
-* @date Tue Dec 06 17:50:09 CET 2016
+* @date Sun Dec 11 08:53:30 CET 2016
 */
 
-package Sheavy.operations.environment.ActAll.sfSafePlaceFinder {
+package Sheavy.operations.environment.ActAuthenticated.sfMissionFinished {
 
 import lu.uni.lassy.messir.libraries.calendar
 import lu.uni.lassy.messir.libraries.math
 import lu.uni.lassy.messir.libraries.primitives
 import lu.uni.lassy.messir.libraries.string
-
 
 import Sheavy.environment
 import Sheavy.concepts.primarytypes.datatypes
@@ -17,14 +16,14 @@ import Sheavy.concepts.primarytypes.classes
 
 	Operation Model {
 		
-operation: actAll.outactAll.sfSafePlaceFinder(GPSLocation:dtGeolocation):ptBoolean
+operation: actAuthenticated.outactAuthenticated.sfMissionFinished():ptBoolean
 {
 preP{
   let TheSystem: ctState in
-  let TheActAll:actAll in
+  let TheActor:actAuthenticated in
   
   self.rnActor.rnSystem = TheSystem
-  and self.rnActor = TheActAll
+  and self.rnActor = TheActor
   
 /* PreP01 */
   and TheSystem.vpStarted = true
@@ -32,28 +31,19 @@ preP{
 	and TheSystem.vpCrisisLevel = 2
 
 }
-preF{let TheSystem: ctState in
-  let TheActAll:actAll in
-   
-  self.rnActor.rnSystem = TheSystem
-  and self.rnActor = TheActAll
-/* PreF01 */
-  TheSystem.rnctZone->select(zoneType.eq(Camp))
-  = ColctCampZones
-  
-}
+preF{true}
 postF{
-	let TheSystem: ctState in
-  let ColctCampZones:Bag(ctZone) in
+	 let TheSystem: ctState in
+  let TheActor:actAuthenticated in
   
   self.rnActor.rnSystem = TheSystem
-  
+  and self.rnActor = TheActor
   
   /*PostF01*/
-  
+  TheActor.rnctMission.isFinish = true
+}
 }
 	}
 
 
-}
 }

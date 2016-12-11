@@ -10,9 +10,25 @@ import lu.uni.lassy.messir.libraries.math
 import lu.uni.lassy.messir.libraries.primitives
 import lu.uni.lassy.messir.libraries.string
 
+import Sheavy.concepts.primarytypes.classes
+import Sheavy.concepts.primarytypes.datatypes
 
 	Operation Model {
+operation: ctActAll.init(AID: dtAbstractID, ALocation: dtGeolocation):ptBoolean {
+postF {
+	if(
+		/* Post F01 */
+		let Self:ctActAll in
+		Self.id = Aid and Self.Geolocation = AGeolocation
+		/* Post F02 */
+		and(Self.oclIsNew and self= Self))
+	then(result = true)
+	else(result = false)
+	endif
 
+}
+
+}
 	}
 
 

@@ -1,0 +1,73 @@
+/*
+* @author Phil
+* @date Sun Dec 11 08:51:29 CET 2016
+*/
+
+package Sheavy.operations.environment.ActCoordinator.sfDeleteUser {
+
+import lu.uni.lassy.messir.libraries.calendar
+import lu.uni.lassy.messir.libraries.math
+import lu.uni.lassy.messir.libraries.primitives
+import lu.uni.lassy.messir.libraries.string
+
+
+import Sheavy.environment
+import Sheavy.concepts.primarytypes.datatypes
+import Sheavy.concepts.primarytypes.classes
+
+	Operation Model {
+
+operation: actCoordinator.outactCoordinator.sfDeleteUser(AUser: ctAuthenticated):ptBoolean
+{
+preP{
+  let TheSystem: ctState in
+  let TheCoor:actCoordinator in
+  
+  self.rnActor.rnSystem = TheSystem
+  and self.rnActor = TheCoor
+  
+/* PreP01 */
+  and TheSystem.vpStarted = true
+/*PreP02*/
+	and TheSystem.vpCrisisLevel = 2
+/* PreP03 */
+  and TheCoor.rnctAuthenticated.vpIsLogged = true
+}
+preF{
+  let TheSystem: ctState in
+  let TheCoor:actCoordinator in
+   
+  self.rnActor.rnSystem = TheSystem
+  and self.rnActor = TheActor
+/* PreF01 */
+  TheSystem.rnctAuthenticated->select(id.eq(AbstractID))
+  = ColctAuthenticated
+  and ColctAuthenticated->size().eq(1)
+}
+postF{
+  let TheSystem: ctState in
+  let TheCoor:actCoordinator in
+  let ThectAuthenticated:ctAuthenticated in
+  
+  self.rnActor.rnSystem = TheSystem
+  and self.rnActor = TheActor
+/* PostF01 */
+  TheSystem.renctAuthenticated->select(id.eq(AbstractID))
+  = ThectAuthenticated
+  and ThectAuthenticated->forAll(msrIsKilled)
+  and ThectAuthenticated.msrIsKilled
+ 
+  /* PostF02 */
+  and TheCoor.rnInterfaceIN^ieMessage("User Deleted!")
+
+ /* Post Protocol:*/
+/* PostP01 */
+ and true
+ }
+ postP{true}
+ 
+ }
+	}
+
+
+}

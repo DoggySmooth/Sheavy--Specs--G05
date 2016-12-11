@@ -31,6 +31,26 @@ Sheavy.concepts.primarytypes.classes.ctMissionTransferPeople.init.AToLocation
 @parameter
 Sheavy.concepts.primarytypes.classes.ctMissionTransferPeople.init.AQuantity
 ""
+@parameter Sheavy.operations.concepts.primarytypes.classes.ctMissionTransferPeople.operationmodel.ctMissionTransferPeople.init.ASendTo
+" "
+@parameter Sheavy.operations.concepts.primarytypes.classes.ctMissionTransferPeople.operationmodel.ctMissionTransferPeople.init.ATitle
+" "
+@parameter Sheavy.operations.concepts.primarytypes.classes.ctMissionTransferPeople.operationmodel.ctMissionTransferPeople.init.AMissionType
+" "
+@parameter Sheavy.operations.concepts.primarytypes.classes.ctMissionTransferPeople.operationmodel.ctMissionTransferPeople.init.AStart
+" "
+@parameter Sheavy.operations.concepts.primarytypes.classes.ctMissionTransferPeople.operationmodel.ctMissionTransferPeople.init.ADate
+" "
+@parameter Sheavy.operations.concepts.primarytypes.classes.ctMissionTransferPeople.operationmodel.ctMissionTransferPeople.init.AAccepted
+" "
+@parameter Sheavy.operations.concepts.primarytypes.classes.ctMissionTransferPeople.operationmodel.ctMissionTransferPeople.init.isFinished
+" "
+@parameter Sheavy.operations.concepts.primarytypes.classes.ctMissionTransferPeople.operationmodel.ctMissionTransferPeople.init.AFromLocation
+" "
+@parameter Sheavy.operations.concepts.primarytypes.classes.ctMissionTransferPeople.operationmodel.ctMissionTransferPeople.init.AToLocation
+" "
+@parameter Sheavy.operations.concepts.primarytypes.classes.ctMissionTransferPeople.operationmodel.ctMissionTransferPeople.init.AQuantity
+" "
 @endParameters
 
 @description "

@@ -15,7 +15,7 @@ import Sheavy.concepts.primarytypes.datatypes
 
 	Operation Model {
 
-operation: ctMissionSetCheckpoint.init(ASendTo:enActTypesForMissionScreen, ATitle:dtString, AMissionType:enMissionTypes, AStart:dtTime, ADate:dtDate, AAccepted:ptBoolean, ALocation:dtGeolocation, ANeededTeams:dtInteger, ASendInfectTo:dtString, ADescription:dtString):ptBoolean {
+operation: ctMissionSetCheckpoint.init(ASendTo:enActTypesForMissionScreen, ATitle:dtString, AMissionType:enMissionTypes, AStart:dtTime, ADate:dtDate, AAccepted:ptBoolean,isFinished:ptBoolean, ALocation:dtGeolocation, ANeededTeams:dtInteger, ASendInfectTo:dtString, ADescription:dtString):ptBoolean {
 postF {
 if(
 /* Post F01 */
@@ -26,6 +26,7 @@ and Self.MissionType = AType
 and Self.Start = AStart 
 and Self.Date = ADate 
 and Self.Accepted = false
+and Self.isFinished = false
 and Self.location = ALocation 
 and Self.NeddedTeams = ANeddedTeams
 and Self.SendInfectedTo = ADestionation 

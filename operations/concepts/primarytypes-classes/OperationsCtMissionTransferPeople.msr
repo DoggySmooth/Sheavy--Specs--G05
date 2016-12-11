@@ -16,7 +16,7 @@ import Sheavy.concepts.primarytypes.datatypes
 
 	Operation Model {
 
-operation: ctMissionTransferPeople.init(ASendTo:enActTypesForMissionScreen, ATitle:dtString, AMissionType:enMissionTypes, AStart:dtTime, ADate:dtDate, AAccepted:ptBoolean, AFromLocation:dtGeolocation, AToLocation:dtGeolocation, AQuantity:dtInteger):ptBoolean {
+operation: ctMissionTransferPeople.init(ASendTo:enActTypesForMissionScreen, ATitle:dtString, AMissionType:enMissionTypes, AStart:dtTime, ADate:dtDate, AAccepted:ptBoolean, isFinished:ptBoolean,AFromLocation:dtGeolocation, AToLocation:dtGeolocation, AQuantity:dtInteger):ptBoolean {
 postF {
 if(
 /* Post F01 */
@@ -27,6 +27,7 @@ and Self.MissionType = AType
 and Self.Start = AStart 
 and Self.Date = ADate
 and Self.Accepted = false 
+and Self.isFinished = false
 and Self.FromLocation = ALocation 
 and Self.ToLocation = ALocation
 and Self.Quantity = AQuantity

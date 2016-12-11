@@ -10,6 +10,8 @@ Sheavy.environment.actCoordinator.outactCoordinator.sfSendMissionSetCamp
 @parameter
 Sheavy.environment.actCoordinator.outactCoordinator.sfSendMissionSetCamp.Mission
 ""
+@parameter Sheavy.operations.environment.ActCoordinator.sfSendMissionSetCamp.operationmodel.actCoordinator.outactCoordinator.sfSendMissionSetCamp.AMission
+" "
 @endParameters
 
 @description "

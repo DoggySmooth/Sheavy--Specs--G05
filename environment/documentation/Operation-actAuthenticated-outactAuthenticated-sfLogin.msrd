@@ -13,6 +13,10 @@ Sheavy.environment.actAuthenticated.outactAuthenticated.sfLogin.AdtLogin
 @parameter
 Sheavy.environment.actAuthenticated.outactAuthenticated.sfLogin.AdtPassword
 ""
+@parameter Sheavy.operations.environment.ActAuthenticated.sfLogin.operationmodel.actAuthenticated.outactAuthenticated.sfLogin.AdtLogin
+" "
+@parameter Sheavy.operations.environment.ActAuthenticated.sfLogin.operationmodel.actAuthenticated.outactAuthenticated.sfLogin.AdtPassword
+" "
 @endParameters
 
 @description "

@@ -22,6 +22,16 @@ Sheavy.concepts.primarytypes.classes.ctZone.init.AWidth
 @parameter
 Sheavy.concepts.primarytypes.classes.ctZone.init.ALocation
 ""
+@parameter Sheavy.operations.concepts.primarytypes.classes.ctZone.operationmodel.ctZone.init.AZoneID
+" "
+@parameter Sheavy.operations.concepts.primarytypes.classes.ctZone.operationmodel.ctZone.init.AZoneType
+" "
+@parameter Sheavy.operations.concepts.primarytypes.classes.ctZone.operationmodel.ctZone.init.AHeight
+" "
+@parameter Sheavy.operations.concepts.primarytypes.classes.ctZone.operationmodel.ctZone.init.AWidth
+" "
+@parameter Sheavy.operations.concepts.primarytypes.classes.ctZone.operationmodel.ctZone.init.ALocation
+" "
 @endParameters
 
 @description "

@@ -245,13 +245,11 @@
   <semanticResources>operations/concepts/primarytypes-datatypes/OperationsDtLatitude.msr</semanticResources>
   <semanticResources>operations/concepts/primarytypes-datatypes/OperationsDtLogin.msr</semanticResources>
   <semanticResources>operations/concepts/primarytypes-datatypes/dtAbstractID.msr</semanticResources>
-  <semanticResources>operations/concepts/primarytypes-datatypes/dtCoordinatorID.msr</semanticResources>
   <semanticResources>operations/concepts/primarytypes-datatypes/dtFile.msr</semanticResources>
   <semanticResources>operations/concepts/primarytypes-datatypes/dtLongitude.msr</semanticResources>
   <semanticResources>operations/concepts/primarytypes-datatypes/dtMessage.msr</semanticResources>
   <semanticResources>operations/concepts/primarytypes-datatypes/dtName.msr</semanticResources>
   <semanticResources>operations/concepts/primarytypes-datatypes/dtPassword.msr</semanticResources>
-  <semanticResources>operations/concepts/primarytypes-datatypes/dtTeamLeaderID.msr</semanticResources>
   <semanticResources>operations/concepts/primarytypes-datatypes/dtTeamMemberID.msr</semanticResources>
   <semanticResources>operations/concepts/primarytypes-datatypes/enActTypesForMissionScreen.msr</semanticResources>
   <semanticResources>operations/concepts/primarytypes-datatypes/enEvacuateTypes.msr</semanticResources>
@@ -276,7 +274,6 @@
   <semanticResources>operations/environment/sfSendMissionEvacuate.msr</semanticResources>
   <semanticResources>operations/environment/sfSendMissionSetCamp.msr</semanticResources>
   <semanticResources>operations/environment/sfSendMissionTransferPeople.msr</semanticResources>
-  <semanticResources>operations/environment/sfSetZone.msr</semanticResources>
   <semanticResources>operations/environment/sfStatistiques.msr</semanticResources>
   <semanticResources>operations/environment/sfTriggerAlert.msr</semanticResources>
   <semanticResources>concepts/primarytypes-classes/documentation/PrimaryType-Class-ctState.msrd</semanticResources>
@@ -393,6 +390,16 @@
   <semanticResources>usecases/documentation/UseCase-sfFindPerson.msrd</semanticResources>
   <semanticResources>usecases/documentation/UseCase-sfGetAllZones.msrd</semanticResources>
   <semanticResources>usecases/documentation/UseCase-sfAlertGPSZone.msrd</semanticResources>
+  <semanticResources>operations/environment/sfDeleteUser.msr</semanticResources>
+  <semanticResources>operations/environment/sfMissionFinished.msr</semanticResources>
+  <semanticResources>operations/environment/sfChangeZone.msr</semanticResources>
+  <semanticResources>environment/documentation/Operation-actCoordinator-outactCoordinator-sfDeleteUser.msrd</semanticResources>
+  <semanticResources>environment/documentation/Operation-actAuthenticated-outactAuthenticated-sfMissionFinished.msrd</semanticResources>
+  <semanticResources>usecases/documentation/UseCase-sfMissionFinished.msrd</semanticResources>
+  <semanticResources>usecases/documentation/UseCase-sfDeleteUser.msrd</semanticResources>
+  <semanticResources>concepts/primarytypes-classes/documentation/Operation-ctActAll-init.msrd</semanticResources>
+  <semanticResources>environment/documentation/Operation-actCoordinator-outactCoordinator-sfChangeZone.msrd</semanticResources>
+  <semanticResources>usecases/documentation/UseCase-sfChangeZone.msrd</semanticResources>
   <ownedViews xmi:type="viewpoint:DView" xmi:id="__Pb3ELu_EeaDleje63eFGA">
     <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']"/>
   </ownedViews>

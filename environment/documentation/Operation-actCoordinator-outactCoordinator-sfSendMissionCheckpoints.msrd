@@ -10,6 +10,8 @@ Sheavy.environment.actCoordinator.outactCoordinator.sfSendMissionCheckpoints
 @parameter
 Sheavy.environment.actCoordinator.outactCoordinator.sfSendMissionCheckpoints.Mission
 ""
+@parameter Sheavy.operations.environment.ActCoordinator.sfSendMissionCheckpoints.operationmodel.actCoordinator.outactCoordinator.sfSendMissionCheckpoints.AMission
+" "
 @endParameters
 
 @description "
