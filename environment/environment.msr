@@ -41,7 +41,7 @@ package Sheavy.environment {
 			input interface inactCoordinator {
 				operation ieAffectATeamToAMission(Mission:ctMission):ptBoolean
 				operation ieAlertMessage(Message:dtMessage, Report:dtFile):ptBoolean
-				operation ieShowPerson(actTeamLeader:dtTeamLeaderID):ptBoolean
+				operation ieShowPerson(actTeamLeader:dtAbstractID):ptBoolean
 				operation ieMissionSent():ptBoolean
 				operation ieStats():ptBoolean
 				operation ieMessage():ptBoolean
@@ -71,7 +71,7 @@ package Sheavy.environment {
 				operation sfLogin(AdtLogin:dtLogin, AdtPassword:dtPassword):ptBoolean
 				operation sfLogout():ptBoolean
 				operation sfSendExactAmountOfPeople(Amount:dtInteger):ptBoolean
-				operation sfMissionFinished():ptBoolean
+				
 			}
 		}
 		actor actAdministrator role rnactAdministrator cardinality[1 .. *] {
@@ -106,6 +106,7 @@ package Sheavy.environment {
 			output interface outactTeamLeader {
 				operation sfAcceptMission(Mission:ctMission):ptBoolean
 				operation sfDenyMission(Mission:ctMission):ptBoolean
+				operation sfMissionFinished():ptBoolean
 			}
 		}
 	}

@@ -20,4 +20,6 @@ Sheavy.environment.actTeamLeader.inactTeamLeader.ieNotify
 Sheavy.environment.actTeamLeader.outactTeamLeader.sfAcceptMission
 ""
 
+@outputEvent Sheavy.environment.actTeamLeader.outactTeamLeader.sfDenyMission
+" "
 @endOutputEvents

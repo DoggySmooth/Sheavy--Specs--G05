@@ -50,7 +50,7 @@ import Sheavy.concepts.primarytypes.datatypes
 			TheSystem.vpCrisisLevel = 1
 			
 			/*PostF03*/
-			ThySystem.rnactActAll.>forAll(rnInterfaceIN^ieWarning)
+			ThySystem.rnactActAll->forAll(AllUsers.rnInterfaceIN^ieWarning())
 			/*PostF04*/
 			TheMedicalDep.rnInterfaceIN^ieNotifyMedicalDep("Alert sent")
 			

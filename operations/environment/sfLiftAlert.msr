@@ -3,7 +3,7 @@
 * @date Sun Dec 11 11:41:51 CET 2016
 */
 
-package Sheavy.operations.actCoordinator.sfLiftAlert {
+package Sheavy.operations.environment.ActCoordinator.sfLiftAlert {
 
 import lu.uni.lassy.messir.libraries.calendar
 import lu.uni.lassy.messir.libraries.math

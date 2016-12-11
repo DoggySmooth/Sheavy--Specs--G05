@@ -10,6 +10,8 @@ Sheavy.environment.actCoordinator.outactCoordinator.sfChangeZone
 @parameter
 Sheavy.environment.actCoordinator.outactCoordinator.sfChangeZone.Zone
 ""
+@parameter Sheavy.operations.environment.ActCoordinator.sfChangeZone.operationmodel.actCoordinator.outactCoordinator.sfChangeZone.Zone
+" "
 @endParameters
 
 @description "

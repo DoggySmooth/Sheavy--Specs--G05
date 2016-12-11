@@ -42,10 +42,10 @@ postF{
   and self.rnActor = TheActor
   
   /*PostF01*/
-  TheActor.rnctMission.Estimated = UserInput
+  TheActor.rnctMission.Estimated = ANumber
   
   /*PostF02*/
-  TheCoor.rnInterfaceIN^ieMessage("Exact Amount is "+UserInput)
+  TheCoor.rnInterfaceIN^ieMessage("Exact Amount is "+ANumber)
 }
 }
 	}

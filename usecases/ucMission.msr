@@ -22,6 +22,9 @@ package Sheavy.usecases.ucMission {
 				Joe executed instanceof subfunction sfAcceptMission() {
 					ieAffectATeamToAMission("AMission") returned to JoeTeam
 				}
+				Joe executed instanceof subfunction sfMissionFinished() {
+					
+				}
 			}
 		}
 	}

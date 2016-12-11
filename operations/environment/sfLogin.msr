@@ -36,11 +36,23 @@ package Sheavy.operations.environment.ActAuthenticated.sfLogin {
 		let TheactAuthenticated:actAuthenticated in
 		let AptStringMessageForTheactAuthenticated:ptString in
 		let AptStringMessageForTheactAdministrator:ptString in
-		self.rnActor.rnSystem = TheSystem and self.rnActor = TheactAuthenticated and
+		
+		self.rnActor.rnSystem = TheSystem 
+		and self.rnActor = TheactAuthenticated and
+		
 		/* PostF01 */
-		if(TheactAuthenticated.rnctAuthenticated.pwd = AdtPassword and TheactAuthenticated.rnctAuthenticated.login = AdtLogin)
-		then(AptStringMessageForTheactAuthenticated.eq('Login Successfully') and TheactAuthenticated.rnInterfaceIN ^ieMessage(AptStringMessageForTheactAuthenticated))
-		else(AptStringMessageForTheactAuthenticated.eq('Wrong identification information ! Please try again ...') and TheactAuthenticated.rnInterfaceIN ^ieMessage(AptStringMessageForTheactAuthenticated) and AptStringMessageForTheactAdministrator.eq('Intrusion tentative !') and TheSystem.rnactAdministrator.rnInterfaceIN ^ieMessage(AptStringMessageForTheactAdministrator))
+		
+		if(TheactAuthenticated.rnctAuthenticated.pwd = AdtPassword 
+			and TheactAuthenticated.rnctAuthenticated.login = AdtLogin
+		)
+		then(AptStringMessageForTheactAuthenticated.eq('Login Successfully') 
+			and TheactAuthenticated.rnInterfaceIN ^ieMessage(AptStringMessageForTheactAuthenticated)
+		)
+		else(AptStringMessageForTheactAuthenticated.eq('Wrong identification information ! Please try again ...') 
+			and TheactAuthenticated.rnInterfaceIN ^ieMessage(AptStringMessageForTheactAuthenticated) 
+			and AptStringMessageForTheactAdministrator.eq('Intrusion tentative !') 
+			and TheSystem.rnactAdministrator.rnInterfaceIN ^ieMessage(AptStringMessageForTheactAdministrator)
+		)
 		endif
 
 	}

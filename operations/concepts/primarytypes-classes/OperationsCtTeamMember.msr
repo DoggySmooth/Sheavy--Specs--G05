@@ -16,7 +16,7 @@ import Sheavy.concepts.primarytypes.datatypes
 
 	Operation Model {
 
-operation: ctTeamMember.init(ATeamMemberID:dtTeamMemberID):ptBoolean {
+operation: ctTeamMember.init(ATeamMemberID:dtAbstractID):ptBoolean {
 postF {
 if(
 /* Post F01 */

@@ -4,10 +4,12 @@
 * @date Tue Dec 06 15:26:31 CET 2016
 */
 package Sheavy.usecases.subfunctions {
+	
 	import lu.uni.lassy.messir.libraries.calendar
 	import lu.uni.lassy.messir.libraries.math
 	import lu.uni.lassy.messir.libraries.primitives
 	import lu.uni.lassy.messir.libraries.string
+	
 	import Sheavy.environment
 	import Sheavy.concepts.primarytypes.datatypes
 	import Sheavy.concepts.primarytypes.classes
@@ -24,7 +26,7 @@ package Sheavy.usecases.subfunctions {
 			}
 		}
 		use case system subfunction sfMissionFinished(){
-			actor actAuthenticated[primary, active]
+			actor actTeamLeader[primary, active]
 			actor actCoordinator[secondary]
 			returned messages{
 				ieMessage(AMessage) returned to actAuthenticated

@@ -10,6 +10,8 @@ Sheavy.environment.actCoordinator.outactCoordinator.sfLiftAlert
 @parameter
 Sheavy.environment.actCoordinator.outactCoordinator.sfLiftAlert.AMessage
 ""
+@parameter Sheavy.operations.environment.ActCoordinator.sfLiftAlert.operationmodel.actCoordinator.outactCoordinator.sfLiftAlert.Amessage
+" "
 @endParameters
 
 @description "

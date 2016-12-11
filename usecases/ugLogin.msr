@@ -1,0 +1,30 @@
+/*
+* @author Phil
+* @date Sun Dec 11 16:50:43 CET 2016
+*/
+
+package Sheavy.usecases.ugLogin {
+
+import Sheavy.environment
+import Sheavy.usecases.subfunctions
+
+	Use Case Model {
+
+use case system usergoal 
+  ugLoginLogout() {
+	
+	actor actAuthenticated[primary,active]
+
+	reuse sfLogin[1..1]
+	reuse sfLogout[1..1]
+
+	step a: actAuthenticated 
+	     executes sfLogin
+	step b: actAuthenticated 
+	     executes sfLogout
+	
+	ordering constraint 
+	 "step (a) must always precede step (b)."
+		}
+	}
+}

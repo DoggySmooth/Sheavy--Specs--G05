@@ -41,13 +41,12 @@ import Sheavy.concepts.primarytypes.datatypes
 			let TheSystem: ctState in
 			let User: actAuthenticated in
 			let Users: Bag(ctActAll) in
-			let SerachUser: dtString in
 			
 			self.rnActor.rnSystem = TheSystem
 			and self.rnActor = User
 			
 			/*PostF01*/
-			if(SearchUser.eq(Users))
+			if(Name.eq(Users.Name) or Function.eq(Users.WorkAs))
 				then (User.rnInterfaceIN^ieDisplay())
 			else false
 			endif

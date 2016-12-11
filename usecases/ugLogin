@@ -1,0 +1,19 @@
+/*
+* @author Phil
+* @date Sun Dec 11 16:50:37 CET 2016
+*/
+
+package Sheavy.usecases.ugLogin {
+
+import lu.uni.lassy.messir.libraries.calendar
+import lu.uni.lassy.messir.libraries.math
+import lu.uni.lassy.messir.libraries.primitives
+import lu.uni.lassy.messir.libraries.string
+
+
+	Use Case Model {
+
+	}
+
+
+}

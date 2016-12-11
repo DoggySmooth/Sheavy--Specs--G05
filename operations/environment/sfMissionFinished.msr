@@ -16,7 +16,7 @@ import Sheavy.concepts.primarytypes.classes
 
 	Operation Model {
 		
-operation: actAuthenticated.outactAuthenticated.sfMissionFinished():ptBoolean
+operation: actTeamLeader.outactTeamLeader.sfMissionFinished():ptBoolean
 {
 preP{
   let TheSystem: ctState in

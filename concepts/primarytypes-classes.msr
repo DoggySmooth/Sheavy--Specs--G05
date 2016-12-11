@@ -46,14 +46,14 @@ package Sheavy.concepts.primarytypes.classes {
 			}
 
 			class ctTeamLeader role rnctTeamLeader cardinality[1 .. *] extends ctAuthenticated {
-				attribute TeamLeaderID:dtTeamLeaderID
-				operation init(ATeamLeaderID:dtTeamLeaderID):ptBoolean
+				attribute TeamLeaderID:dtAbstractID
+				operation init(ATeamLeaderID:dtAbstractID):ptBoolean
 			}
 
 			class ctTeamMember role rnctTeamMember cardinality[1 .. *] extends ctAuthenticated {
-				attribute AssignedToThisTeamLeader:dtTeamLeaderID
-				attribute TeamMemberID:dtTeamMemberID
-				operation init(ATeamMemberID:dtTeamMemberID):ptBoolean
+				attribute AssignedToThisTeamLeader:dtAbstractID
+				attribute TeamMemberID:dtAbstractID
+				operation init(ATeamMemberID:dtAbstractID):ptBoolean
 			}
 
 			class ctMission role rnctMission cardinality[1 .. *] {

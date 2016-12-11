@@ -28,7 +28,4 @@ Sheavy.environment.actAuthenticated.outactAuthenticated.sfLogout
 @outputEvent
 Sheavy.environment.actAuthenticated.outactAuthenticated.sfSendExactAmountOfPeople
 ""
-
-@outputEvent Sheavy.environment.actAuthenticated.outactAuthenticated.sfMissionFinished
-" "
 @endOutputEvents

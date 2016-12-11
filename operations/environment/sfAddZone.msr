@@ -41,13 +41,14 @@ package Sheavy.operations.environment.ActCoordinator.sfAddZone {
 				let TheCoor:actCoordinator in
 				let AZone: ctZone in
 				
-				self.rnActor.rnSystem = TheSystem and 				self.rnActor = TheCoor
+				self.rnActor.rnSystem = TheSystem 
+				and self.rnActor = TheCoor
 				
 				/*PostF01*/
 				and AZone.init(AZoneID, AZoneType, AHeight, AWidth, ALocation)
 				
 				/*PostF02*/
-				and TheeCoor.rnInterfaceIN^ieMessage("Zone Added")
+				and TheCoor.rnInterfaceIN^ieMessage("Zone Added")
 			}
 		}
 

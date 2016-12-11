@@ -32,12 +32,7 @@ package Sheavy.concepts.primarytypes.datatypes {
 			datatype dtAbstractID extends dtInteger {
 				operation is():ptBoolean
 			}
-			datatype dtTeamLeaderID extends dtAbstractID {
-				operation is():ptBoolean
-			}
-			datatype dtTeamMemberID extends dtAbstractID {
-				operation is():ptBoolean
-			}
+		
 			datatype dtLatitude extends dtReal {
 				operation is():ptBoolean
 			}

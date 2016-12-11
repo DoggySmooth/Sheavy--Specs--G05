@@ -11,8 +11,27 @@ import lu.uni.lassy.messir.libraries.primitives
 import lu.uni.lassy.messir.libraries.string
 
 
+import Sheavy.concepts.primarytypes.datatypes
+
 	Operation Model {
 
+operation: enStateTypes.is():ptBoolean{
+    postF{ 
+        let TheResult: ptBoolean in
+        ( if
+          ( self = 0
+            or self = 1
+            or self = 2
+            
+          )
+          then (TheResult = true)
+          else (TheResult = false)
+          endif
+          result = TheResult
+        )
+		}
+
+}
 	}
 
 

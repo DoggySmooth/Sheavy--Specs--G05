@@ -34,7 +34,7 @@ preF{true}
 
 postF{
   let TheSystem: ctState in
-  let Actor: ctActAll in
+  let Actor: actAll in
   let myZones: Set(ctZone) in
   
   self.rnActor.rnSystem = TheSystem

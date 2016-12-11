@@ -15,8 +15,11 @@ package Sheavy.usecases.ugMission {
 			actor actMedicalDepartement[secondary]
 			actor actAuthorities[secondary]
 			actor actTeamMembers[secondary]
-			step a:actCoordinator executes sfSendMissionSetCamp(TeamLeaderID, Title, Location, Date, Time, Capacity, TeamsNeeded, Description)
+			
+			step a:actCoordinator executes sfSendMissionSetCamp(AMission)
 			step b:actTeamLeader executes sfAcceptMission(Mission)
+			step c:actTeamLeader executes sfMissionFinished(Mission)
+			
 		}
 	}
 }
