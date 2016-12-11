@@ -1,6 +1,6 @@
 /*
 @author Phil
-@date Sun Dec 11 10:49:34 CET 2016
+@date Sun Dec 11 12:48:40 CET 2016
 */
 
 
@@ -60,6 +60,9 @@ Sheavy.environment.actCoordinator.outactCoordinator.sfChangeZone
 ""
 @outputEvent
 Sheavy.environment.actCoordinator.outactCoordinator.sfDeleteUser
+""
+@outputEvent
+Sheavy.environment.actCoordinator.outactCoordinator.sfLiftAlert
 ""
 
 @endOutputEvents

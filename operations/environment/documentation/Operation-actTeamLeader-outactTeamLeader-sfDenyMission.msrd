@@ -1,14 +1,14 @@
 /*
 @author Phil
-@date Sun Dec 11 11:55:30 CET 2016
+@date Sun Dec 11 11:55:32 CET 2016
 */
 
 
 @@Operation
-Sheavy.environment.actCoordinator.outactCoordinator.sfChangeZone
+Sheavy.environment.actTeamLeader.outactTeamLeader.sfDenyMission
 //parameters
 @parameter
-Sheavy.environment.actCoordinator.outactCoordinator.sfChangeZone.Zone
+Sheavy.environment.actTeamLeader.outactTeamLeader.sfDenyMission.Mission
 ""
 @endParameters
 

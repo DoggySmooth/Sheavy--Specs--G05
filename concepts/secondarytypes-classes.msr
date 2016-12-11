@@ -1,9 +1,9 @@
 /*
 * @author Phil
-* @date Tue Dec 06 16:50:24 CET 2016
+* @date Tue Dec 06 15:26:31 CET 2016
 */
 
-package Sheavy.usecases.ugCrisis {
+package Sheavy.concepts.secondarytypes.classes {
 
 import lu.uni.lassy.messir.libraries.calendar
 import lu.uni.lassy.messir.libraries.math
@@ -11,9 +11,11 @@ import lu.uni.lassy.messir.libraries.primitives
 import lu.uni.lassy.messir.libraries.string
 
 
-	Use Case Model {
 
+Concept Model {
+	
+	Secondary Types {
+	
 	}
-
-
+}
 }

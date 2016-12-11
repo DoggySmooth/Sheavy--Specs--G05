@@ -1,0 +1,36 @@
+/*
+@author Phil
+@date Sun Dec 11 10:17:40 CET 2016
+*/
+
+
+@@Operation
+Sheavy.environment.actCoordinator.outactCoordinator.sfDeleteUser
+//parameters
+@parameter
+Sheavy.environment.actCoordinator.outactCoordinator.sfDeleteUser.User
+""
+@parameter Sheavy.operations.environment.ActCoordinator.sfDeleteUser.operationmodel.actCoordinator.outactCoordinator.sfDeleteUser.AUser
+" "
+@endParameters
+
+@description "
+ "
+//preProtocol descriptions
+@preP
+" "
+@endPreP
+//preFunctional descriptions
+@preF
+" "
+@endPreF
+//postFunctional descriptions
+@postF 
+" "
+@endPostF
+//postProtocol descriptions
+@postP 
+" "
+@endPostP
+//example
+@example" "

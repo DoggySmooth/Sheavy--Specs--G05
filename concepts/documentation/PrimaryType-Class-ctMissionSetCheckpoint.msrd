@@ -1,0 +1,25 @@
+/*
+@author Phil
+@date Sat Dec 10 12:50:59 CET 2016
+*/
+
+
+@@Primary Type Class Sheavy.concepts.primarytypes.classes.ctMissionSetCheckpoint
+@description ""
+@attribute
+Sheavy.concepts.primarytypes.classes.ctMissionSetCheckpoint.location
+""
+@attribute
+Sheavy.concepts.primarytypes.classes.ctMissionSetCheckpoint.NeededTeams
+""
+@attribute
+Sheavy.concepts.primarytypes.classes.ctMissionSetCheckpoint.SendInfectedTo
+""
+@attribute
+Sheavy.concepts.primarytypes.classes.ctMissionSetCheckpoint.Description
+""
+@endAttributes
+@operation
+Sheavy.concepts.primarytypes.classes.ctMissionSetCheckpoint.init
+""
+@endOperations

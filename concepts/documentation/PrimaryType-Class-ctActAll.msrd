@@ -1,0 +1,17 @@
+/*
+@author Phil
+@date Sat Dec 10 12:50:47 CET 2016
+*/
+
+
+@@Primary Type Class Sheavy.concepts.primarytypes.classes.ctActAll
+@description ""
+@attribute
+Sheavy.concepts.primarytypes.classes.ctActAll.location
+""
+@attribute Sheavy.concepts.primarytypes.classes.ctActAll.ID
+" "
+@endAttributes
+@operation Sheavy.concepts.primarytypes.classes.ctActAll.init
+" "
+@endOperations

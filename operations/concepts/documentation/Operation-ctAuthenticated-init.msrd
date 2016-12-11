@@ -1,0 +1,59 @@
+/*
+@author Phil
+@date Sat Dec 10 12:50:49 CET 2016
+*/
+
+
+@@Operation
+Sheavy.concepts.primarytypes.classes.ctAuthenticated.init
+//parameters
+@parameter
+Sheavy.concepts.primarytypes.classes.ctAuthenticated.init.AWorksAs
+""
+@parameter
+Sheavy.concepts.primarytypes.classes.ctAuthenticated.init.AName
+""
+@parameter
+Sheavy.concepts.primarytypes.classes.ctAuthenticated.init.ATeam
+""
+@parameter
+Sheavy.concepts.primarytypes.classes.ctAuthenticated.init.AAvaible
+""
+@parameter
+Sheavy.concepts.primarytypes.classes.ctAuthenticated.init.APhoneNumber
+""
+@parameter
+Sheavy.concepts.primarytypes.classes.ctAuthenticated.init.Alogin
+""
+@parameter
+Sheavy.concepts.primarytypes.classes.ctAuthenticated.init.Apwd
+""
+@parameter
+Sheavy.concepts.primarytypes.classes.ctAuthenticated.init.AvpIsLogged
+""
+@parameter Sheavy.operations.concepts.primarytypes.classes.ctAuthenticated.operationmodel.ctAuthenticated.init.AWorksAs
+" "
+@parameter Sheavy.operations.concepts.primarytypes.classes.ctAuthenticated.operationmodel.ctAuthenticated.init.AName
+" "
+@parameter Sheavy.operations.concepts.primarytypes.classes.ctAuthenticated.operationmodel.ctAuthenticated.init.ATeam
+" "
+@parameter Sheavy.operations.concepts.primarytypes.classes.ctAuthenticated.operationmodel.ctAuthenticated.init.AAvaible
+" "
+@parameter Sheavy.operations.concepts.primarytypes.classes.ctAuthenticated.operationmodel.ctAuthenticated.init.APhoneNumber
+" "
+@parameter Sheavy.operations.concepts.primarytypes.classes.ctAuthenticated.operationmodel.ctAuthenticated.init.Alogin
+" "
+@parameter Sheavy.operations.concepts.primarytypes.classes.ctAuthenticated.operationmodel.ctAuthenticated.init.Apwd
+" "
+@parameter Sheavy.operations.concepts.primarytypes.classes.ctAuthenticated.operationmodel.ctAuthenticated.init.AvpIsLogged
+" "
+@endParameters
+
+@description "
+used to initialize the current object as a new instance of the ctAuthenticated type. "
+//postFunctional descriptions
+@postF 
+"true iff the system poststate includes the current object as a new ctAuthenticated instance having its attributes equal to the ones provided as parameters. "
+@endPostF
+//example
+@example" "

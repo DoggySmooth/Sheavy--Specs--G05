@@ -1,0 +1,40 @@
+/*
+@author Phil
+@date Sat Dec 10 12:50:48 CET 2016
+*/
+
+
+@@Primary Type Class Sheavy.concepts.primarytypes.classes.ctAuthenticated
+@description ""
+@attribute
+Sheavy.concepts.primarytypes.classes.ctAuthenticated.WorksAs
+""
+@attribute
+Sheavy.concepts.primarytypes.classes.ctAuthenticated.Name
+""
+@attribute
+Sheavy.concepts.primarytypes.classes.ctAuthenticated.Team
+""
+@attribute
+Sheavy.concepts.primarytypes.classes.ctAuthenticated.Avaible
+""
+@attribute
+Sheavy.concepts.primarytypes.classes.ctAuthenticated.phoneNumber
+""
+@attribute
+Sheavy.concepts.primarytypes.classes.ctAuthenticated.emailAdress
+""
+@attribute
+Sheavy.concepts.primarytypes.classes.ctAuthenticated.login
+""
+@attribute
+Sheavy.concepts.primarytypes.classes.ctAuthenticated.pwd
+""
+@attribute
+Sheavy.concepts.primarytypes.classes.ctAuthenticated.vpIsLogged
+""
+@endAttributes
+@operation
+Sheavy.concepts.primarytypes.classes.ctAuthenticated.init
+""
+@endOperations

@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <viewpoint:DAnalysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description" xmi:id="__PBnYLu_EeaDleje63eFGA" selectedViews="__Pb3ELu_EeaDleje63eFGA" version="11.0.0.201604141600">
-  <semanticResources>concepts/primarytypes-associations/primarytypes-associations.msr</semanticResources>
   <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/calendar.msr</semanticResources>
   <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/math.msr</semanticResources>
   <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/primitives.msr</semanticResources>
   <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/string.msr</semanticResources>
   <semanticResources>concepts/primarytypes-classes/primarytypes-classes.msr</semanticResources>
   <semanticResources>concepts/primarytypes-datatypes/primarytypes-datatypes.msr</semanticResources>
-  <semanticResources>concepts/secondarytypes-associations/secondarytypes-associations.msr</semanticResources>
-  <semanticResources>concepts/secondarytypes-classes/secondarytypes-classes.msr</semanticResources>
   <semanticResources>environment/environment.msr</semanticResources>
-  <semanticResources>concepts/secondarytypes-datatypes/secondarytypes-datatypes.msr</semanticResources>
   <semanticResources>.views.msr</semanticResources>
   <semanticResources>tests/tests.msr</semanticResources>
   <semanticResources>usecases/usecases.msr</semanticResources>
@@ -224,7 +220,6 @@
   <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/PrimaryType-Primitive-ptInteger.msrd</semanticResources>
   <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/PrimaryType-Primitive-ptReal.msrd</semanticResources>
   <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/PrimaryType-Primitive-ptString.msrd</semanticResources>
-  <semanticResources>concepts/ugCrisis.msr</semanticResources>
   <semanticResources>usecases/ugMission.msr</semanticResources>
   <semanticResources>usecases/ucMission.msr</semanticResources>
   <semanticResources>usecases/ucCrisisEngaged.msr</semanticResources>
@@ -276,95 +271,17 @@
   <semanticResources>operations/environment/sfSendMissionTransferPeople.msr</semanticResources>
   <semanticResources>operations/environment/sfStatistiques.msr</semanticResources>
   <semanticResources>operations/environment/sfTriggerAlert.msr</semanticResources>
-  <semanticResources>concepts/primarytypes-classes/documentation/PrimaryType-Class-ctState.msrd</semanticResources>
-  <semanticResources>concepts/primarytypes-classes/documentation/Operation-ctState-init.msrd</semanticResources>
-  <semanticResources>concepts/primarytypes-classes/documentation/PrimaryType-Class-ctActAll.msrd</semanticResources>
-  <semanticResources>concepts/primarytypes-classes/documentation/PrimaryType-Class-ctAuthenticated.msrd</semanticResources>
-  <semanticResources>concepts/primarytypes-classes/documentation/Operation-ctAuthenticated-init.msrd</semanticResources>
-  <semanticResources>concepts/primarytypes-classes/documentation/PrimaryType-Class-ctCoordinator.msrd</semanticResources>
-  <semanticResources>concepts/primarytypes-classes/documentation/Operation-ctCoordinator-init.msrd</semanticResources>
-  <semanticResources>concepts/primarytypes-classes/documentation/PrimaryType-Class-ctTeamLeader.msrd</semanticResources>
-  <semanticResources>concepts/primarytypes-classes/documentation/Operation-ctTeamLeader-init.msrd</semanticResources>
-  <semanticResources>concepts/primarytypes-classes/documentation/PrimaryType-Class-ctTeamMember.msrd</semanticResources>
-  <semanticResources>concepts/primarytypes-classes/documentation/Operation-ctTeamMember-init.msrd</semanticResources>
-  <semanticResources>concepts/primarytypes-classes/documentation/PrimaryType-Class-ctMission.msrd</semanticResources>
   <semanticResources>concepts/primarytypes-classes/documentation/PrimaryType-Class-ctMissionSetCamp.msrd</semanticResources>
-  <semanticResources>concepts/primarytypes-classes/documentation/Operation-ctMissionSetCamp-init.msrd</semanticResources>
-  <semanticResources>concepts/primarytypes-classes/documentation/PrimaryType-Class-ctMissionSetCheckpoint.msrd</semanticResources>
-  <semanticResources>concepts/primarytypes-classes/documentation/Operation-ctMissionSetCheckpoint-init.msrd</semanticResources>
-  <semanticResources>concepts/primarytypes-classes/documentation/PrimaryType-Class-ctMissionTransferPeople.msrd</semanticResources>
-  <semanticResources>concepts/primarytypes-classes/documentation/Operation-ctMissionTransferPeople-init.msrd</semanticResources>
-  <semanticResources>concepts/primarytypes-classes/documentation/PrimaryType-Class-ctMissionEvacuate.msrd</semanticResources>
-  <semanticResources>concepts/primarytypes-classes/documentation/Operation-ctMissionEvacuate-init.msrd</semanticResources>
-  <semanticResources>concepts/primarytypes-classes/documentation/PrimaryType-Class-ctZone.msrd</semanticResources>
-  <semanticResources>concepts/primarytypes-classes/documentation/Operation-ctZone-init.msrd</semanticResources>
-  <semanticResources>concepts/primarytypes-classes/documentation/PrimaryType-Class-ctNews.msrd</semanticResources>
-  <semanticResources>concepts/primarytypes-classes/documentation/Operation-ctNews-init.msrd</semanticResources>
-  <semanticResources>concepts/primarytypes-datatypes/documentation/PrimaryType-Datatype-dtCoordinatorID.msrd</semanticResources>
-  <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-dtCoordinatorID-is.msrd</semanticResources>
-  <semanticResources>concepts/primarytypes-datatypes/documentation/PrimaryType-Datatype-dtLogin.msrd</semanticResources>
-  <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-dtLogin-is.msrd</semanticResources>
-  <semanticResources>concepts/primarytypes-datatypes/documentation/PrimaryType-Datatype-dtFile.msrd</semanticResources>
-  <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-dtFile-is.msrd</semanticResources>
-  <semanticResources>concepts/primarytypes-datatypes/documentation/PrimaryType-Datatype-dtPassword.msrd</semanticResources>
-  <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-dtPassword-is.msrd</semanticResources>
-  <semanticResources>concepts/primarytypes-datatypes/documentation/PrimaryType-Datatype-dtName.msrd</semanticResources>
-  <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-dtName-is.msrd</semanticResources>
-  <semanticResources>concepts/primarytypes-datatypes/documentation/PrimaryType-Datatype-dtMessage.msrd</semanticResources>
-  <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-dtMessage-is.msrd</semanticResources>
-  <semanticResources>concepts/primarytypes-datatypes/documentation/PrimaryType-Datatype-dtAbstractID.msrd</semanticResources>
-  <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-dtAbstractID-is.msrd</semanticResources>
-  <semanticResources>concepts/primarytypes-datatypes/documentation/PrimaryType-Datatype-dtTeamLeaderID.msrd</semanticResources>
-  <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-dtTeamLeaderID-is.msrd</semanticResources>
-  <semanticResources>concepts/primarytypes-datatypes/documentation/PrimaryType-Datatype-dtTeamMemberID.msrd</semanticResources>
-  <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-dtTeamMemberID-is.msrd</semanticResources>
-  <semanticResources>concepts/primarytypes-datatypes/documentation/PrimaryType-Datatype-dtLatitude.msrd</semanticResources>
-  <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-dtLatitude-is.msrd</semanticResources>
-  <semanticResources>concepts/primarytypes-datatypes/documentation/PrimaryType-Datatype-dtLongitude.msrd</semanticResources>
-  <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-dtLongitude-is.msrd</semanticResources>
-  <semanticResources>concepts/primarytypes-datatypes/documentation/PrimaryType-Datatype-dtGeolocation.msrd</semanticResources>
-  <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-dtGeolocation-is.msrd</semanticResources>
-  <semanticResources>concepts/primarytypes-datatypes/documentation/PrimaryType-Enumeration-enEvacuateTypes.msrd</semanticResources>
-  <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-enEvacuateTypes-is.msrd</semanticResources>
-  <semanticResources>concepts/primarytypes-datatypes/documentation/PrimaryType-Enumeration-enMissionTypes.msrd</semanticResources>
-  <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-enMissionTypes-is.msrd</semanticResources>
-  <semanticResources>concepts/primarytypes-datatypes/documentation/PrimaryType-Enumeration-enTypeOne.msrd</semanticResources>
-  <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-enTypeOne-is.msrd</semanticResources>
-  <semanticResources>concepts/primarytypes-datatypes/documentation/PrimaryType-Enumeration-enStateTypes.msrd</semanticResources>
-  <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-enStateTypes-is.msrd</semanticResources>
-  <semanticResources>concepts/primarytypes-datatypes/documentation/PrimaryType-Enumeration-enActTypesForMissionScreen.msrd</semanticResources>
-  <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-enActTypesForMissionScreen-is.msrd</semanticResources>
-  <semanticResources>concepts/documentation/UseCase-ugCrisis.msrd</semanticResources>
   <semanticResources>environment/documentation/Actor-actTeamMembers.msrd</semanticResources>
   <semanticResources>environment/documentation/Actor-actAll.msrd</semanticResources>
-  <semanticResources>environment/documentation/Operation-actAll-outactAll-sfSafePlaceFinder.msrd</semanticResources>
-  <semanticResources>environment/documentation/Operation-actAll-outactAll-sfAlertGPSZone.msrd</semanticResources>
-  <semanticResources>environment/documentation/Operation-actAll-outactAll-sfForgotPassword.msrd</semanticResources>
-  <semanticResources>environment/documentation/Operation-actAll-outactAll-sfGetAllZones.msrd</semanticResources>
   <semanticResources>environment/documentation/Actor-actCoordinator.msrd</semanticResources>
-  <semanticResources>environment/documentation/Operation-actCoordinator-outactCoordinator-sfSeeAffectedTeamToMission.msrd</semanticResources>
-  <semanticResources>environment/documentation/Operation-actCoordinator-outactCoordinator-sfStatistiques.msrd</semanticResources>
-  <semanticResources>environment/documentation/Operation-actCoordinator-outactCoordinator-sfConfirmAlert.msrd</semanticResources>
-  <semanticResources>environment/documentation/Operation-actCoordinator-outactCoordinator-sfSendMissionSetCamp.msrd</semanticResources>
-  <semanticResources>environment/documentation/Operation-actCoordinator-outactCoordinator-sfSendMissionCheckpoints.msrd</semanticResources>
-  <semanticResources>environment/documentation/Operation-actCoordinator-outactCoordinator-sfSendMissionTransferPeople.msrd</semanticResources>
-  <semanticResources>environment/documentation/Operation-actCoordinator-outactCoordinator-sfSendMissionEvacuate.msrd</semanticResources>
-  <semanticResources>environment/documentation/Operation-actCoordinator-outactCoordinator-sfAddZone.msrd</semanticResources>
-  <semanticResources>environment/documentation/Operation-actCoordinator-outactCoordinator-sfDeleteZone.msrd</semanticResources>
   <semanticResources>environment/documentation/Operation-actCoordinator-outactCoordinator-sfInformAdminForBug.msrd</semanticResources>
   <semanticResources>environment/documentation/Actor-actAuthenticated.msrd</semanticResources>
-  <semanticResources>environment/documentation/Operation-actAuthenticated-outactAuthenticated-sfFindPerson.msrd</semanticResources>
-  <semanticResources>environment/documentation/Operation-actAuthenticated-outactAuthenticated-sfLogin.msrd</semanticResources>
-  <semanticResources>environment/documentation/Operation-actAuthenticated-outactAuthenticated-sfLogout.msrd</semanticResources>
-  <semanticResources>environment/documentation/Operation-actAuthenticated-outactAuthenticated-sfSendExactAmountOfPeople.msrd</semanticResources>
   <semanticResources>environment/documentation/Actor-actAdministrator.msrd</semanticResources>
-  <semanticResources>environment/documentation/Operation-actAdministrator-outactAdministrator-sfInsertPersonIntoDatabase.msrd</semanticResources>
   <semanticResources>environment/documentation/Actor-actMedicalDepartement.msrd</semanticResources>
-  <semanticResources>environment/documentation/Operation-actMedicalDepartement-outactMedicalDepartement-sfTriggerAlert.msrd</semanticResources>
   <semanticResources>environment/documentation/Actor-actAuthorities.msrd</semanticResources>
   <semanticResources>environment/documentation/Actor-actDoctor.msrd</semanticResources>
   <semanticResources>environment/documentation/Actor-actTeamLeader.msrd</semanticResources>
-  <semanticResources>environment/documentation/Operation-actTeamLeader-outactTeamLeader-sfAcceptMission.msrd</semanticResources>
   <semanticResources>usecases/documentation/UseCaseInstance-ucCrisisEngaged.msrd</semanticResources>
   <semanticResources>usecases/documentation/UseCaseInstance-ucMission.msrd</semanticResources>
   <semanticResources>usecases/documentation/UseCase-ugMission.msrd</semanticResources>
@@ -392,18 +309,104 @@
   <semanticResources>operations/environment/sfDeleteUser.msr</semanticResources>
   <semanticResources>operations/environment/sfMissionFinished.msr</semanticResources>
   <semanticResources>operations/environment/sfChangeZone.msr</semanticResources>
-  <semanticResources>environment/documentation/Operation-actCoordinator-outactCoordinator-sfDeleteUser.msrd</semanticResources>
-  <semanticResources>environment/documentation/Operation-actAuthenticated-outactAuthenticated-sfMissionFinished.msrd</semanticResources>
   <semanticResources>usecases/documentation/UseCase-sfMissionFinished.msrd</semanticResources>
   <semanticResources>usecases/documentation/UseCase-sfDeleteUser.msrd</semanticResources>
-  <semanticResources>concepts/primarytypes-classes/documentation/Operation-ctActAll-init.msrd</semanticResources>
-  <semanticResources>environment/documentation/Operation-actCoordinator-outactCoordinator-sfChangeZone.msrd</semanticResources>
   <semanticResources>usecases/documentation/UseCase-sfChangeZone.msrd</semanticResources>
   <semanticResources>operations/environment/sfLiftAlert.msr</semanticResources>
   <semanticResources>operations/environment/sfDenyMission.msr</semanticResources>
-  <semanticResources>environment/documentation/Operation-actCoordinator-outactCoordinator-sfLiftAlert.msrd</semanticResources>
-  <semanticResources>environment/documentation/Operation-actTeamLeader-outactTeamLeader-sfDenyMission.msrd</semanticResources>
   <semanticResources>usecases/documentation/UseCase-sfLiftAlert.msrd</semanticResources>
+  <semanticResources>concepts/documentation/PrimaryType-Class-ctActAll.msrd</semanticResources>
+  <semanticResources>concepts/documentation/PrimaryType-Class-ctAuthenticated.msrd</semanticResources>
+  <semanticResources>concepts/documentation/PrimaryType-Class-ctCoordinator.msrd</semanticResources>
+  <semanticResources>concepts/documentation/PrimaryType-Class-ctMission.msrd</semanticResources>
+  <semanticResources>concepts/documentation/PrimaryType-Class-ctMissionEvacuate.msrd</semanticResources>
+  <semanticResources>concepts/documentation/PrimaryType-Class-ctMissionSetCamp.msrd</semanticResources>
+  <semanticResources>concepts/documentation/PrimaryType-Class-ctMissionSetCheckpoint.msrd</semanticResources>
+  <semanticResources>concepts/documentation/PrimaryType-Class-ctMissionTransferPeople.msrd</semanticResources>
+  <semanticResources>concepts/documentation/PrimaryType-Class-ctNews.msrd</semanticResources>
+  <semanticResources>concepts/documentation/PrimaryType-Class-ctState.msrd</semanticResources>
+  <semanticResources>concepts/documentation/PrimaryType-Class-ctTeamLeader.msrd</semanticResources>
+  <semanticResources>concepts/documentation/PrimaryType-Class-ctTeamMember.msrd</semanticResources>
+  <semanticResources>concepts/documentation/PrimaryType-Class-ctZone.msrd</semanticResources>
+  <semanticResources>concepts/documentation/PrimaryType-Datatype-dtAbstractID.msrd</semanticResources>
+  <semanticResources>concepts/documentation/PrimaryType-Datatype-dtCoordinatorID.msrd</semanticResources>
+  <semanticResources>concepts/documentation/PrimaryType-Datatype-dtFile.msrd</semanticResources>
+  <semanticResources>concepts/documentation/PrimaryType-Datatype-dtGeolocation.msrd</semanticResources>
+  <semanticResources>concepts/documentation/PrimaryType-Datatype-dtLatitude.msrd</semanticResources>
+  <semanticResources>concepts/documentation/PrimaryType-Datatype-dtLogin.msrd</semanticResources>
+  <semanticResources>concepts/documentation/PrimaryType-Datatype-dtLongitude.msrd</semanticResources>
+  <semanticResources>concepts/documentation/PrimaryType-Datatype-dtMessage.msrd</semanticResources>
+  <semanticResources>concepts/documentation/PrimaryType-Datatype-dtName.msrd</semanticResources>
+  <semanticResources>concepts/documentation/PrimaryType-Datatype-dtPassword.msrd</semanticResources>
+  <semanticResources>concepts/documentation/PrimaryType-Datatype-dtTeamLeaderID.msrd</semanticResources>
+  <semanticResources>concepts/documentation/PrimaryType-Datatype-dtTeamMemberID.msrd</semanticResources>
+  <semanticResources>concepts/documentation/PrimaryType-Enumeration-enActTypesForMissionScreen.msrd</semanticResources>
+  <semanticResources>concepts/documentation/PrimaryType-Enumeration-enEvacuateTypes.msrd</semanticResources>
+  <semanticResources>concepts/documentation/PrimaryType-Enumeration-enMissionTypes.msrd</semanticResources>
+  <semanticResources>concepts/documentation/PrimaryType-Enumeration-enStateTypes.msrd</semanticResources>
+  <semanticResources>concepts/documentation/PrimaryType-Enumeration-enTypeOne.msrd</semanticResources>
+  <semanticResources>concepts/primarytypes-associations.msr</semanticResources>
+  <semanticResources>concepts/primarytypes-classes.msr</semanticResources>
+  <semanticResources>concepts/primarytypes-datatypes.msr</semanticResources>
+  <semanticResources>concepts/secondarytypes-associations.msr</semanticResources>
+  <semanticResources>concepts/secondarytypes-classes.msr</semanticResources>
+  <semanticResources>concepts/secondarytypes-datatypes.msr</semanticResources>
+  <semanticResources>operations/concepts/documentation/Operation-ctActAll-init.msrd</semanticResources>
+  <semanticResources>operations/concepts/documentation/Operation-ctAuthenticated-init.msrd</semanticResources>
+  <semanticResources>operations/concepts/documentation/Operation-ctCoordinator-init.msrd</semanticResources>
+  <semanticResources>operations/concepts/documentation/Operation-ctMissionEvacuate-init.msrd</semanticResources>
+  <semanticResources>operations/concepts/documentation/Operation-ctMissionSetCamp-init.msrd</semanticResources>
+  <semanticResources>operations/concepts/documentation/Operation-ctMissionSetCheckpoint-init.msrd</semanticResources>
+  <semanticResources>operations/concepts/documentation/Operation-ctMissionTransferPeople-init.msrd</semanticResources>
+  <semanticResources>operations/concepts/documentation/Operation-ctNews-init.msrd</semanticResources>
+  <semanticResources>operations/concepts/documentation/Operation-ctState-init.msrd</semanticResources>
+  <semanticResources>operations/concepts/documentation/Operation-ctTeamLeader-init.msrd</semanticResources>
+  <semanticResources>operations/concepts/documentation/Operation-ctTeamMember-init.msrd</semanticResources>
+  <semanticResources>operations/concepts/documentation/Operation-ctZone-init.msrd</semanticResources>
+  <semanticResources>operations/concepts/documentation/Operation-dtAbstractID-is.msrd</semanticResources>
+  <semanticResources>operations/concepts/documentation/Operation-dtCoordinatorID-is.msrd</semanticResources>
+  <semanticResources>operations/concepts/documentation/Operation-dtFile-is.msrd</semanticResources>
+  <semanticResources>operations/concepts/documentation/Operation-dtGeolocation-is.msrd</semanticResources>
+  <semanticResources>operations/concepts/documentation/Operation-dtLatitude-is.msrd</semanticResources>
+  <semanticResources>operations/concepts/documentation/Operation-dtLogin-is.msrd</semanticResources>
+  <semanticResources>operations/concepts/documentation/Operation-dtLongitude-is.msrd</semanticResources>
+  <semanticResources>operations/concepts/documentation/Operation-dtMessage-is.msrd</semanticResources>
+  <semanticResources>operations/concepts/documentation/Operation-dtName-is.msrd</semanticResources>
+  <semanticResources>operations/concepts/documentation/Operation-dtPassword-is.msrd</semanticResources>
+  <semanticResources>operations/concepts/documentation/Operation-dtTeamLeaderID-is.msrd</semanticResources>
+  <semanticResources>operations/concepts/documentation/Operation-dtTeamMemberID-is.msrd</semanticResources>
+  <semanticResources>operations/concepts/documentation/Operation-enActTypesForMissionScreen-is.msrd</semanticResources>
+  <semanticResources>operations/concepts/documentation/Operation-enEvacuateTypes-is.msrd</semanticResources>
+  <semanticResources>operations/concepts/documentation/Operation-enMissionTypes-is.msrd</semanticResources>
+  <semanticResources>operations/concepts/documentation/Operation-enStateTypes-is.msrd</semanticResources>
+  <semanticResources>operations/concepts/documentation/Operation-enTypeOne-is.msrd</semanticResources>
+  <semanticResources>operations/environment/documentation/Operation-actAdministrator-outactAdministrator-sfInsertPersonIntoDatabase.msrd</semanticResources>
+  <semanticResources>operations/environment/documentation/Operation-actAll-outactAll-sfAlertGPSZone.msrd</semanticResources>
+  <semanticResources>operations/environment/documentation/Operation-actAll-outactAll-sfForgotPassword.msrd</semanticResources>
+  <semanticResources>operations/environment/documentation/Operation-actAll-outactAll-sfGetAllZones.msrd</semanticResources>
+  <semanticResources>operations/environment/documentation/Operation-actAll-outactAll-sfSafePlaceFinder.msrd</semanticResources>
+  <semanticResources>operations/environment/documentation/Operation-actAuthenticated-outactAuthenticated-sfFindPerson.msrd</semanticResources>
+  <semanticResources>operations/environment/documentation/Operation-actAuthenticated-outactAuthenticated-sfLogin.msrd</semanticResources>
+  <semanticResources>operations/environment/documentation/Operation-actAuthenticated-outactAuthenticated-sfLogout.msrd</semanticResources>
+  <semanticResources>operations/environment/documentation/Operation-actAuthenticated-outactAuthenticated-sfMissionFinished.msrd</semanticResources>
+  <semanticResources>operations/environment/documentation/Operation-actAuthenticated-outactAuthenticated-sfSendExactAmountOfPeople.msrd</semanticResources>
+  <semanticResources>operations/environment/documentation/Operation-actCoordinator-outactCoordinator-sfAddZone.msrd</semanticResources>
+  <semanticResources>operations/environment/documentation/Operation-actCoordinator-outactCoordinator-sfChangeZone.msrd</semanticResources>
+  <semanticResources>operations/environment/documentation/Operation-actCoordinator-outactCoordinator-sfConfirmAlert.msrd</semanticResources>
+  <semanticResources>operations/environment/documentation/Operation-actCoordinator-outactCoordinator-sfDeleteUser.msrd</semanticResources>
+  <semanticResources>operations/environment/documentation/Operation-actCoordinator-outactCoordinator-sfDeleteZone.msrd</semanticResources>
+  <semanticResources>operations/environment/documentation/Operation-actCoordinator-outactCoordinator-sfLiftAlert.msrd</semanticResources>
+  <semanticResources>operations/environment/documentation/Operation-actCoordinator-outactCoordinator-sfSeeAffectedTeamToMission.msrd</semanticResources>
+  <semanticResources>operations/environment/documentation/Operation-actCoordinator-outactCoordinator-sfSendMissionCheckpoints.msrd</semanticResources>
+  <semanticResources>operations/environment/documentation/Operation-actCoordinator-outactCoordinator-sfSendMissionEvacuate.msrd</semanticResources>
+  <semanticResources>operations/environment/documentation/Operation-actCoordinator-outactCoordinator-sfSendMissionSetCamp.msrd</semanticResources>
+  <semanticResources>operations/environment/documentation/Operation-actCoordinator-outactCoordinator-sfSendMissionTransferPeople.msrd</semanticResources>
+  <semanticResources>operations/environment/documentation/Operation-actCoordinator-outactCoordinator-sfStatistiques.msrd</semanticResources>
+  <semanticResources>operations/environment/documentation/Operation-actMedicalDepartement-outactMedicalDepartement-sfTriggerAlert.msrd</semanticResources>
+  <semanticResources>operations/environment/documentation/Operation-actTeamLeader-outactTeamLeader-sfAcceptMission.msrd</semanticResources>
+  <semanticResources>operations/environment/documentation/Operation-actTeamLeader-outactTeamLeader-sfDenyMission.msrd</semanticResources>
+  <semanticResources>usecases/documentation/UseCase-ugCrisis.msrd</semanticResources>
+  <semanticResources>usecases/ugCrisis.msr</semanticResources>
   <ownedViews xmi:type="viewpoint:DView" xmi:id="__Pb3ELu_EeaDleje63eFGA">
     <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']"/>
   </ownedViews>

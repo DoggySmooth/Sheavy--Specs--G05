@@ -1,0 +1,41 @@
+/*
+@author Phil
+@date Sat Dec 10 12:51:48 CET 2016
+*/
+
+
+@@Operation
+Sheavy.environment.actAll.outactAll.sfAlertGPSZone
+//parameters
+@parameter
+Sheavy.environment.actAll.outactAll.sfAlertGPSZone.GPSLocation
+""
+@parameter
+Sheavy.environment.actAll.outactAll.sfAlertGPSZone.Zones
+""
+@parameter Sheavy.operations.environment.ActAll.sfAlertGPSZone.operationmodel.actAll.outactAll.sfAlertGPSZone.GPSLocation
+" "
+@parameter Sheavy.operations.environment.ActAll.sfAlertGPSZone.operationmodel.actAll.outactAll.sfAlertGPSZone.Zones
+" "
+@endParameters
+
+@description "
+ "
+//preProtocol descriptions
+@preP
+" "
+@endPreP
+//preFunctional descriptions
+@preF
+" "
+@endPreF
+//postFunctional descriptions
+@postF 
+" "
+@endPostF
+//postProtocol descriptions
+@postP 
+" "
+@endPostP
+//example
+@example" "

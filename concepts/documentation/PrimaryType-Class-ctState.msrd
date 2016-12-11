@@ -1,0 +1,19 @@
+/*
+@author Phil
+@date Sat Dec 10 12:50:44 CET 2016
+*/
+
+
+@@Primary Type Class Sheavy.concepts.primarytypes.classes.ctState
+@description ""
+@attribute
+Sheavy.concepts.primarytypes.classes.ctState.vpStarted
+""
+@attribute
+Sheavy.concepts.primarytypes.classes.ctState.vpCrisisLevel
+""
+@endAttributes
+@operation
+Sheavy.concepts.primarytypes.classes.ctState.init
+""
+@endOperations

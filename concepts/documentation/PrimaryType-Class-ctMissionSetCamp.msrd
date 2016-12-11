@@ -1,0 +1,25 @@
+/*
+@author Phil
+@date Sat Dec 10 12:50:57 CET 2016
+*/
+
+
+@@Primary Type Class Sheavy.concepts.primarytypes.classes.ctMissionSetCamp
+@description ""
+@attribute
+Sheavy.concepts.primarytypes.classes.ctMissionSetCamp.location
+""
+@attribute
+Sheavy.concepts.primarytypes.classes.ctMissionSetCamp.Capacity
+""
+@attribute
+Sheavy.concepts.primarytypes.classes.ctMissionSetCamp.NeededTeams
+""
+@attribute
+Sheavy.concepts.primarytypes.classes.ctMissionSetCamp.Description
+""
+@endAttributes
+@operation
+Sheavy.concepts.primarytypes.classes.ctMissionSetCamp.init
+""
+@endOperations

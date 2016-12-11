@@ -1,0 +1,12 @@
+/*
+@author Phil
+@date Sat Dec 10 12:51:11 CET 2016
+*/
+
+
+@@Primary Type Datatype Sheavy.concepts.primarytypes.datatypes.dtLogin
+@description ""
+@operation
+Sheavy.concepts.primarytypes.datatypes.dtLogin.is
+""
+@endOperations

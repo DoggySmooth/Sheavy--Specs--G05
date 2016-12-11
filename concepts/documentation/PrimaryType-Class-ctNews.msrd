@@ -1,0 +1,25 @@
+/*
+@author Phil
+@date Sat Dec 10 12:51:07 CET 2016
+*/
+
+
+@@Primary Type Class Sheavy.concepts.primarytypes.classes.ctNews
+@description ""
+@attribute
+Sheavy.concepts.primarytypes.classes.ctNews.Title
+""
+@attribute
+Sheavy.concepts.primarytypes.classes.ctNews.Level
+""
+@attribute
+Sheavy.concepts.primarytypes.classes.ctNews.AText
+""
+@attribute
+Sheavy.concepts.primarytypes.classes.ctNews.xAgo
+""
+@endAttributes
+@operation
+Sheavy.concepts.primarytypes.classes.ctNews.init
+""
+@endOperations

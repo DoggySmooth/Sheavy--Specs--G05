@@ -1,0 +1,36 @@
+/*
+@author Phil
+@date Sat Dec 10 12:51:47 CET 2016
+*/
+
+
+@@Operation
+Sheavy.environment.actAll.outactAll.sfSafePlaceFinder
+//parameters
+@parameter
+Sheavy.environment.actAll.outactAll.sfSafePlaceFinder.GPSLocation
+""
+@parameter Sheavy.operations.environment.ActAll.sfSafePlaceFinder.operationmodel.actAll.outactAll.sfSafePlaceFinder.GPSLocation
+" "
+@endParameters
+
+@description "
+ "
+//preProtocol descriptions
+@preP
+" "
+@endPreP
+//preFunctional descriptions
+@preF
+" "
+@endPreF
+//postFunctional descriptions
+@postF 
+" "
+@endPostF
+//postProtocol descriptions
+@postP 
+" "
+@endPostP
+//example
+@example" "

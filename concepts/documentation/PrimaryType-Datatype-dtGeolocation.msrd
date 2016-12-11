@@ -1,0 +1,19 @@
+/*
+@author Phil
+@date Sat Dec 10 12:51:32 CET 2016
+*/
+
+
+@@Primary Type Datatype Sheavy.concepts.primarytypes.datatypes.dtGeolocation
+@description ""
+@attribute
+Sheavy.concepts.primarytypes.datatypes.dtGeolocation.latitude
+""
+@attribute
+Sheavy.concepts.primarytypes.datatypes.dtGeolocation.longtitude
+""
+@endAttributes
+@operation
+Sheavy.concepts.primarytypes.datatypes.dtGeolocation.is
+""
+@endOperations

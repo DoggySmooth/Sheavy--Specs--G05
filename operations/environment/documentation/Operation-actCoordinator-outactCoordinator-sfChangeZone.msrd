@@ -1,0 +1,34 @@
+/*
+@author Phil
+@date Sun Dec 11 12:48:41 CET 2016
+*/
+
+
+@@Operation
+Sheavy.environment.actCoordinator.outactCoordinator.sfChangeZone
+//parameters
+@parameter
+Sheavy.environment.actCoordinator.outactCoordinator.sfChangeZone.Zone
+""
+@endParameters
+
+@description "
+ "
+//preProtocol descriptions
+@preP
+" "
+@endPreP
+//preFunctional descriptions
+@preF
+" "
+@endPreF
+//postFunctional descriptions
+@postF 
+" "
+@endPostF
+//postProtocol descriptions
+@postP 
+" "
+@endPostP
+//example
+@example" "

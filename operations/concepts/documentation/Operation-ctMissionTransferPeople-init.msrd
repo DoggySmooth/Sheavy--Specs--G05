@@ -1,0 +1,63 @@
+/*
+@author Phil
+@date Sat Dec 10 12:51:02 CET 2016
+*/
+
+
+@@Operation
+Sheavy.concepts.primarytypes.classes.ctMissionTransferPeople.init
+//parameters
+@parameter
+Sheavy.concepts.primarytypes.classes.ctMissionTransferPeople.init.ASendTo
+""
+@parameter
+Sheavy.concepts.primarytypes.classes.ctMissionTransferPeople.init.ATitle
+""
+@parameter
+Sheavy.concepts.primarytypes.classes.ctMissionTransferPeople.init.AMissionType
+""
+@parameter
+Sheavy.concepts.primarytypes.classes.ctMissionTransferPeople.init.AStart
+""
+@parameter
+Sheavy.concepts.primarytypes.classes.ctMissionTransferPeople.init.ADate
+""
+@parameter
+Sheavy.concepts.primarytypes.classes.ctMissionTransferPeople.init.AFromLocation
+""
+@parameter
+Sheavy.concepts.primarytypes.classes.ctMissionTransferPeople.init.AToLocation
+""
+@parameter
+Sheavy.concepts.primarytypes.classes.ctMissionTransferPeople.init.AQuantity
+""
+@parameter Sheavy.operations.concepts.primarytypes.classes.ctMissionTransferPeople.operationmodel.ctMissionTransferPeople.init.ASendTo
+" "
+@parameter Sheavy.operations.concepts.primarytypes.classes.ctMissionTransferPeople.operationmodel.ctMissionTransferPeople.init.ATitle
+" "
+@parameter Sheavy.operations.concepts.primarytypes.classes.ctMissionTransferPeople.operationmodel.ctMissionTransferPeople.init.AMissionType
+" "
+@parameter Sheavy.operations.concepts.primarytypes.classes.ctMissionTransferPeople.operationmodel.ctMissionTransferPeople.init.AStart
+" "
+@parameter Sheavy.operations.concepts.primarytypes.classes.ctMissionTransferPeople.operationmodel.ctMissionTransferPeople.init.ADate
+" "
+@parameter Sheavy.operations.concepts.primarytypes.classes.ctMissionTransferPeople.operationmodel.ctMissionTransferPeople.init.AAccepted
+" "
+@parameter Sheavy.operations.concepts.primarytypes.classes.ctMissionTransferPeople.operationmodel.ctMissionTransferPeople.init.isFinished
+" "
+@parameter Sheavy.operations.concepts.primarytypes.classes.ctMissionTransferPeople.operationmodel.ctMissionTransferPeople.init.AFromLocation
+" "
+@parameter Sheavy.operations.concepts.primarytypes.classes.ctMissionTransferPeople.operationmodel.ctMissionTransferPeople.init.AToLocation
+" "
+@parameter Sheavy.operations.concepts.primarytypes.classes.ctMissionTransferPeople.operationmodel.ctMissionTransferPeople.init.AQuantity
+" "
+@endParameters
+
+@description "
+used to initialize the current object as a new instance of the ctMissionTransferPeople type. "
+//postFunctional descriptions
+@postF 
+"true iff the system poststate includes the current object as a new ctMissionTransferPeople instance having its attributes equal to the ones provided as parameters. "
+@endPostF
+//example
+@example" "
