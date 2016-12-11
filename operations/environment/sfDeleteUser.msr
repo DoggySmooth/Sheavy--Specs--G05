@@ -28,9 +28,7 @@ preP{
   
 /* PreP01 */
   and TheSystem.vpStarted = true
-/*PreP02*/
-	and TheSystem.vpCrisisLevel = 2
-/* PreP03 */
+/* PreP02 */
   and TheCoor.rnctAuthenticated.vpIsLogged = true
 }
 preF{

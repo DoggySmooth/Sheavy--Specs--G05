@@ -58,6 +58,7 @@ package Sheavy.environment {
 				operation sfDeleteZone(Zone:ctZone):ptBoolean
 				operation sfChangeZone(Zone:ctZone):ptBoolean
 				operation sfDeleteUser(User: ctAuthenticated):ptBoolean
+				operation sfLiftAlert(AMessage: dtMessage):ptBoolean
 			}
 		}
 		actor actAuthenticated role rnactAuthenticated cardinality[1 .. *] extends actAll {
@@ -104,6 +105,7 @@ package Sheavy.environment {
 			}
 			output interface outactTeamLeader {
 				operation sfAcceptMission(Mission:ctMission):ptBoolean
+				operation sfDenyMission(Mission:ctMission):ptBoolean
 			}
 		}
 	}

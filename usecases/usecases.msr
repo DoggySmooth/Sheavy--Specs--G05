@@ -202,5 +202,12 @@ package Sheavy.usecases.subfunctions {
 		}
 	
 	
+	use case system subfunction sfLiftAlert() {
+			actor actCoordinator[primary, active]
+			actor actAll[secondary]
+			returned messages {
+				ieMessage(AMessage) returned to actAll
+			}
+		}
 	}
 }

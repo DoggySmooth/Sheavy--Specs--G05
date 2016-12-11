@@ -44,7 +44,7 @@ import Sheavy.concepts.primarytypes.datatypes
 			let AllUsers: ctActAll in
 			
 			/*PostF01*/
-			TheCoordinator.rnInterfaceIN^ieAlertMessage(AMessage, AReport)
+			TheCoordinator.rnInterfaceIN^ieAlertMessage("Potential Crisis", AReport)
 			
 			/*PostF02*/
 			TheSystem.vpCrisisLevel = 1
@@ -52,7 +52,7 @@ import Sheavy.concepts.primarytypes.datatypes
 			/*PostF03*/
 			ThySystem.rnactActAll.>forAll(rnInterfaceIN^ieWarning)
 			/*PostF04*/
-			TheMedicalDep.rnInterfaceIN^ieNotifyMedicalDep(AMessage)
+			TheMedicalDep.rnInterfaceIN^ieNotifyMedicalDep("Alert sent")
 			
 			
 		}

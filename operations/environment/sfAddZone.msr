@@ -33,7 +33,7 @@ package Sheavy.operations.environment.ActCoordinator.sfAddZone {
 				
 				and TheSystem.rnctZone->select(id.eq(ZoneID))
       = ColctZones
-  and ColctCoordinators->isEmpty() = 
+  and ColctCoordinators->isEmpty() 
 			}
 			
 			postF{

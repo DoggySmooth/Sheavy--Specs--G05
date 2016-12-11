@@ -40,13 +40,13 @@ import Sheavy.environment
 		self.rnActor.rnSystem = TheSystem and self.rnActor = TeamLeader
 		
 		/*PostF01*/
-		and AMission.init(ASendTo, ATitle, AMissionType, AStart, ADate, AAccepted, AFromLocation, AToLocation, AQuantity)
+		and AMission.init(ASendTo, ATitle, AMissionType, AStart, ADate, AAccepted, AisFinished, AFromLocation, AToLocation, AQuantity)
 		
 		/*PostF02*/
 		and TeamLeader.rnInterfaceIN ^ieNotify(AMission)
 		
 		/*PostF03*/
-		and TheCoor.rnIntefaceIN ^ieMessage("Request Send")
+		and TheCoor.rnIntefaceIN ^ieMessage("Mission Pending")
 
 	}
 }

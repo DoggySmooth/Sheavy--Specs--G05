@@ -22,9 +22,9 @@ package Sheavy.operations.environment.ActAuthenticated.sfLogout {
 				/* PreP01 */
 				and TheSystem.vpStarted = true
 				/* PreP02 */
-				and TheSystem.vpCrisisLevel = 1
+				and TheSystem.vpCrisisLevel = 1 or 2
 				/* PreP03 */
-				and TheActor.rnctAuthenticated.vpIsLogged = false
+				and TheActor.rnctAuthenticated.vpIsLogged = true
 
 			}
 			preF {
@@ -35,13 +35,11 @@ package Sheavy.operations.environment.ActAuthenticated.sfLogout {
 		let TheSystem:ctState in
 		let TheactAuthenticated:actAuthenticated in
 		let AptStringMessageForTheactAuthenticated:ptString in
-		let AptStringMessageForTheactAdministrator:ptString in
 		self.rnActor.rnSystem = TheSystem and self.rnActor = TheactAuthenticated and
 		/* PostF01 */
-		if(TheactAuthenticated.rnctAuthenticated.pwd = AdtPassword and TheactAuthenticated.rnctAuthenticated.login = AdtLogin)
-		then(AptStringMessageForTheactAuthenticated.eq('You are logged ! Welcome ...') and TheactAuthenticated.rnInterfaceIN ^ieMessage(AptStringMessageForTheactAuthenticated))
-		else(AptStringMessageForTheactAuthenticated.eq('Wrong identification information ! Please try again ...') and TheactAuthenticated.rnInterfaceIN ^ieMessage(AptStringMessageForTheactAuthenticated) and AptStringMessageForTheactAdministrator.eq('Intrusion tentative !') and TheSystem.rnactAdministrator.rnInterfaceIN ^ieMessage(AptStringMessageForTheactAdministrator))
-		endif
+		AptStringMessageForTheactAuthenticated.eq('Logout Successfully')
+		/*PostF02*/
+		TheactAuthenticated.ctAuthenticated.vpIsLogged = false
 
 	}
 }

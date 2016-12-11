@@ -351,7 +351,6 @@
   <semanticResources>environment/documentation/Operation-actCoordinator-outactCoordinator-sfSendMissionEvacuate.msrd</semanticResources>
   <semanticResources>environment/documentation/Operation-actCoordinator-outactCoordinator-sfAddZone.msrd</semanticResources>
   <semanticResources>environment/documentation/Operation-actCoordinator-outactCoordinator-sfDeleteZone.msrd</semanticResources>
-  <semanticResources>environment/documentation/Operation-actCoordinator-outactCoordinator-sfSetZone.msrd</semanticResources>
   <semanticResources>environment/documentation/Operation-actCoordinator-outactCoordinator-sfInformAdminForBug.msrd</semanticResources>
   <semanticResources>environment/documentation/Actor-actAuthenticated.msrd</semanticResources>
   <semanticResources>environment/documentation/Operation-actAuthenticated-outactAuthenticated-sfFindPerson.msrd</semanticResources>
@@ -400,6 +399,11 @@
   <semanticResources>concepts/primarytypes-classes/documentation/Operation-ctActAll-init.msrd</semanticResources>
   <semanticResources>environment/documentation/Operation-actCoordinator-outactCoordinator-sfChangeZone.msrd</semanticResources>
   <semanticResources>usecases/documentation/UseCase-sfChangeZone.msrd</semanticResources>
+  <semanticResources>operations/environment/sfLiftAlert.msr</semanticResources>
+  <semanticResources>operations/environment/sfDenyMission.msr</semanticResources>
+  <semanticResources>environment/documentation/Operation-actCoordinator-outactCoordinator-sfLiftAlert.msrd</semanticResources>
+  <semanticResources>environment/documentation/Operation-actTeamLeader-outactTeamLeader-sfDenyMission.msrd</semanticResources>
+  <semanticResources>usecases/documentation/UseCase-sfLiftAlert.msrd</semanticResources>
   <ownedViews xmi:type="viewpoint:DView" xmi:id="__QjRYLu_EeaDleje63eFGA">
     <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']"/>
   </ownedViews>

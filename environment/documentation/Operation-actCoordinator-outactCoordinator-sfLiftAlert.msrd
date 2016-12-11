@@ -1,14 +1,14 @@
 /*
 @author Phil
-@date Sun Dec 11 11:55:30 CET 2016
+@date Sun Dec 11 11:55:31 CET 2016
 */
 
 
 @@Operation
-Sheavy.environment.actCoordinator.outactCoordinator.sfChangeZone
+Sheavy.environment.actCoordinator.outactCoordinator.sfLiftAlert
 //parameters
 @parameter
-Sheavy.environment.actCoordinator.outactCoordinator.sfChangeZone.Zone
+Sheavy.environment.actCoordinator.outactCoordinator.sfLiftAlert.AMessage
 ""
 @endParameters
 

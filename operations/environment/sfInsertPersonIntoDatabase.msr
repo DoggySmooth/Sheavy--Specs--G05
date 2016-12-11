@@ -25,7 +25,7 @@ import Sheavy.concepts.primarytypes.classes
 			and self.rnActor = TheactAdministrator
 			
 			/*PreP01*/
-			and TheSystem.vpStarted
+			and TheSystem.vpStarted = true
 			
 			/*PreP02*/
 			and TheactAdministrator.rnctAuthenticated.vpIsLogged = true
@@ -52,7 +52,7 @@ import Sheavy.concepts.primarytypes.classes
 /* PostF04 */  
   and ThectAuthenticated@post.rnactAuthenticated = TheactAuthenticated
 /* PostF05 */  
-  and TheactAdministrator.rnInterfaceIN^ieMessage("User Added!")
+  and TheactAdministrator.rnInterfaceIN^ieMessage("The user has been added to the system!")
 		}
 	}
 	}

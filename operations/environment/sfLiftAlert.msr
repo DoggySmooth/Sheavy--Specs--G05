@@ -1,0 +1,58 @@
+/*
+* @author Phil
+* @date Sun Dec 11 11:41:51 CET 2016
+*/
+
+package Sheavy.operations.actCoordinator.sfLiftAlert {
+
+import lu.uni.lassy.messir.libraries.calendar
+import lu.uni.lassy.messir.libraries.math
+import lu.uni.lassy.messir.libraries.primitives
+import lu.uni.lassy.messir.libraries.string
+
+import Sheavy.environment
+import Sheavy.concepts.primarytypes.classes
+import Sheavy.concepts.primarytypes.datatypes
+
+	Operation Model {
+
+	operation: actCoordinator.outactCoordinator.sfLiftAlert(Amessage: dtMessage):ptBoolean{
+		
+		preP{
+			let ThySystem: ctState in
+			let TheCoor: ctCoordinator in
+			
+			self.rnActor.rnSystem = TheSystem and self.rnAuthenticated = TheCoor
+			
+			/*PreP01*/
+			and TheSystem.vpStarted
+			
+			/*PreP02*/
+			and TheSystem.vpCrisisLevel = 2
+			
+			/*PreP03*/
+			and TheCoor.vpIsLogged = true
+			}
+		preF{true}
+		postF{
+			let ThySystem: ctState in
+			let TheCoordinator: actCoordinator in
+			let AllUsers: ctActAll in
+		
+			
+			/*PostF02*/
+			TheSystem.vpCrisisLevel = 0
+			
+			/*PostF03*/
+			ThySystem.rnactActAll.>forAll(rnInterfaceIN^ieMessage("Crisis is over"))
+			/*PostF04*/
+			TheCoordinator.rnInterfaceIN^ieMessage("Request Sent to all users")
+			
+			
+		}
+		
+	}
+	}
+
+
+}

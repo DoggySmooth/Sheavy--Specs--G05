@@ -1,20 +1,22 @@
-
 /*
 * @author Phil
-* @date Tue Dec 06 18:02:26 CET 2016
+* @date Sun Dec 11 11:46:20 CET 2016
 */
-package Sheavy.operations.environment.ActTeamLeader.sfAcceptMission {
-	import lu.uni.lassy.messir.libraries.calendar
-	import lu.uni.lassy.messir.libraries.math
-	import lu.uni.lassy.messir.libraries.primitives
-	import lu.uni.lassy.messir.libraries.string
+
+package Sheavy.environment.actTeamLeader.sfDenyMission {
+
+import lu.uni.lassy.messir.libraries.calendar
+import lu.uni.lassy.messir.libraries.math
+import lu.uni.lassy.messir.libraries.primitives
+import lu.uni.lassy.messir.libraries.string
 	import Sheavy.concepts.primarytypes.classes
 	import Sheavy.environment
 
 	Operation Model {
 
-		operation: actTeamLeader.outactTeamLeader.sfAcceptMission(AMission:ctMission):ptBoolean {
+		operation: actTeamLeader.outactTeamLeader.sfDenyMission(AMission:ctMission):ptBoolean {
 			preP {
+				
 				let TheSystem:ctState in
 				let TheActor:actTeamLeader in
 				self.rnActor.rnSystem = TheSystem and self.rnActor = TheTeamLeader
@@ -34,7 +36,7 @@ package Sheavy.operations.environment.ActTeamLeader.sfAcceptMission {
 		let TheSystem:ctState in
 		let TheactTeamLeader:actTeamLeader in
 		let TheactCoordinator:actCoordinator in
-		let AllTheactTeamMember:Bag(ctTeamMember) in
+		let AllThectTeamLeaders:Bag(ctTeamLeader) in
 		let AptStringMessageForTheactTeamMember:ptString in
 		let AMission:ctMission in
 		
@@ -44,17 +46,17 @@ package Sheavy.operations.environment.ActTeamLeader.sfAcceptMission {
 		and self.rnActor = AllTheactTeamMember
 		
 		/*PostF01*/
-		and AptStringMessageForTheactTeamMember.eq('You have a new Mission') 
-		and AllTheactTeamMember.rnInterfaceIN^ieNotify(AptStringMessageForTheactTeamMember)
+		and AptStringMessageForTheactTeamLeader.eq('You have a new Mission') 
 		
 		/*PostF02*/
-		and TheactTeamLeader.rnctMission.Accepted = true
+		and ATeamLeader = AllThectTeamLeaders->select(AbstractID excludes (self.AbstractID)).eq(1)
 		
 		/*PostF03*/
-		and TheactCoordinator.rnInterfaceINieAffectATeamToAMission(AMission)
-
+		and ATeamLeader.Avaible = true
+				
 		/*PostF04*/
-		and TheactTeamLeader.Avaible = false
+		and ATeamLeader.rnInterfaceIN^ieNotify(AMission)
+
 	}
 }
 

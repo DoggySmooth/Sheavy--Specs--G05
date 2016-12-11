@@ -39,7 +39,7 @@ package Sheavy.operations.environment.ActAuthenticated.sfLogin {
 		self.rnActor.rnSystem = TheSystem and self.rnActor = TheactAuthenticated and
 		/* PostF01 */
 		if(TheactAuthenticated.rnctAuthenticated.pwd = AdtPassword and TheactAuthenticated.rnctAuthenticated.login = AdtLogin)
-		then(AptStringMessageForTheactAuthenticated.eq('You are logged ! Welcome ...') and TheactAuthenticated.rnInterfaceIN ^ieMessage(AptStringMessageForTheactAuthenticated))
+		then(AptStringMessageForTheactAuthenticated.eq('Login Successfully') and TheactAuthenticated.rnInterfaceIN ^ieMessage(AptStringMessageForTheactAuthenticated))
 		else(AptStringMessageForTheactAuthenticated.eq('Wrong identification information ! Please try again ...') and TheactAuthenticated.rnInterfaceIN ^ieMessage(AptStringMessageForTheactAuthenticated) and AptStringMessageForTheactAdministrator.eq('Intrusion tentative !') and TheSystem.rnactAdministrator.rnInterfaceIN ^ieMessage(AptStringMessageForTheactAdministrator))
 		endif
 

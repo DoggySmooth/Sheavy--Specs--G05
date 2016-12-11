@@ -37,13 +37,13 @@ package Sheavy.operations.environment.ActCoordinator.sfSendMissionCheckpoints {
 		self.rnActor.rnSystem = TheSystem and self.rnActor = TeamLeader
 		
 		/*PostF01*/
-		and AMission.init(ASendTo, ATitle, AMissionType, AStart, ADate, AAccepted, ALocation, ANeededTeams, ASendInfectTo, ADescription)
+		and AMission.init(ASendTo, ATitle, AMissionType, AStart, ADate, AAccepted, AisFinished, ALocation, ANeededTeams, ASendInfectTo, ADescription)
 		
 		/*PostF02*/
 		and TeamLeader.rnInterfaceIN ^ieNotify(AMission)
 		
 		/*PostF03*/
-		and TheCoor.rnIntefaceIN ^ieMessage("Request Send")
+		and TheCoor.rnIntefaceIN ^ieMessage("Mission Pending")
 
 	}
 }
