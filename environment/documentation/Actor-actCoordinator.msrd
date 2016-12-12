@@ -60,11 +60,12 @@ Sheavy.environment.actCoordinator.outactCoordinator.sfAddZone
 @outputEvent
 Sheavy.environment.actCoordinator.outactCoordinator.sfDeleteZone
 ""
-@outputEvent
-Sheavy.environment.actCoordinator.outactCoordinator.sfSetZone
+Sheavy.environment.actCoordinator.outactCoordinator.sfChangeZone
 ""
-//@outputEvent
-//Sheavy.environment.actCoordinator.outactCoordinator.sfInformAdminForBug
-//""
+@outputEvent
+Sheavy.environment.actCoordinator.outactCoordinator.sfDeleteUser
+""
+@outputEvent
+Sheavy.environment.actCoordinator.outactCoordinator.sfLiftAlert
 
 @endOutputEvents

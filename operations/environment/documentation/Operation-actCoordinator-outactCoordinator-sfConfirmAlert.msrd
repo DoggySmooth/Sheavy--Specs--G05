@@ -7,22 +7,29 @@
 @@Operation
 Sheavy.environment.actCoordinator.outactCoordinator.sfConfirmAlert
 @description "
+actCoordinator receives an alert message from the Medical Department including a report about the severity
+of the epidemic. actCoordinator will read it and will confirm the alert and notify every user about the epidemic.
  "
 //preProtocol descriptions
 @preP
-" "
+"The user is logged in and is still logged in."
+@preP
+"the system is started."
+
 @endPreP
 //preFunctional descriptions
 @preF
-" "
+"User read the report send by the actMedicalDepartment."
 @endPreF
 //postFunctional descriptions
 @postF 
-" "
+"Start of the crisis management system. "
+@postF 
+"The alert is confirmed and every user is notified about he epidemic. "
 @endPostF
 //postProtocol descriptions
 @postP 
-" "
+"none "
 @endPostP
 //example
 @example" "

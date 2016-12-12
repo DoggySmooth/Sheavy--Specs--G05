@@ -14,23 +14,26 @@ Sheavy.environment.actCoordinator.outactCoordinator.sfSendMissionEvacuate.Missio
 " "
 @endParameters
 
-@description "
+@description "actCoordinator sends evacuation mission to various actTeamLeaders (e.g. fire figther, military, Doctors,..) with
+some important information concerning the mission.
  "
 //preProtocol descriptions
 @preP
-" "
+"The system is started."
+@preP
+"The user is logged in and is still logged in."
 @endPreP
 //preFunctional descriptions
 @preF
-" "
+"actCoordinator enters all information needed "
 @endPreF
 //postFunctional descriptions
 @postF 
-" "
+"The mission is received by the concerned actTeamLeader. "
 @endPostF
 //postProtocol descriptions
 @postP 
-" "
+"none "
 @endPostP
 //example
 @example" "

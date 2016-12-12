@@ -14,23 +14,36 @@ Sheavy.environment.actTeamLeader.outactTeamLeader.sfAcceptMission.Mission
 " "
 @endParameters
 
-@description "
+@description " Team member can receive a mission from the Coordinator. actTeamLeader can accept the mission or
+decline if they can’t execute it.
  "
 //preProtocol descriptions
+
 @preP
-" "
+"The system is started."
+
+@preP
+"The user is logged in and is still logged in."
+
 @endPreP
+
+
 //preFunctional descriptions
 @preF
-" "
+"The maximum number of team needed in the mission doesn’t exceed the demand."
+
+@preF
+"The Deadline isn’t reached."
+
 @endPreF
+
 //postFunctional descriptions
 @postF 
-" "
+"The mission will be executed or sent to another team. "
 @endPostF
 //postProtocol descriptions
 @postP 
-" "
+"None "
 @endPostP
 //example
 @example" "

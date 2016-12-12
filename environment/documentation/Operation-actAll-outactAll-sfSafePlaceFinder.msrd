@@ -10,6 +10,8 @@ Sheavy.environment.actAll.outactAll.sfSafePlaceFinder
 @parameter
 Sheavy.environment.actAll.outactAll.sfSafePlaceFinder.GPSLocation
 ""
+@parameter Sheavy.operations.environment.ActAll.sfSafePlaceFinder.operationmodel.actAll.outactAll.sfSafePlaceFinder.GPSLocation
+" "
 @endParameters
 
 @description "An user requests the safest and fastest way to a certain safe place e.g. hospital, safe camp. The operation will

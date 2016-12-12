@@ -54,6 +54,8 @@ Sheavy.concepts.primarytypes.classes.ctMissionSetCheckpoint.init.ADescription
 " "
 @parameter Sheavy.operations.concepts.primarytypes.classes.ctSetCheckpoint.operationmodel.ctMissionSetCheckpoint.init.ADescription
 " "
+@parameter Sheavy.operations.concepts.primarytypes.classes.ctSetCheckpoint.operationmodel.ctMissionSetCheckpoint.init.isFinished
+" "
 @endParameters
 
 @description "

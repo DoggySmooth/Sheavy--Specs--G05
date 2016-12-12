@@ -19,23 +19,29 @@ Sheavy.environment.actMedicalDepartement.outactMedicalDepartement.sfTriggerAlert
 " "
 @endParameters
 
-@description "
+@description "actMedicalDepartment creates an alert message for an epidemic, including a report of what happened and
+what should be done as a reaction of that epidemic. He’s sending it to actCoordinator who will read it and
+confirm the alert state.
  "
 //preProtocol descriptions
 @preP
-" "
+"The system is started."
+@preP
+"The user is logged in and is still logged in."
 @endPreP
 //preFunctional descriptions
 @preF
-" "
+"Actor has evidence and created a report. "
 @endPreF
 //postFunctional descriptions
 @postF 
-" "
+"The alert was successfully sent. "
+@postF 
+"actCoordinator was notified about the alert. "
 @endPostF
 //postProtocol descriptions
 @postP 
-" "
+"none "
 @endPostP
 //example
 @example" "

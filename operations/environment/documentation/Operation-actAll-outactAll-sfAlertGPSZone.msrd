@@ -19,23 +19,24 @@ Sheavy.environment.actAll.outactAll.sfAlertGPSZone.Zones
 " "
 @endParameters
 
-@description "
+@description " The user is warned if he enteres a danger or unsafe zone in order to prevent him/her to be put in danger.
  "
 //preProtocol descriptions
 @preP
-" "
+"The system is started."
+
 @endPreP
 //preFunctional descriptions
 @preF
-" "
+"The user is entering a 'Danger Zone' or 'Unsafe Zone'."
 @endPreF
 //postFunctional descriptions
 @postF 
-" "
+"The user receives an warning message and is asked to not go further into the corresponding zone."
 @endPostF
 //postProtocol descriptions
 @postP 
-" "
+"none "
 @endPostP
 //example
 @example" "

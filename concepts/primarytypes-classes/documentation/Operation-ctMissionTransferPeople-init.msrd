@@ -49,6 +49,8 @@ Sheavy.concepts.primarytypes.classes.ctMissionTransferPeople.init.AQuantity
 " "
 @parameter Sheavy.operations.concepts.primarytypes.classes.ctMissionTransferPeople.operationmodel.ctMissionTransferPeople.init.AQuantity
 " "
+@parameter Sheavy.operations.concepts.primarytypes.classes.ctMissionTransferPeople.operationmodel.ctMissionTransferPeople.init.isFinished
+" "
 @endParameters
 
 @description "
