@@ -5,7 +5,7 @@
 
 
 @@Primary Type Class Sheavy.concepts.primarytypes.classes.ctZone
-@description ""
+@description "used to model crisis by being a certain zonetype informing actors what state a location right now is in."
 @attribute
 Sheavy.concepts.primarytypes.classes.ctZone.zoneID
 ""

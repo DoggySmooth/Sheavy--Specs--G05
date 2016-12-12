@@ -5,7 +5,7 @@
 
 
 @@Use Case Subfunction Sheavy.usecases.subfunctions.sfFindPerson
-@description ""
+@description "used to find a person or group to call by an actor of the system."
 @parameter Sheavy.usecases.subfunctions.sfFindPerson.Name ""
 @parameter Sheavy.usecases.subfunctions.sfFindPerson.Function ""
 @endParameters

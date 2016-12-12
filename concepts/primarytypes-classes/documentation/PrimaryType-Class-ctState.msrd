@@ -5,7 +5,7 @@
 
 
 @@Primary Type Class Sheavy.concepts.primarytypes.classes.ctState
-@description ""
+@description "used to model the system. It determines if the crisis has started and in which level it is at this state."
 @attribute
 Sheavy.concepts.primarytypes.classes.ctState.vpStarted
 ""

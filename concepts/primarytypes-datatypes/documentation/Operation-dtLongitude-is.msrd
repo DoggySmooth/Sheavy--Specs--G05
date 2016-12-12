@@ -6,7 +6,7 @@
 
 @@Operation
 Sheavy.concepts.primarytypes.datatypes.dtLongitude.is
-@description "
+@description "used to determine which reals are considered as valid dtLongitude.
  "
 //postFunctional descriptions
 @postF 

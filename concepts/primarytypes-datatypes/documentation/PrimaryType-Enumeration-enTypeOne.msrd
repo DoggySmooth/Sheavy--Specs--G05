@@ -5,7 +5,7 @@
 
 
 @@Primary Type Enumeration Sheavy.concepts.primarytypes.datatypes.enTypeOne
-@description ""
+@description "this type is used to indicate the different location used for the zones and checkpoints."
 @operation
 Sheavy.concepts.primarytypes.datatypes.enTypeOne.is
 ""

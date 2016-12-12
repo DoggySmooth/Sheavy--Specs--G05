@@ -14,23 +14,25 @@ Sheavy.environment.actCoordinator.outactCoordinator.sfDeleteZone.Zone
 " "
 @endParameters
 
-@description "
+@description "actCoordinator can delete a zone in any time. According to that the map will be updated
  "
 //preProtocol descriptions
 @preP
-" "
+"The system is started."
+@preP
+"The user is logged in and is still logged in."
 @endPreP
 //preFunctional descriptions
 @preF
-" "
+"The zone that should be deleted has been created previously. "
 @endPreF
 //postFunctional descriptions
 @postF 
-" "
+"The previously existing zone is deleted form the database. "
 @endPostF
 //postProtocol descriptions
 @postP 
-" "
+"none "
 @endPostP
 //example
 @example" "

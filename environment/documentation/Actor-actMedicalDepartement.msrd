@@ -5,7 +5,16 @@
 
 
 @@Actor Sheavy.environment.actMedicalDepartement
-@description ""
+@description "The Medical Department has two main groups, namely Doctors and the Laboratory. Each one is connected
+with each other and they are exchanging their reports. The Medical Department is the intermediate between
+its groups and the Coordinator. They’ll work together in order to find a cure. Furthermore they’ll try to reduce
+the number of infected persons by delivering some guidelines to avoid being infected.
+• Recognize a possible epidemic and report it to the Coordinator.
+• Works in various check points or hospitals in order to perform check ups.
+• Take care of the infected patients the time that an antivirus is found.
+• Takes blood sample from the infected patients and analyze them in order to find a cure.
+• Gives a guideline to the application as a news so that all the people knows how to protect itself from become
+infected."
 //input events
 @inputEvent
 Sheavy.environment.actMedicalDepartement.inactMedicalDepartement.ieNotifyMedicalDep

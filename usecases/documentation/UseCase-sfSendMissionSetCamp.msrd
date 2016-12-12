@@ -5,7 +5,7 @@
 
 
 @@Use Case Subfunction Sheavy.usecases.subfunctions.sfSendMissionSetCamp
-@description ""
+@description "used by actCoordinator to send mission to actTeamLeader in order to execute the mission. The mission is for this case: Create a camp until the deadline."
 @parameter Sheavy.usecases.subfunctions.sfSendMissionSetCamp.Mission ""
 @endParameters
 @protocolCondition

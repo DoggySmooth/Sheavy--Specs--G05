@@ -6,7 +6,7 @@
 
 @@Operation
 Sheavy.concepts.primarytypes.datatypes.enStateTypes.is
-@description "
+@description "used to determine which litteral belongs to the enumeration.
  "
 //postFunctional descriptions
 @postF 

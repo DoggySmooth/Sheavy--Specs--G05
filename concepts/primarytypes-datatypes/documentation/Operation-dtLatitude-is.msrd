@@ -6,7 +6,7 @@
 
 @@Operation
 Sheavy.concepts.primarytypes.datatypes.dtLatitude.is
-@description "
+@description "used to determine which reals are considered as valid dtLatitude.
  "
 //postFunctional descriptions
 @postF 

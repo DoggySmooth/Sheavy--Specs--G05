@@ -19,23 +19,22 @@ Sheavy.environment.actAuthenticated.outactAuthenticated.sfLogin.AdtPassword
 " "
 @endParameters
 
-@description "
- "
+@description "Actors want to enter the applications."
 //preProtocol descriptions
 @preP
-" "
+"The system is started."
 @endPreP
 //preFunctional descriptions
 @preF
-" "
+"The user knows his authentification."
 @endPreF
 //postFunctional descriptions
 @postF 
-" "
+"The user enters the homescreen with access to his individual information and functions. "
 @endPostF
 //postProtocol descriptions
 @postP 
-" "
+"none "
 @endPostP
 //example
 @example" "

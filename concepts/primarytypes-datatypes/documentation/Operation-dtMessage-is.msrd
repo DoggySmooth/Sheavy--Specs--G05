@@ -6,7 +6,7 @@
 
 @@Operation
 Sheavy.concepts.primarytypes.datatypes.dtMessage.is
-@description "
+@description "used to determine which strings are considered as valid dtMessage.
  "
 //postFunctional descriptions
 @postF 

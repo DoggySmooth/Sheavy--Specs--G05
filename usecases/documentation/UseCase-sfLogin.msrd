@@ -5,7 +5,7 @@
 
 
 @@Use Case Subfunction Sheavy.usecases.subfunctions.sfLogin
-@description ""
+@description "used to authentify a user and therefore gain access to the system option given to the user."
 @parameter Sheavy.usecases.subfunctions.sfLogin.AdtLogin ""
 @parameter Sheavy.usecases.subfunctions.sfLogin.AdtPassword ""
 @endParameters

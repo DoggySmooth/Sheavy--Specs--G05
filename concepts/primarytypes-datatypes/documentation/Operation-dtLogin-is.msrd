@@ -6,7 +6,7 @@
 
 @@Operation
 Sheavy.concepts.primarytypes.datatypes.dtLogin.is
-@description "
+@description "used to determine which strings are considered as valid dtLogin.
  "
 //postFunctional descriptions
 @postF 

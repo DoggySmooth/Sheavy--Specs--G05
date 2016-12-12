@@ -5,7 +5,7 @@
 
 
 @@Use Case Subfunction Sheavy.usecases.subfunctions.sfAlertGPSZone
-@description ""
+@description "used to alert a user of the system that is entering an non-safe zone."
 @parameter Sheavy.usecases.subfunctions.sfAlertGPSZone.GPSLocation ""
 @parameter Sheavy.usecases.subfunctions.sfAlertGPSZone.Zones ""
 @endParameters

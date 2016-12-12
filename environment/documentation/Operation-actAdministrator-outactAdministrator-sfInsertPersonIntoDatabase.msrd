@@ -14,23 +14,27 @@ Sheavy.environment.actAdministrator.outactAdministrator.sfInsertPersonIntoDataba
 " "
 @endParameters
 
-@description "
- "
+@description "In request of the actCoordinator, actAdministrator adds a person as a user to the
+system, allowing them to use the specific operation each type of user has."
 //preProtocol descriptions
 @preP
-" "
+"The system is started."
+@preP
+"The crisis has not started yet."
+@preP
+"The user is logged in and is still logged in."
 @endPreP
 //preFunctional descriptions
 @preF
-" "
+"The users who the actAdministrator is going to add, doesn’t have an existing account. "
 @endPreF
 //postFunctional descriptions
 @postF 
-" "
+"The selected user gains access to the specific feature of the system each type of user has. "
 @endPostF
 //postProtocol descriptions
 @postP 
-" "
+"none "
 @endPostP
 //example
 @example" "

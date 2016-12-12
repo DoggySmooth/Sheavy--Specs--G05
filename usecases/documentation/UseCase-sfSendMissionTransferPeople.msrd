@@ -5,7 +5,8 @@
 
 
 @@Use Case Subfunction Sheavy.usecases.subfunctions.sfSendMissionTransferPeople
-@description ""
+@description "used by actCoordinator to send mission to actTeamLeader in order to execute the mission. The mission is for this case: Transport a certain amount of people from one location to the second location
+before the deadline."
 @parameter Sheavy.usecases.subfunctions.sfSendMissionTransferPeople.Mission ""
 @endParameters
 @protocolCondition

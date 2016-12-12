@@ -5,7 +5,7 @@
 
 
 @@Primary Type Datatype Sheavy.concepts.primarytypes.datatypes.dtGeolocation
-@description ""
+@description "A datatype to determine a location with its coordinates."
 @attribute
 Sheavy.concepts.primarytypes.datatypes.dtGeolocation.latitude
 ""

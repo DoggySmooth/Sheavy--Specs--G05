@@ -5,7 +5,7 @@
 
 
 @@Use Case Subfunction Sheavy.usecases.subfunctions.sfLogout
-@description ""
+@description "used by a user to exit the application and losing access to the corresponding option given by the system."
 @protocolCondition
 "
 "

@@ -5,7 +5,8 @@
 
 
 @@Primary Type Class Sheavy.concepts.primarytypes.classes.ctTeamLeader
-@description ""
+@description "used to model system's representation about the actors that lead a group in order to execute given missions. This actors divided into 2 divisions:
+Authorities or Medical Department."
 @attribute
 Sheavy.concepts.primarytypes.classes.ctTeamLeader.TeamLeaderID
 ""

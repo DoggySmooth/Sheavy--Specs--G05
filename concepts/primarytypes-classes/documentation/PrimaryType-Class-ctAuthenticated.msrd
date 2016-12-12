@@ -5,7 +5,7 @@
 
 
 @@Primary Type Class Sheavy.concepts.primarytypes.classes.ctAuthenticated
-@description ""
+@description "used to model system's representation about any actor."
 @attribute
 Sheavy.concepts.primarytypes.classes.ctAuthenticated.WorksAs
 ""

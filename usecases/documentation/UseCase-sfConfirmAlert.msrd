@@ -5,7 +5,7 @@
 
 
 @@Use Case Subfunction Sheavy.usecases.subfunctions.sfConfirmAlert
-@description ""
+@description "used to confirm an alert send by actMedicalDepartment and confirmed by actCoordinator."
 @protocolCondition
 "
 "

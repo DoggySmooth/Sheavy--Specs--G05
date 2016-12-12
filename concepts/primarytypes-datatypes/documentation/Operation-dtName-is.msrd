@@ -6,7 +6,7 @@
 
 @@Operation
 Sheavy.concepts.primarytypes.datatypes.dtName.is
-@description "
+@description "used to determine which strings are considered as valid dtName.
  "
 //postFunctional descriptions
 @postF 

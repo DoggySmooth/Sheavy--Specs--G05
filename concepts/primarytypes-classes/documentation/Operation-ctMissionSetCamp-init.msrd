@@ -46,8 +46,6 @@ Sheavy.concepts.primarytypes.classes.ctMissionSetCamp.init.ADescription
 " "
 @parameter Sheavy.operations.concepts.primarytypes.classes.ctMissionSetCamp.operationmodel.ctMissionSetCamp.init.AAccepted
 " "
-@parameter Sheavy.operations.concepts.primarytypes.classes.ctMissionSetCamp.operationmodel.ctMissionSetCamp.init.isFinished
-" "
 @parameter Sheavy.operations.concepts.primarytypes.classes.ctMissionSetCamp.operationmodel.ctMissionSetCamp.init.ALocation
 " "
 @parameter Sheavy.operations.concepts.primarytypes.classes.ctMissionSetCamp.operationmodel.ctMissionSetCamp.init.ACapacity

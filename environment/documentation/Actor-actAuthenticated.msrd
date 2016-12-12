@@ -5,7 +5,7 @@
 
 
 @@Actor Sheavy.environment.actAuthenticated
-@description ""
+@description "This represents an user that has successfully logged into the system."
 //input events
 @inputEvent
 Sheavy.environment.actAuthenticated.inactAuthenticated.ieDisplay
@@ -28,4 +28,5 @@ Sheavy.environment.actAuthenticated.outactAuthenticated.sfLogout
 @outputEvent
 Sheavy.environment.actAuthenticated.outactAuthenticated.sfSendExactAmountOfPeople
 ""
+
 @endOutputEvents

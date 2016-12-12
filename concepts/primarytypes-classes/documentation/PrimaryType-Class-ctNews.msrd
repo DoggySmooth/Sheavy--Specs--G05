@@ -5,7 +5,7 @@
 
 
 @@Primary Type Class Sheavy.concepts.primarytypes.classes.ctNews
-@description ""
+@description "used to model crisis by showing any new information that the coordinator decided to send."
 @attribute
 Sheavy.concepts.primarytypes.classes.ctNews.Title
 ""

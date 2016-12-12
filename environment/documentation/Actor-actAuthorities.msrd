@@ -5,7 +5,10 @@
 
 
 @@Actor Sheavy.environment.actAuthorities
-@description ""
+@description "The Authorities is regrouping various intervention groups such as the fire brigade, the police and the militaries.
+They are working together and have a connection with each other. The Authorities are the intermediate between
+its groups and the Coordinator.
+• Support group for various purposes."
 //input events
 @inputEvent
 Sheavy.environment.actAuthorities.inactAuthorities.ieNotifyAuthorities

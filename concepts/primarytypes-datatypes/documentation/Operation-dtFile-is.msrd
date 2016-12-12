@@ -6,7 +6,7 @@
 
 @@Operation
 Sheavy.concepts.primarytypes.datatypes.dtFile.is
-@description "
+@description "used to determine which strings are considered as valid dtFile.
  "
 //postFunctional descriptions
 @postF 

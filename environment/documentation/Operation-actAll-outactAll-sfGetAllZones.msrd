@@ -6,23 +6,25 @@
 
 @@Operation
 Sheavy.environment.actAll.outactAll.sfGetAllZones
-@description "
+@description "Collection of all Zones is send to the user requesting it.
  "
 //preProtocol descriptions
 @preP
-" "
+"The system is started."
+@preP
+"The user is logged in and is still logged in."
 @endPreP
 //preFunctional descriptions
 @preF
-" "
+"The user opens a operation that uses the GPS function that requests zones to use."
 @endPreF
 //postFunctional descriptions
 @postF 
-" "
+"The user receives the collection of all zones "
 @endPostF
 //postProtocol descriptions
 @postP 
-" "
+"none "
 @endPostP
 //example
 @example" "

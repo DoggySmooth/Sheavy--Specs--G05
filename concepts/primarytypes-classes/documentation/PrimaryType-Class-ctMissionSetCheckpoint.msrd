@@ -5,7 +5,7 @@
 
 
 @@Primary Type Class Sheavy.concepts.primarytypes.classes.ctMissionSetCheckpoint
-@description ""
+@description "used to model crisis by handling to create a checkpoint so that anyone can test if he/she is infected."
 @attribute
 Sheavy.concepts.primarytypes.classes.ctMissionSetCheckpoint.location
 ""

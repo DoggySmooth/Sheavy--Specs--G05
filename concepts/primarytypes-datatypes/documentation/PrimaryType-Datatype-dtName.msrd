@@ -5,7 +5,7 @@
 
 
 @@Primary Type Datatype Sheavy.concepts.primarytypes.datatypes.dtName
-@description ""
+@description "A string to identify the name of a user"
 @operation
 Sheavy.concepts.primarytypes.datatypes.dtName.is
 ""

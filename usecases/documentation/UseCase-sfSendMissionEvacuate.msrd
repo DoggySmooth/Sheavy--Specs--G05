@@ -5,7 +5,7 @@
 
 
 @@Use Case Subfunction Sheavy.usecases.subfunctions.sfSendMissionEvacuate
-@description ""
+@description "used by actCoordinator to send mission to actTeamLeader in order to execute the mission. The mission is for this case: Evacuate a location as fast as possible."
 @parameter Sheavy.usecases.subfunctions.sfSendMissionEvacuate.Mission ""
 @endParameters
 @protocolCondition

@@ -5,7 +5,7 @@
 
 
 @@Use Case Subfunction Sheavy.usecases.subfunctions.sfAcceptMission
-@description ""
+@description "used to accept Mission send by actCoordinator and accepted by actTeamLeader."
 @parameter Sheavy.usecases.subfunctions.sfAcceptMission.Mission ""
 @endParameters
 @protocolCondition

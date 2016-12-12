@@ -5,7 +5,7 @@
 
 
 @@Primary Type Class Sheavy.concepts.primarytypes.classes.ctMission
-@description ""
+@description "used to model crisis by solving individual problems determined by the Coordinator that have a time limit or have to be execute directly.."
 @attribute
 Sheavy.concepts.primarytypes.classes.ctMission.SendTo
 ""
@@ -22,7 +22,5 @@ Sheavy.concepts.primarytypes.classes.ctMission.Start
 Sheavy.concepts.primarytypes.classes.ctMission.Date
 ""
 @attribute Sheavy.concepts.primarytypes.classes.ctMission.Accepted
-" "
-@attribute Sheavy.concepts.primarytypes.classes.ctMission.isFinish
 " "
 @endAttributes

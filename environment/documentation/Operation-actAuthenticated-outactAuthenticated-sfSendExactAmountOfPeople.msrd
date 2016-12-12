@@ -10,27 +10,27 @@ Sheavy.environment.actAuthenticated.outactAuthenticated.sfSendExactAmountOfPeopl
 @parameter
 Sheavy.environment.actAuthenticated.outactAuthenticated.sfSendExactAmountOfPeople.Amount
 ""
-@parameter Sheavy.operations.environment.ActAuthenticated.sfSendExactAmountOfPeople.operationmodel.actAuthenticated.outactAuthenticated.sfSendExactAmountOfPeople.ANumber
-" "
 @endParameters
 
-@description "
+@description "actTeamLeader sends an exact number of people to actCoordinator in order to organize an evacuation Mission.
  "
 //preProtocol descriptions
 @preP
-" "
+"The system is started."
+@preP
+"The user is logged in and is still logged in."
 @endPreP
 //preFunctional descriptions
 @preF
-" "
+"Team Members give actTeamLeader the amount of people in the location that should be evacuated. "
 @endPreF
 //postFunctional descriptions
 @postF 
-" "
+"actCoordinator receives the exact amount of people in the location. "
 @endPostF
 //postProtocol descriptions
 @postP 
-" "
+"none "
 @endPostP
 //example
 @example" "

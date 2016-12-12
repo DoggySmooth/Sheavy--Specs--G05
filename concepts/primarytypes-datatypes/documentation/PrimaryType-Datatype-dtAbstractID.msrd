@@ -5,7 +5,7 @@
 
 
 @@Primary Type Datatype Sheavy.concepts.primarytypes.datatypes.dtAbstractID
-@description ""
+@description "A integer used to determine an ID "
 @operation
 Sheavy.concepts.primarytypes.datatypes.dtAbstractID.is
 ""

@@ -5,7 +5,7 @@
 
 
 @@Use Case Subfunction Sheavy.usecases.subfunctions.sfTriggerAlert
-@description ""
+@description "used by actMedicalDepartment to send a prove of an potential epidemic crisis to the actCoordinator. "
 @parameter Sheavy.usecases.subfunctions.sfTriggerAlert.AMessage ""
 @parameter Sheavy.usecases.subfunctions.sfTriggerAlert.AReport ""
 @endParameters

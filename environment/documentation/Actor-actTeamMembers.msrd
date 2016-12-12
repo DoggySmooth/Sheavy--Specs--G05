@@ -5,7 +5,7 @@
 
 
 @@Actor Sheavy.environment.actTeamMembers
-@description ""
+@description "The members follow the instruction of their team leader in order to successfully solve task or mission given to them."
 //input events
 @inputEvent
 Sheavy.environment.actTeamMembers.inactTeamMembers.ieSendInformation

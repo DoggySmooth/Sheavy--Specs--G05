@@ -5,7 +5,7 @@
 
 
 @@Primary Type Enumeration Sheavy.concepts.primarytypes.datatypes.enMissionTypes
-@description ""
+@description "this type is used to indicate the different mission with their individual task."
 @operation
 Sheavy.concepts.primarytypes.datatypes.enMissionTypes.is
 ""

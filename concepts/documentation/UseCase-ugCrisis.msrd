@@ -5,7 +5,7 @@
 
 
 @@Use Case Sheavy.usecases.ugCrisis.ugCrisis
-@description ""
+@description "The goal is to set up the system to be used by the actors to solve a epidemic crisis."
 @protocolCondition
 "
 "

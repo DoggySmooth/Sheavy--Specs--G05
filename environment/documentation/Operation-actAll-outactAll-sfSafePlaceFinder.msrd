@@ -10,27 +10,28 @@ Sheavy.environment.actAll.outactAll.sfSafePlaceFinder
 @parameter
 Sheavy.environment.actAll.outactAll.sfSafePlaceFinder.GPSLocation
 ""
-@parameter Sheavy.operations.environment.ActAll.sfSafePlaceFinder.operationmodel.actAll.outactAll.sfSafePlaceFinder.GPSLocation
-" "
 @endParameters
 
-@description "
+@description "An user requests the safest and fastest way to a certain safe place e.g. hospital, safe camp. The operation will
+send him through GPS to the selected place.
  "
 //preProtocol descriptions
 @preP
-" "
+"The system is started."
+@preP
+"The user is logged in and is still logged in."
 @endPreP
 //preFunctional descriptions
 @preF
-" "
+"The user has GPS enabled. "
 @endPreF
 //postFunctional descriptions
 @postF 
-" "
+"The fastest way to a certain safe place was calculated. "
 @endPostF
 //postProtocol descriptions
 @postP 
-" "
+"none "
 @endPostP
 //example
 @example" "

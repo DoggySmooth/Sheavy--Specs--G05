@@ -5,7 +5,7 @@
 
 
 @@Use Case Subfunction Sheavy.usecases.subfunctions.sfSeeAffectedTeamToMission
-@description ""
+@description "used by actCoordinator to request information about one team or one mission and their relation to the other."
 @parameter Sheavy.usecases.subfunctions.sfSeeAffectedTeamToMission.AMission ""
 @endParameters
 @protocolCondition

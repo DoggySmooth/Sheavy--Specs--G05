@@ -6,7 +6,7 @@
 
 @@Operation
 Sheavy.concepts.primarytypes.datatypes.dtGeolocation.is
-@description "
+@description "used to determine which couples are considered as valid dtGeolocation values.
  "
 //postFunctional descriptions
 @postF 

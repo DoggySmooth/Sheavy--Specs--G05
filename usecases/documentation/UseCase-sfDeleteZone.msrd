@@ -5,7 +5,7 @@
 
 
 @@Use Case Subfunction Sheavy.usecases.subfunctions.sfDeleteZone
-@description ""
+@description "used to delete an existing zone from the collection of zone from sfGetAllZones."
 @parameter Sheavy.usecases.subfunctions.sfDeleteZone.Zone ""
 @endParameters
 @protocolCondition

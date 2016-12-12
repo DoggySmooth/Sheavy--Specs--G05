@@ -5,7 +5,7 @@
 
 
 @@Use Case Subfunction Sheavy.usecases.subfunctions.sfStatistiques
-@description ""
+@description "used by actCoordinator to evaluate the current progression of the crisis. The statistic is generate by the system."
 @parameter Sheavy.usecases.subfunctions.sfStatistiques.Mission ""
 @endParameters
 @protocolCondition

@@ -1,0 +1,26 @@
+/*
+@author Phil
+@date Sat Dec 10 12:52:36 CET 2016
+*/
+
+
+@@Use Case Subfunction Sheavy.usecases.subfunctions.sfSetZone
+@description "used by actCoordinator to change an existing zone in the collection of zones from sfGetAllZones."
+@parameter Sheavy.usecases.subfunctions.sfSetZone.AZone ""
+@endParameters
+@protocolCondition
+"
+"
+@endProtocolConditions
+@preCondition
+"
+"
+@endPreConditions
+@postCondition
+"
+"
+@endPostConditions
+@additionalInformation
+"
+none
+"

@@ -1,11 +1,17 @@
 /*
 @author Phil
-@date Sun Dec 11 12:48:40 CET 2016
+@date Sat Dec 10 12:51:51 CET 2016
 */
 
 
 @@Actor Sheavy.environment.actCoordinator
-@description ""
+@description "The Coordinator is the intermediate between its two low-level departments, Medical Department and
+Authorities, and the Government. He will execute the orders of the Government by using SHeavy. The
+Coordinator has several main functions such as :
+• The Coordinator starts or ends the alert of the concerning epidemic.
+• He’s also responsible for the Resources Management, which is already set up before the epidemic.
+• Another task is to update SHeavy’s Map accordingly to the situation.
+"
 //input events
 @inputEvent
 Sheavy.environment.actCoordinator.inactCoordinator.ieAffectATeamToAMission
@@ -22,10 +28,9 @@ Sheavy.environment.actCoordinator.inactCoordinator.ieMissionSent
 @inputEvent
 Sheavy.environment.actCoordinator.inactCoordinator.ieStats
 ""
-@inputEvent
-Sheavy.environment.actCoordinator.inactCoordinator.ieMessage
-""
 
+@inputEvent Sheavy.environment.actCoordinator.inactCoordinator.ieMessage
+" "
 @endInputEvents
 //output events
 @outputEvent
@@ -56,13 +61,10 @@ Sheavy.environment.actCoordinator.outactCoordinator.sfAddZone
 Sheavy.environment.actCoordinator.outactCoordinator.sfDeleteZone
 ""
 @outputEvent
-Sheavy.environment.actCoordinator.outactCoordinator.sfChangeZone
+Sheavy.environment.actCoordinator.outactCoordinator.sfSetZone
 ""
-@outputEvent
-Sheavy.environment.actCoordinator.outactCoordinator.sfDeleteUser
-""
-@outputEvent
-Sheavy.environment.actCoordinator.outactCoordinator.sfLiftAlert
-""
+//@outputEvent
+//Sheavy.environment.actCoordinator.outactCoordinator.sfInformAdminForBug
+//""
 
 @endOutputEvents

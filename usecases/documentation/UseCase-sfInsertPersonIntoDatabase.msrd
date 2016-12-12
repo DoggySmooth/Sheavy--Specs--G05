@@ -5,7 +5,7 @@
 
 
 @@Use Case Subfunction Sheavy.usecases.subfunctions.sfInsertPersonIntoDatabase
-@description ""
+@description "used by actAdministrator to add a new user to the system."
 @parameter Sheavy.usecases.subfunctions.sfInsertPersonIntoDatabase.AAuthenticatedUser ""
 @endParameters
 @protocolCondition

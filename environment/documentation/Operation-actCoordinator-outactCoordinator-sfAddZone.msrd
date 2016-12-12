@@ -14,23 +14,27 @@ Sheavy.environment.actCoordinator.outactCoordinator.sfAddZone.Zone
 " "
 @endParameters
 
-@description "
+@description "actCoordinator can add new zones to the map. According to that the map will be updated.
  "
 //preProtocol descriptions
 @preP
-" "
+"The system is started."
+
+@preP
+"The user is logged in and is still logged in."
+
 @endPreP
 //preFunctional descriptions
 @preF
-" "
+"The zone to add doesn’t exists. "
 @endPreF
 //postFunctional descriptions
 @postF 
-" "
+"A new zone was added to the map "
 @endPostF
 //postProtocol descriptions
 @postP 
-" "
+"User sees an 'Updated' message. "
 @endPostP
 //example
 @example" "

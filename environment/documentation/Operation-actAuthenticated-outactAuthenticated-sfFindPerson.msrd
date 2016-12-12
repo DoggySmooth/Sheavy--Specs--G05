@@ -1,41 +1,42 @@
+
 /*
 @author Phil
 @date Sat Dec 10 12:52:04 CET 2016
 */
-
-
-@@Operation
-Sheavy.environment.actAuthenticated.outactAuthenticated.sfFindPerson
+@@Operation Sheavy.environment.actAuthenticated.outactAuthenticated.sfFindPerson
 //parameters
-@parameter
-Sheavy.environment.actAuthenticated.outactAuthenticated.sfFindPerson.Name
+@parameter Sheavy.environment.actAuthenticated.outactAuthenticated.sfFindPerson.Name
 ""
-@parameter
-Sheavy.environment.actAuthenticated.outactAuthenticated.sfFindPerson.Function
+@parameter Sheavy.environment.actAuthenticated.outactAuthenticated.sfFindPerson.Function
 ""
 @parameter Sheavy.operations.environment.ActAuthenticated.sfFindPerson.operationmodel.actAuthenticated.outactAuthenticated.sfFindPerson.Name
 " "
 @parameter Sheavy.operations.environment.ActAuthenticated.sfFindPerson.operationmodel.actAuthenticated.outactAuthenticated.sfFindPerson.Function
 " "
 @endParameters
-
-@description "
+@description
+" Actors who requests a call to a specific group in a certain location. Can find them by selecting
+them in the contact list or using the search to find the group (medics, fireman, military) by name or location
+(e.g. hospital/camp name or city they are located).
  "
 //preProtocol descriptions
 @preP
-" "
+"The system is started."
+@preP
+"The user is logged in and is still logged in."
 @endPreP
 //preFunctional descriptions
 @preF
-" "
+"Actor selects a group or person."
 @endPreF
 //postFunctional descriptions
-@postF 
-" "
+@postF
+"System uses phone to 'call' the selected person or group "
 @endPostF
 //postProtocol descriptions
-@postP 
-" "
+@postP
+"none "
 @endPostP
 //example
-@example" "
+@example
+" "

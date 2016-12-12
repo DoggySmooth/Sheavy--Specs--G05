@@ -5,13 +5,8 @@
 
 
 @@Primary Type Class Sheavy.concepts.primarytypes.classes.ctActAll
-@description ""
+@description "used to show the location of each actor."
 @attribute
 Sheavy.concepts.primarytypes.classes.ctActAll.location
 ""
-@attribute Sheavy.concepts.primarytypes.classes.ctActAll.ID
-" "
 @endAttributes
-@operation Sheavy.concepts.primarytypes.classes.ctActAll.init
-" "
-@endOperations

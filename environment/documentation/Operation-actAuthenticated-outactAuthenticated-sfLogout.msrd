@@ -6,23 +6,24 @@
 
 @@Operation
 Sheavy.environment.actAuthenticated.outactAuthenticated.sfLogout
-@description "
- "
+@description "Actors want to enter the applications."
 //preProtocol descriptions
 @preP
-" "
+"The system is started."
+@preP
+"The user is logged in and is still logged in."
 @endPreP
 //preFunctional descriptions
 @preF
-" "
+"none"
 @endPreF
 //postFunctional descriptions
 @postF 
-" "
+"The user can’t no longer access to his personal functions proposed by the system."
 @endPostF
 //postProtocol descriptions
 @postP 
-" "
+"none "
 @endPostP
 //example
 @example" "

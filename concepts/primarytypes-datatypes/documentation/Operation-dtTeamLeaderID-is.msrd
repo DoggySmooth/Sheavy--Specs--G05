@@ -6,7 +6,7 @@
 
 @@Operation
 Sheavy.concepts.primarytypes.datatypes.dtTeamLeaderID.is
-@description "
+@description "used to determine which integer are considered as valid dtTeamLeaderID.
  "
 //postFunctional descriptions
 @postF 

@@ -10,27 +10,27 @@ Sheavy.environment.actCoordinator.outactCoordinator.sfSeeAffectedTeamToMission
 @parameter
 Sheavy.environment.actCoordinator.outactCoordinator.sfSeeAffectedTeamToMission.AMission
 ""
-@parameter Sheavy.operations.environment.ActCoordinator.sfSeeAffectedTeamToMission.operationmodel.actCoordinator.outactCoordinator.sfSeeAffectedTeamToMission.AMission
-" "
 @endParameters
 
-@description "
+@description "actCoordinator is shown what teams are currently doing what mission they are in.
  "
 //preProtocol descriptions
 @preP
-" "
+"The system is started."
+@preP
+"The user is logged in and is still logged in."
 @endPreP
 //preFunctional descriptions
 @preF
-" "
+"actCoordinator selects team or mission to request the informations. "
 @endPreF
 //postFunctional descriptions
 @postF 
-" "
+"actCoordinator receives the requested information "
 @endPostF
 //postProtocol descriptions
 @postP 
-" "
+"none "
 @endPostP
 //example
 @example" "

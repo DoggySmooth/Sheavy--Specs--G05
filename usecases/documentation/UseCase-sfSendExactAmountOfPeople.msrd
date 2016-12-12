@@ -5,7 +5,7 @@
 
 
 @@Use Case Subfunction Sheavy.usecases.subfunctions.sfSendExactAmountOfPeople
-@description ""
+@description "used by actTeamLeader to send information to actCoordinator in case of an Evacuate-Mission."
 @parameter Sheavy.usecases.subfunctions.sfSendExactAmountOfPeople.Amount ""
 @endParameters
 @protocolCondition

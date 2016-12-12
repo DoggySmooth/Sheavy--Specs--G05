@@ -5,7 +5,7 @@
 
 
 @@Primary Type Enumeration Sheavy.concepts.primarytypes.datatypes.enStateTypes
-@description ""
+@description "this type is used to indicate the different states the crisis is at the moment."
 @operation
 Sheavy.concepts.primarytypes.datatypes.enStateTypes.is
 ""

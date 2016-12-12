@@ -14,23 +14,26 @@ Sheavy.environment.actCoordinator.outactCoordinator.sfSendMissionSetCamp.Mission
 " "
 @endParameters
 
-@description "
+@description "actCoordinator sends set camp mission to various groups actTeamLeaders (e.g. fire figther, military, Doctors,..) with
+some important information concerning the mission
  "
 //preProtocol descriptions
 @preP
-" "
+"The system is started."
+@preP
+"The user is logged in and is still logged in."
 @endPreP
 //preFunctional descriptions
 @preF
-" "
+"actCoordinator enters all information needed "
 @endPreF
 //postFunctional descriptions
 @postF 
-" "
+"The mission is received by the concerned actTeamLeader. "
 @endPostF
 //postProtocol descriptions
 @postP 
-" "
+"none "
 @endPostP
 //example
 @example" "

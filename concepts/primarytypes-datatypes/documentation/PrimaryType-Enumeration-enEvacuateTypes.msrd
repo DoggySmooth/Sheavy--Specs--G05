@@ -5,7 +5,7 @@
 
 
 @@Primary Type Enumeration Sheavy.concepts.primarytypes.datatypes.enEvacuateTypes
-@description ""
+@description "this type is used to indicate the different location types of an evacuation."
 @operation
 Sheavy.concepts.primarytypes.datatypes.enEvacuateTypes.is
 ""

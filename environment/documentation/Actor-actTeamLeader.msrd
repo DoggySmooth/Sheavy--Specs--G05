@@ -5,7 +5,13 @@
 
 
 @@Actor Sheavy.environment.actTeamLeader
-@description ""
+@description "Team Leader are present in all instances of Departments such as Medical Departments and Authorities.
+They are the leader of an intervention group which is going to execute missions given by the Coordinator. A
+Department consists of multiple team leader.
+• They are responsible of his team.
+• Accept or decline a mission given by the Coordinator.
+• Execute missions.
+• Reports the mission to the Coordinator"
 //input events
 @inputEvent
 Sheavy.environment.actTeamLeader.inactTeamLeader.ieAddTeam
@@ -20,6 +26,4 @@ Sheavy.environment.actTeamLeader.inactTeamLeader.ieNotify
 Sheavy.environment.actTeamLeader.outactTeamLeader.sfAcceptMission
 ""
 
-@outputEvent Sheavy.environment.actTeamLeader.outactTeamLeader.sfDenyMission
-" "
 @endOutputEvents

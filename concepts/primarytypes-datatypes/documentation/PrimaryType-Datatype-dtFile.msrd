@@ -5,7 +5,7 @@
 
 
 @@Primary Type Datatype Sheavy.concepts.primarytypes.datatypes.dtFile
-@description ""
+@description "A String used to show a report that is usually a text file."
 @operation
 Sheavy.concepts.primarytypes.datatypes.dtFile.is
 ""

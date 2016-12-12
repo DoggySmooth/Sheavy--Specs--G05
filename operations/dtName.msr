@@ -1,0 +1,19 @@
+/*
+* @author Phil
+* @date Tue Dec 06 17:24:55 CET 2016
+*/
+
+package Sheavy.operations.concepts.primarytypes.datatypes.dtName {
+
+import lu.uni.lassy.messir.libraries.calendar
+import lu.uni.lassy.messir.libraries.math
+import lu.uni.lassy.messir.libraries.primitives
+import lu.uni.lassy.messir.libraries.string
+
+
+	Operation Model {
+
+	}
+
+
+}

@@ -1,21 +1,20 @@
+
 /*
 @author Phil
 @date Sat Dec 10 12:52:08 CET 2016
 */
-
-
 @@Actor Sheavy.environment.actAdministrator
-@description 
-"represents a logical actor for time automatic message sending based on system's or environment status."
-
-@inputEvent
-Sheavy.environment.actAdministrator.inactAdministrator.ieMessage
-""
-
+@description
+"The Administrator is the responsible who keeps the system operational. Additional he distributes the logins
+and the professional web and mobile interface.
+• The Administrator keeps the system operational by maintaining the system
+• If necessary he performs some improvements and bugs corrections.
+• The Administrator distributes the professional web and mobile interface to the concerned persons. and also
+the logins.
+• The administrator is able to block a mobile phone or desktop interface for the security of the system"
+@inputEvent Sheavy.environment.actAdministrator.inactAdministrator.ieMessage
+" "
 @endInputEvents
-//output events
-@outputEvent
-Sheavy.environment.actAdministrator.outactAdministrator.sfInsertPersonIntoDatabase
-""
-
+@outputEvent Sheavy.environment.actAdministrator.outactAdministrator.sfInsertPersonIntoDatabase
+" "
 @endOutputEvents

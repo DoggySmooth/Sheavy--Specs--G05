@@ -10,27 +10,27 @@ Sheavy.environment.actCoordinator.outactCoordinator.sfStatistiques
 @parameter
 Sheavy.environment.actCoordinator.outactCoordinator.sfStatistiques.Mission
 ""
-@parameter Sheavy.operations.environment.ActCoordinator.sfStatistiques.operationmodel.actCoordinator.outactCoordinator.sfStatistiques.AMission
-" "
 @endParameters
 
-@description "
+@description "actCoordinator can see a statistic that is calculated by the accomplished mission per time units.
  "
 //preProtocol descriptions
 @preP
-" "
+"The system is started."
+@preP
+"The user is logged in and is still logged in."
 @endPreP
 //preFunctional descriptions
 @preF
-" "
+"At least one mission has been send. "
 @endPreF
 //postFunctional descriptions
 @postF 
-" "
+"A graph is created in actCoordinators' Homescreen. "
 @endPostF
 //postProtocol descriptions
 @postP 
-" "
+"none "
 @endPostP
 //example
 @example" "

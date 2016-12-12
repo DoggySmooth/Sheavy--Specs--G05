@@ -5,7 +5,7 @@
 
 
 @@Actor Sheavy.environment.actAll
-@description ""
+@description "This represents all actor of the system as an abstract class. This class give all actor access to the system."
 //input events
 @inputEvent
 Sheavy.environment.actAll.inactAll.ieLinkToRoute

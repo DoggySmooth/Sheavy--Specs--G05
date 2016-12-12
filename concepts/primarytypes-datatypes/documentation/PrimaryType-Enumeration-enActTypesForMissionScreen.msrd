@@ -5,7 +5,7 @@
 
 
 @@Primary Type Enumeration Sheavy.concepts.primarytypes.datatypes.enActTypesForMissionScreen
-@description ""
+@description "this type is used to indicate the different type of actors for one mission."
 @operation
 Sheavy.concepts.primarytypes.datatypes.enActTypesForMissionScreen.is
 ""

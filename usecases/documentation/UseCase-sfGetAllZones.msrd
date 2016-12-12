@@ -5,7 +5,7 @@
 
 
 @@Use Case Subfunction Sheavy.usecases.subfunctions.sfGetAllZones
-@description ""
+@description "used to request the collection of all zones that exist in the database."
 @protocolCondition
 "
 "
